@@ -1,0 +1,56 @@
+CREATE TABLE Student(
+    StudentID int NOT NULL,
+    SFirstName varchar(50) NOT NULL,
+    SLastName varchar(50) NOT NULL,
+    SMajor varchar(50) NOT NULL,
+    SEmail varchar(50) NOT NULL,
+    SPhone bigint NOT NULL,
+    StudentGPA decimal(3,2),
+    PRIMARY KEY (StudentID)
+);
+
+CREATE TABLE Professor(
+    ProfessorID int NOT NULL,
+    SFirstName varchar(50) NOT NULL,
+    SLastName varchar(50) NOT NULL,
+    SEmail varchar(50) NOT NULL,
+    SPhone bigint NOT NULL,
+    PRIMARY KEY (ProfessorID)
+);
+
+CREATE TABLE Course(
+    CourseID int NOT NULL,
+    CName varchar(50) NOT NULL,
+    StudentID int NOT NULL,
+    CONSTRAINT FK_StudentID_Course FOREIGN KEY (StudentID)
+    REFERENCES Student(StudentID),
+    ProfessorID int NOT NULL,
+    CONSTRAINT FK_ProfessorID_Course FOREIGN KEY (ProfessorID)
+    REFERENCES Professor(ProfessorID),
+    PRIMARY KEY (CourseID)
+);
+
+CREATE TABLE Grade(
+    GName varchar(1),
+    StudentID int NOT NULL,
+    CONSTRAINT FK_StudentID_Grade FOREIGN KEY (StudentID)
+    REFERENCES Student(StudentID),
+    ProfessorID int NOT NULL,
+    CONSTRAINT FK_ProfessorID_Grade FOREIGN KEY (ProfessorID)
+    REFERENCES Professor(ProfessorID),
+    PRIMARY KEY (GName)
+);
+
+CREATE TABLE Address(
+    StudentID int NOT NULL,
+    CONSTRAINT FK_StudentID_Address FOREIGN KEY (StudentID)
+    REFERENCES Student(StudentID),
+    ProfessorID int NOT NULL,
+    CONSTRAINT FK_ProfessorID_Address FOREIGN KEY (ProfessorID)
+    REFERENCES Professor(ProfessorID),
+    StreetNumber int NOT NULL,
+    Street varchar(50) NOT NULL,
+    City varchar(50) NOT NULL,
+    State varchar(50) NOT NULL,
+    Zipcode int NOT NULL
+);

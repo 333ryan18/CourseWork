@@ -1,0 +1,9 @@
+#!/bin/bash
+
+now=$(date +"%m-%d-%Y")
+filename="N00961805 Backup "$now
+
+tar -cvzf "/home/n00961805/$filename.tgz" "/home/n00961805/module8"
+pscp -pw cop4640password "/home/n00961805/$filename.tgz" cop4640user@192.168.100.80:backup/
+
+echo "The file has been uploaded to the server with the name "$filename

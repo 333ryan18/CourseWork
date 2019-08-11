@@ -1,0 +1,49 @@
+#!/bin/bash
+
+while :
+do
+    printf "Francis> "
+    read -r command arg1 arg2
+    case $command in
+    "CHDIR" | "chdir")
+        cd $arg1
+        ;;
+    "CLS" | "cls")
+        clear
+        ;;
+    "COPY" | "copy")
+        cp $arg1 $arg2
+        ;;
+    "CREATEDIR" | "createdir")
+        mkdir $arg1
+        ;;
+    "CREATEFILE" | "createfile")
+        touch $arg1
+        ;;
+    "DELETE" | "delete")
+        rm $arg1
+        ;;
+    "DIR" | "dir")
+        ls $arg1
+        ;;
+    "MOVE" | "move")
+        mv $arg1 $arg2
+        ;;
+    "PRINT" | "print")
+        echo $arg1
+        ;;
+    "RENAME" | "rename")
+        mv $arg1 $arg2
+        ;;
+    "TYPE" | "type")
+        cat $arg1
+        ;;
+    "QUIT")
+        echo "Quitting"
+        break
+        ;;
+    *)
+        echo "Command Not Found!"
+        ;;
+    esac
+done

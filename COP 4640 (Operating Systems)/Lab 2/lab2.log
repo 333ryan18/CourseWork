@@ -1,0 +1,692 @@
+Script started on Tue 22 Jan 2019 01:21:52 PM EST
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ mai[Kn -he[K[K-ehl[K[K[Khelp
+Usage: man [OPTION...] [SECTION] PAGE...
+
+  -C, --config-file=FILE     use this user configuration file
+  -d, --debug                emit debugging messages
+  -D, --default              reset all options to their default values
+      --warnings[=WARNINGS]  enable warnings from groff
+
+ Main modes of operation:
+  -f, --whatis               equivalent to whatis
+  -k, --apropos              equivalent to apropos
+  -K, --global-apropos       search for text in all pages
+  -l, --local-file           interpret PAGE argument(s) as local filename(s)
+  -w, --where, --path, --location
+                             print physical location of man page(s)
+  -W, --where-cat, --location-cat
+                             print physical location of cat file(s)
+
+  -c, --catman               used by catman to reformat out of date cat pages
+  -R, --recode=ENCODING      output source page encoded in ENCODING
+
+ Finding manual pages:
+  -L, --locale=LOCALE        define the locale for this particular man search
+  -m, --systems=SYSTEM       use manual pages from other systems
+  -M, --manpath=PATH         set search path for manual pages to PATH
+
+  -S, -s, --sections=LIST    use colon separated section list
+
+  -e, --extension=EXTENSION  limit search to extension type EXTENSION
+
+  -i, --ignore-case          look for pages case-insensitively (default)
+  -I, --match-case           look for pages case-sensitively
+
+      --regex                show all pages matching regex
+      --wildcard             show all pages matching wildcard
+
+      --names-only           make --regex and --wildcard match page names only,
+                             not descriptions
+
+  -a, --all                  find all matching manual pages
+  -u, --update               force a cache consistency check
+
+      --no-subpages          don't try subpages, e.g. 'man foo bar' => 'man
+                             foo-bar'
+
+ Controlling formatted output:
+  -P, --pager=PAGER          use program PAGER to display output
+  -r, --prompt=STRING        provide the `less' pager with a prompt
+
+  -7, --ascii                display ASCII translation of certain latin1 chars
+  -E, --encoding=ENCODING    use selected output encoding
+      --no-hyphenation, --nh turn off hyphenation
+      --no-justification,                              --nj   turn off justification
+  -p, --preprocessor=STRING  STRING indicates which preprocessors to run:
+                             e - [n]eqn, p - pic, t - tbl,
+g - grap, r - refer, v - vgrind
+
+  -t, --troff                use groff to format pages
+  -T, --troff-device[=DEVICE]   use groff with selected device
+
+  -H, --html[=BROWSER]       use www-browser or BROWSER to display HTML output
+  -X, --gxditview[=RESOLUTION]   use groff and display through gxditview
+                             (X11):
+                             -X = -TX75, -X100 = -TX100, -X100-12 = -TX100-12
+  -Z, --ditroff              use groff and force it to produce ditroff
+
+  -?, --help                 give this help list
+      --usage                give a short usage message
+  -V, --version              print program version
+
+Mandatory or optional arguments to long options are also mandatory or optional
+for any corresponding short options.
+
+Report bugs to cjwatson@debian.org.
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ uname -o
+GNU/Linux
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ lsb_release -a
+No LSB modules are available.
+Distributor ID:	Ubuntu
+Description:	Ubuntu 16.04.5 LTS
+Release:	16.04
+Codename:	xenial
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ if config
+> if config^C
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ if config[C[1Pconfig
+ens160    Link encap:Ethernet  HWaddr 00:18:8b:57:20:6c  
+          inet addr:192.168.100.71  Bcast:192.168.101.255  Mask:255.255.254.0
+          inet6 addr: fe80::218:8bff:fe57:206c/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:16246570 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:714257 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:3922819861 (3.9 GB)  TX bytes:90180724 (90.1 MB)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:321225 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:321225 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1 
+          RX bytes:23809464 (23.8 MB)  TX bytes:23809464 (23.8 MB)
+
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ hostname
+cisvm-cop4640-1
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ [K]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ exit
+exit
+
+Script done on Tue 22 Jan 2019 01:50:59 PM EST
+Script started on Tue 22 Jan 2019 03:17:24 PM EST
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ [K]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ exitscript lab2.log[5Pman --help[K[2P11[Kmanrm lab2.log [2@nano[C[C[C[C[C[C[C[C[C[Cscript lab2.logexit[Kscript lab2.log[1Pnano lab2.log [2Prm[C[C[C[C[C[C[C[C[C[Cman[K[2P1man 1--helpscript lab2.logexit[K[Khostname
+cisvm-cop4640-1
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ uname -o
+GNU/Linux
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ uname -o[Kr
+4.4.0-104-generic
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ cat /etc/os-rels[Kease
+NAME="Ubuntu"
+VERSION="16.04.5 LTS (Xenial Xerus)"
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME="Ubuntu 16.04.5 LTS"
+VERSION_ID="16.04"
+HOME_URL="http://www.ubuntu.com/"
+SUPPORT_URL="http://help.ubuntu.com/"
+BUG_REPORT_URL="http://bugs.launchpad.net/ubuntu/"
+VERSION_CODENAME=xenial
+UBUNTU_CODENAME=xenial
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ uname -a
+Linux cisvm-cop4640-1 4.4.0-104-generic #127-Ubuntu SMP Mon Dec 11 12:16:42 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ uname -a[Ks
+Linux
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ uname -s[Kr
+4.4.0-104-generic
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ uname -r[Ka
+Linux cisvm-cop4640-1 4.4.0-104-generic #127-Ubuntu SMP Mon Dec 11 12:16:42 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ uname --version
+uname (GNU coreutils) 8.25
+Copyright (C) 2016 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by David MacKenzie.
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ who
+n00961805 pts/0        2019-01-22 15:17 (192.168.100.41)
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ ^C
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ ifconfig
+ens160    Link encap:Ethernet  HWaddr 00:18:8b:57:20:6c  
+          inet addr:192.168.100.71  Bcast:192.168.101.255  Mask:255.255.254.0
+          inet6 addr: fe80::218:8bff:fe57:206c/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:16257910 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:714991 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:3925632647 (3.9 GB)  TX bytes:90263277 (90.2 MB)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:321225 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:321225 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1 
+          RX bytes:23809464 (23.8 MB)  TX bytes:23809464 (23.8 MB)
+
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ ls
+lab2.log
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ echo $SSH_CLIENT | awk '{ print $1}'
+192.168.100.41
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ ^C
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ ls -l
+total 8
+-rw-rw-r-- 1 n00961805 n00961805 5172 Jan 22 13:50 lab2.log
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ pwd
+/home/n00961805
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ mkdir lab1
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ ls
+[0m[01;34mlab1[0m  lab2.log
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ touch [K[K[K[K[K[Kcd lab1
+]0;n00961805@cisvm-cop4640-1: ~/lab1n00961805@cisvm-cop4640-1:~/lab1$ ls
+]0;n00961805@cisvm-cop4640-1: ~/lab1n00961805@cisvm-cop4640-1:~/lab1$ touch myTest
+]0;n00961805@cisvm-cop4640-1: ~/lab1n00961805@cisvm-cop4640-1:~/lab1$ ls
+myTest
+]0;n00961805@cisvm-cop4640-1: ~/lab1n00961805@cisvm-cop4640-1:~/lab1$ tocu[K[K[K[Krm myTest 
+]0;n00961805@cisvm-cop4640-1: ~/lab1n00961805@cisvm-cop4640-1:~/lab1$ touch mytest[K[K[K[K[Ky[KyTest date
+]0;n00961805@cisvm-cop4640-1: ~/lab1n00961805@cisvm-cop4640-1:~/lab1$ echo myTest 
+myTest
+]0;n00961805@cisvm-cop4640-1: ~/lab1n00961805@cisvm-cop4640-1:~/lab1$ cat myTest
+]0;n00961805@cisvm-cop4640-1: ~/lab1n00961805@cisvm-cop4640-1:~/lab1$ rm myTest 
+]0;n00961805@cisvm-cop4640-1: ~/lab1n00961805@cisvm-cop4640-1:~/lab1$ touch ""m"y"T"e"s"t"[C[K[K[K[K[K[K[K[K[K[K[K[K[K[Ktouch myTest
+]0;n00961805@cisvm-cop4640-1: ~/lab1n00961805@cisvm-cop4640-1:~/lab1$ echo ""$"(")"d)"a)"t)"e)"[C[C >> myTest 
+]0;n00961805@cisvm-cop4640-1: ~/lab1n00961805@cisvm-cop4640-1:~/lab1$ cat myTest 
+Tue Jan 22 15:33:04 EST 2019
+]0;n00961805@cisvm-cop4640-1: ~/lab1n00961805@cisvm-cop4640-1:~/lab1$ mv myTest myNewTest
+]0;n00961805@cisvm-cop4640-1: ~/lab1n00961805@cisvm-cop4640-1:~/lab1$ ls
+date  myNewTest
+]0;n00961805@cisvm-cop4640-1: ~/lab1n00961805@cisvm-cop4640-1:~/lab1$ rm date
+]0;n00961805@cisvm-cop4640-1: ~/lab1n00961805@cisvm-cop4640-1:~/lab1$ ls
+myNewTest
+]0;n00961805@cisvm-cop4640-1: ~/lab1n00961805@cisvm-cop4640-1:~/lab1$ cp myNewTest myNewTest [K2
+]0;n00961805@cisvm-cop4640-1: ~/lab1n00961805@cisvm-cop4640-1:~/lab1$ ls
+myNewTest  myNewTest2
+]0;n00961805@cisvm-cop4640-1: ~/lab1n00961805@cisvm-cop4640-1:~/lab1$ ls -l
+total 8
+-rw-rw-r-- 1 n00961805 n00961805 29 Jan 22 15:33 myNewTest
+-rw-rw-r-- 1 n00961805 n00961805 29 Jan 22 15:34 myNewTest2
+]0;n00961805@cisvm-cop4640-1: ~/lab1n00961805@cisvm-cop4640-1:~/lab1$ cd ..
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ rm - [Kr lab1
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ ls
+lab2.log
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ s[Kwall -n Hello, my name is XYZ![K[K[K[KFrancis Rukab!
+wall: --nobanner is available only for root
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ man
+What manual page do you want?
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ man --help
+Usage: man [OPTION...] [SECTION] PAGE...
+
+  -C, --config-file=FILE     use this user configuration file
+  -d, --debug                emit debugging messages
+  -D, --default              reset all options to their default values
+      --warnings[=WARNINGS]  enable warnings from groff
+
+ Main modes of operation:
+  -f, --whatis               equivalent to whatis
+  -k, --apropos              equivalent to apropos
+  -K, --global-apropos       search for text in all pages
+  -l, --local-file           interpret PAGE argument(s) as local filename(s)
+  -w, --where, --path, --location
+                             print physical location of man page(s)
+  -W, --where-cat, --location-cat
+                             print physical location of cat file(s)
+
+  -c, --catman               used by catman to reformat out of date cat pages
+  -R, --recode=ENCODING      output source page encoded in ENCODING
+
+ Finding manual pages:
+  -L, --locale=LOCALE        define the locale for this particular man search
+  -m, --systems=SYSTEM       use manual pages from other systems
+  -M, --manpath=PATH         set search path for manual pages to PATH
+
+  -S, -s, --sections=LIST    use colon separated section list
+
+  -e, --extension=EXTENSION  limit search to extension type EXTENSION
+
+  -i, --ignore-case          look for pages case-insensitively (default)
+  -I, --match-case           look for pages case-sensitively
+
+      --regex                show all pages matching regex
+      --wildcard             show all pages matching wildcard
+
+      --names-only           make --regex and --wildcard match page names only,
+                             not descriptions
+
+  -a, --all                  find all matching manual pages
+  -u, --update               force a cache consistency check
+
+      --no-subpages          don't try subpages, e.g. 'man foo bar' => 'man
+                             foo-bar'
+
+ Controlling formatted output:
+  -P, --pager=PAGER          use program PAGER to display output
+  -r, --prompt=STRING        provide the `less' pager with a prompt
+
+  -7, --ascii                display ASCII translation of certain latin1 chars
+  -E, --encoding=ENCODING    use selected output encoding
+      --no-hyphenation, --nh turn off hyphenation
+      --no-justification,                              --nj   turn off justification
+  -p, --preprocessor=STRING  STRING indicates which preprocessors to run:
+                             e - [n]eqn, p - pic, t - tbl,
+g - grap, r - refer, v - vgrind
+
+  -t, --troff                use groff to format pages
+  -T, --troff-device[=DEVICE]   use groff with selected device
+
+  -H, --html[=BROWSER]       use www-browser or BROWSER to display HTML output
+  -X, --gxditview[=RESOLUTION]   use groff and display through gxditview
+                             (X11):
+                             -X = -TX75, -X100 = -TX100, -X100-12 = -TX100-12
+  -Z, --ditroff              use groff and force it to produce ditroff
+
+  -?, --help                 give this help list
+      --usage                give a short usage message
+  -V, --version              print program version
+
+Mandatory or optional arguments to long options are also mandatory or optional
+for any corresponding short options.
+
+Report bugs to cjwatson@debian.org.
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ [K]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ cd /
+]0;n00961805@cisvm-cop4640-1: /n00961805@cisvm-cop4640-1:/$ ls
+az  [0m[01;34mbin[0m  [01;34mboot[0m  [01;34mdev[0m  [01;34metc[0m  [01;34mhome[0m  [01;36minitrd.img[0m  [01;36minitrd.img.old[0m  [01;34mlib[0m  [01;34mlib64[0m  [01;34mlost+found[0m  [01;34mmedia[0m  [01;34mmnt[0m  n00481914@192.168.100.72  [01;34mopt[0m  [01;34mproc[0m  [01;34mroot[0m  [01;34mrun[0m  [01;34msbin[0m  [01;34msnap[0m  [01;34msrv[0m  [01;34msys[0m  [30;42mtmp[0m  [01;34musr[0m  [01;34mvar[0m  [01;36mvmlinuz[0m  [01;36mvmlinuz.old[0m
+]0;n00961805@cisvm-cop4640-1: /n00961805@cisvm-cop4640-1:/$ cd .
+]0;n00961805@cisvm-cop4640-1: /n00961805@cisvm-cop4640-1:/$ ls
+az  [0m[01;34mbin[0m  [01;34mboot[0m  [01;34mdev[0m  [01;34metc[0m  [01;34mhome[0m  [01;36minitrd.img[0m  [01;36minitrd.img.old[0m  [01;34mlib[0m  [01;34mlib64[0m  [01;34mlost+found[0m  [01;34mmedia[0m  [01;34mmnt[0m  n00481914@192.168.100.72  [01;34mopt[0m  [01;34mproc[0m  [01;34mroot[0m  [01;34mrun[0m  [01;34msbin[0m  [01;34msnap[0m  [01;34msrv[0m  [01;34msys[0m  [30;42mtmp[0m  [01;34musr[0m  [01;34mvar[0m  [01;36mvmlinuz[0m  [01;36mvmlinuz.old[0m
+]0;n00961805@cisvm-cop4640-1: /n00961805@cisvm-cop4640-1:/$ cd [K~
+No command 'cd~' found, did you mean:
+ Command 'cde' from package 'cde' (universe)
+ Command 'cdv' from package 'codeville' (universe)
+ Command 'cdp' from package 'irpas' (multiverse)
+ Command 'cdw' from package 'cdw' (universe)
+ Command 'cdo' from package 'cdo' (universe)
+ Command 'cdb' from package 'tinycdb' (main)
+ Command 'cd5' from package 'cd5' (universe)
+ Command 'cdi' from package 'cdo' (universe)
+cd~: command not found
+]0;n00961805@cisvm-cop4640-1: /n00961805@cisvm-cop4640-1:/$ cd~ ~
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ ls
+lab2.log
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ cd .
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ cd -
+/home/n00961805
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ top[[K
+[?1h=[?25l[H[2J(B[mtop - 15:47:24 up 167 days,  6:06,  1 user,  load average: 0.02, 0.01, 0.00(B[m[39;49m(B[m[39;49m[K
+Tasks:(B[m[39;49m[1m 121 (B[m[39;49mtotal,(B[m[39;49m[1m   1 (B[m[39;49mrunning,(B[m[39;49m[1m 120 (B[m[39;49msleeping,(B[m[39;49m[1m   0 (B[m[39;49mstopped,(B[m[39;49m[1m   0 (B[m[39;49mzombie(B[m[39;49m(B[m[39;49m[K
+%Cpu(s):(B[m[39;49m[1m  0.1 (B[m[39;49mus,(B[m[39;49m[1m  0.0 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 99.9 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+KiB Mem :(B[m[39;49m[1m  2048312 (B[m[39;49mtotal,(B[m[39;49m[1m   267440 (B[m[39;49mfree,(B[m[39;49m[1m   133676 (B[m[39;49mused,(B[m[39;49m[1m  1647196 (B[m[39;49mbuff/cache(B[m[39;49m(B[m[39;49m[K
+KiB Swap:(B[m[39;49m[1m  2097148 (B[m[39;49mtotal,(B[m[39;49m[1m  2097112 (B[m[39;49mfree,(B[m[39;49m[1m       36 (B[m[39;49mused.(B[m[39;49m[1m  1679216 (B[m[39;49mavail Mem (B[m[39;49m(B[m[39;49m[K
+[K
+[7m  PID USER      PR  NI    VIRT    RES    SHR S %CPU %MEM     TIME+ COMMAND                                                                                                                                         (B[m[39;49m[K
+(B[m    1 root      20   0  119768   6028   4152 S  0.0  0.3   1:18.56 systemd                                                                                                                                         (B[m[39;49m[K
+(B[m    2 root      20   0       0      0      0 S  0.0  0.0   0:01.03 kthreadd                                                                                                                                        (B[m[39;49m[K
+(B[m    3 root      20   0       0      0      0 S  0.0  0.0   0:16.92 ksoftirqd/0                                                                                                                                     (B[m[39;49m[K
+(B[m    5 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kworker/0:0H                                                                                                                                    (B[m[39;49m[K
+(B[m    7 root      20   0       0      0      0 S  0.0  0.0  19:11.03 rcu_sched                                                                                                                                       (B[m[39;49m[K
+(B[m    8 root      20   0       0      0      0 S  0.0  0.0   0:00.00 rcu_bh                                                                                                                                          (B[m[39;49m[K
+(B[m    9 root      rt   0       0      0      0 S  0.0  0.0   0:00.00 migration/0                                                                                                                                     (B[m[39;49m[K
+(B[m   10 root      rt   0       0      0      0 S  0.0  0.0   0:40.21 watchdog/0                                                                                                                                      (B[m[39;49m[K
+(B[m   11 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kdevtmpfs                                                                                                                                       (B[m[39;49m[K
+(B[m   12 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 netns                                                                                                                                           (B[m[39;49m[K
+(B[m   13 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 perf                                                                                                                                            (B[m[39;49m[K
+(B[m   14 root      20   0       0      0      0 S  0.0  0.0   0:09.26 khungtaskd                                                                                                                                      (B[m[39;49m[K
+(B[m   15 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 writeback                                                                                                                                       (B[m[39;49m[K
+(B[m   16 root      25   5       0      0      0 S  0.0  0.0   0:00.00 ksmd                                                                                                                                            (B[m[39;49m[K
+(B[m   17 root      39  19       0      0      0 S  0.0  0.0   0:31.11 khugepaged                                                                                                                                      (B[m[39;49m[K
+(B[m   18 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 crypto                                                                                                                                          (B[m[39;49m[K
+(B[m   19 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kintegrityd                                                                                                                                     (B[m[39;49m[K
+(B[m   20 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K
+(B[m   21 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kblockd                                                                                                                                         (B[m[39;49m[K
+(B[m   22 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 ata_sff                                                                                                                                         (B[m[39;49m[K
+(B[m   23 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 md                                                                                                                                              (B[m[39;49m[K
+(B[m   24 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 devfreq_wq                                                                                                                                      (B[m[39;49m[K
+(B[m   28 root      20   0       0      0      0 S  0.0  0.0   0:00.01 kswapd0                                                                                                                                         (B[m[39;49m[K
+(B[m   29 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 vmstat                                                                                                                                          (B[m[39;49m[K
+(B[m   30 root      20   0       0      0      0 S  0.0  0.0   0:00.00 fsnotify_mark                                                                                                                                   (B[m[39;49m[K
+(B[m   31 root      20   0       0      0      0 S  0.0  0.0   0:00.00 ecryptfs-kthrea                                                                                                                                 (B[m[39;49m[K
+(B[m   47 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kthrotld                                                                                                                                        (B[m[39;49m[K
+(B[m   48 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 acpi_thermal_pm                                                                                                                                 (B[m[39;49m[K
+(B[m   49 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K
+(B[m   50 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K
+(B[m   51 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K
+(B[m   52 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K
+(B[m   53 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K
+(B[m   54 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K
+(B[m   55 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K
+(B[m   56 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K
+(B[m   57 root      20   0       0      0      0 S  0.0  0.0   0:00.00 scsi_eh_0                                                                                                                                       (B[m[39;49m[K
+(B[m   58 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 scsi_tmf_0                                                                                                                                      (B[m[39;49m[K
+(B[m   59 root      20   0       0      0      0 S  0.0  0.0   0:00.00 scsi_eh_1                                                                                                                                       (B[m[39;49m[K
+(B[m   60 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 scsi_tmf_1                                                                                                                                      (B[m[39;49m[K
+(B[m   66 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 ipv6_addrconf                                                                                                                                   (B[m[39;49m[K
+(B[m   79 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 deferwq                                                                                                                                         (B[m[39;49m[K
+(B[m   80 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 charger_manager                                                                                                                                 (B[m[39;49m[K
+(B[m   81 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K
+(B[m  133 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K
+(B[m  134 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K
+(B[m  135 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K[H(B[mtop - 15:47:27 up 167 days,  6:06,  1 user,  load average: 0.02, 0.01, 0.00(B[m[39;49m(B[m[39;49m[K
+Tasks:(B[m[39;49m[1m 121 (B[m[39;49mtotal,(B[m[39;49m[1m   1 (B[m[39;49mrunning,(B[m[39;49m[1m 120 (B[m[39;49msleeping,(B[m[39;49m[1m   0 (B[m[39;49mstopped,(B[m[39;49m[1m   0 (B[m[39;49mzombie(B[m[39;49m(B[m[39;49m[K
+%Cpu(s):(B[m[39;49m[1m  0.0 (B[m[39;49mus,(B[m[39;49m[1m  0.3 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 99.7 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+KiB Mem :(B[m[39;49m[1m  2048312 (B[m[39;49mtotal,(B[m[39;49m[1m   267440 (B[m[39;49mfree,(B[m[39;49m[1m   133680 (B[m[39;49mused,(B[m[39;49m[1m  1647192 (B[m[39;49mbuff/cache(B[m[39;49m(B[m[39;49m[K
+
+[K
+
+(B[m[1m10501 n009618+  20   0   41796   3788   3180 R  0.3  0.2   0:00.01 top                                                                                                                                             (B[m[39;49m[K
+(B[m    1 root      20   0  119768   6028   4152 S  0.0  0.3   1:18.56 systemd                                                                                                                                         (B[m[39;49m[K
+(B[m    2 root      20   0       0      0      0 S  0.0  0.0   0:01.03 kthreadd                                                                                                                                        (B[m[39;49m[K
+(B[m    3 root      20   0       0      0      0 S  0.0  0.0   0:16.92 ksoftirqd/0                                                                                                                                     (B[m[39;49m[K
+(B[m    5 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kworker/0:0H                                                                                                                                    (B[m[39;49m[K
+(B[m    7 root      20   0       0      0      0 S  0.0  0.0  19:11.03 rcu_sched                                                                                                                                       (B[m[39;49m[K
+(B[m    8 root      20   0       0      0      0 S  0.0  0.0   0:00.00 rcu_bh                                                                                                                                          (B[m[39;49m[K
+(B[m    9 root      rt   0       0      0      0 S  0.0  0.0   0:00.00 migration/0                                                                                                                                     (B[m[39;49m[K
+(B[m   10 root      rt   0       0      0      0 S  0.0  0.0   0:40.21 watchdog/0                                                                                                                                      (B[m[39;49m[K
+(B[m   11 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kdevtmpfs                                                                                                                                       (B[m[39;49m[K
+(B[m   12 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 netns                                                                                                                                           (B[m[39;49m[K
+(B[m   13 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 perf                                                                                                                                            (B[m[39;49m[K
+(B[m   14 root      20   0       0      0      0 S  0.0  0.0   0:09.26 khungtaskd                                                                                                                                      (B[m[39;49m[K
+(B[m   15 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 writeback                                                                                                                                       (B[m[39;49m[K
+(B[m   16 root      25   5       0      0      0 S  0.0  0.0   0:00.00 ksmd                                                                                                                                            (B[m[39;49m[K
+(B[m   17 root      39  19       0      0      0 S  0.0  0.0   0:31.11 khugepaged                                                                                                                                      (B[m[39;49m[K
+(B[m   18 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 crypto                                                                                                                                          (B[m[39;49m[K
+(B[m   19 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kintegrityd                                                                                                                                     (B[m[39;49m[K
+(B[m   20 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K
+(B[m   21 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kblockd                                                                                                                                         (B[m[39;49m[K
+(B[m   22 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 ata_sff                                                                                                                                         (B[m[39;49m[K
+(B[m   23 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 md                                                                                                                                              (B[m[39;49m[K
+(B[m   24 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 devfreq_wq                                                                                                                                      (B[m[39;49m[K
+(B[m   28 root      20   0       0      0      0 S  0.0  0.0   0:00.01 kswapd0                                                                                                                                         (B[m[39;49m[K
+(B[m   29 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 vmstat                                                                                                                                          (B[m[39;49m[K
+(B[m   30 root      20   0       0      0      0 S  0.0  0.0   0:00.00 fsnotify_mark                                                                                                                                   (B[m[39;49m[K
+(B[m   31 root      20   0       0      0      0 S  0.0  0.0   0:00.00 ecryptfs-kthrea                                                                                                                                 (B[m[39;49m[K
+(B[m   47 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kthrotld                                                                                                                                        (B[m[39;49m[K
+(B[m   48 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 acpi_thermal_pm                                                                                                                                 (B[m[39;49m[K
+(B[m   49 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K
+(B[m   50 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K
+(B[m   51 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K
+(B[m   52 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K
+(B[m   53 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K
+(B[m   54 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K
+(B[m   55 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K
+(B[m   56 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K
+(B[m   57 root      20   0       0      0      0 S  0.0  0.0   0:00.00 scsi_eh_0                                                                                                                                       (B[m[39;49m[K
+(B[m   58 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 scsi_tmf_0                                                                                                                                      (B[m[39;49m[K
+(B[m   59 root      20   0       0      0      0 S  0.0  0.0   0:00.00 scsi_eh_1                                                                                                                                       (B[m[39;49m[K
+(B[m   60 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 scsi_tmf_1                                                                                                                                      (B[m[39;49m[K
+(B[m   66 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 ipv6_addrconf                                                                                                                                   (B[m[39;49m[K
+(B[m   79 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 deferwq                                                                                                                                         (B[m[39;49m[K
+(B[m   80 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 charger_manager                                                                                                                                 (B[m[39;49m[K
+(B[m   81 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K
+(B[m  133 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K
+(B[m  134 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K[H(B[mtop - 15:47:30 up 167 days,  6:06,  1 user,  load average: 0.02, 0.01, 0.00(B[m[39;49m(B[m[39;49m[K
+
+%Cpu(s):(B[m[39;49m[1m  0.3 (B[m[39;49mus,(B[m[39;49m[1m  0.3 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 99.3 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+KiB Mem :(B[m[39;49m[1m  2048312 (B[m[39;49mtotal,(B[m[39;49m[1m   267440 (B[m[39;49mfree,(B[m[39;49m[1m   133672 (B[m[39;49mused,(B[m[39;49m[1m  1647200 (B[m[39;49mbuff/cache(B[m[39;49m(B[m[39;49m[K
+KiB Swap:(B[m[39;49m[1m  2097148 (B[m[39;49mtotal,(B[m[39;49m[1m  2097112 (B[m[39;49mfree,(B[m[39;49m[1m       36 (B[m[39;49mused.(B[m[39;49m[1m  1679236 (B[m[39;49mavail Mem (B[m[39;49m(B[m[39;49m[K
+[K
+
+(B[m    1 root      20   0  119768   6028   4152 S  0.0  0.3   1:18.56 systemd                                                                                                                                         (B[m[39;49m[K
+(B[m    2 root      20   0       0      0      0 S  0.0  0.0   0:01.03 kthreadd                                                                                                                                        (B[m[39;49m[K
+(B[m    3 root      20   0       0      0      0 S  0.0  0.0   0:16.92 ksoftirqd/0                                                                                                                                     (B[m[39;49m[K
+(B[m    5 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kworker/0:0H                                                                                                                                    (B[m[39;49m[K
+(B[m    7 root      20   0       0      0      0 S  0.0  0.0  19:11.03 rcu_sched                                                                                                                                       (B[m[39;49m[K
+(B[m    8 root      20   0       0      0      0 S  0.0  0.0   0:00.00 rcu_bh                                                                                                                                          (B[m[39;49m[K
+(B[m    9 root      rt   0       0      0      0 S  0.0  0.0   0:00.00 migration/0                                                                                                                                     (B[m[39;49m[K
+(B[m   10 root      rt   0       0      0      0 S  0.0  0.0   0:40.21 watchdog/0                                                                                                                                      (B[m[39;49m[K
+(B[m   11 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kdevtmpfs                                                                                                                                       (B[m[39;49m[K
+(B[m   12 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 netns                                                                                                                                           (B[m[39;49m[K
+(B[m   13 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 perf                                                                                                                                            (B[m[39;49m[K
+(B[m   14 root      20   0       0      0      0 S  0.0  0.0   0:09.26 khungtaskd                                                                                                                                      (B[m[39;49m[K
+(B[m   15 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 writeback                                                                                                                                       (B[m[39;49m[K
+(B[m   16 root      25   5       0      0      0 S  0.0  0.0   0:00.00 ksmd                                                                                                                                            (B[m[39;49m[K
+(B[m   17 root      39  19       0      0      0 S  0.0  0.0   0:31.11 khugepaged                                                                                                                                      (B[m[39;49m[K
+(B[m   18 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 crypto                                                                                                                                          (B[m[39;49m[K
+(B[m   19 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kintegrityd                                                                                                                                     (B[m[39;49m[K
+(B[m   20 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K
+(B[m   21 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kblockd                                                                                                                                         (B[m[39;49m[K
+(B[m   22 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 ata_sff                                                                                                                                         (B[m[39;49m[K
+(B[m   23 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 md                                                                                                                                              (B[m[39;49m[K
+(B[m   24 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 devfreq_wq                                                                                                                                      (B[m[39;49m[K
+(B[m   28 root      20   0       0      0      0 S  0.0  0.0   0:00.01 kswapd0                                                                                                                                         (B[m[39;49m[K
+(B[m   29 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 vmstat                                                                                                                                          (B[m[39;49m[K
+(B[m   30 root      20   0       0      0      0 S  0.0  0.0   0:00.00 fsnotify_mark                                                                                                                                   (B[m[39;49m[K
+(B[m   31 root      20   0       0      0      0 S  0.0  0.0   0:00.00 ecryptfs-kthrea                                                                                                                                 (B[m[39;49m[K
+(B[m   47 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kthrotld                                                                                                                                        (B[m[39;49m[K
+(B[m   48 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 acpi_thermal_pm                                                                                                                                 (B[m[39;49m[K
+(B[m   49 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K
+(B[m   50 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K
+(B[m   51 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K
+(B[m   52 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K
+(B[m   53 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K
+(B[m   54 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K
+(B[m   55 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K
+(B[m   56 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K
+(B[m   57 root      20   0       0      0      0 S  0.0  0.0   0:00.00 scsi_eh_0                                                                                                                                       (B[m[39;49m[K
+(B[m   58 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 scsi_tmf_0                                                                                                                                      (B[m[39;49m[K
+(B[m   59 root      20   0       0      0      0 S  0.0  0.0   0:00.00 scsi_eh_1                                                                                                                                       (B[m[39;49m[K
+(B[m   60 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 scsi_tmf_1                                                                                                                                      (B[m[39;49m[K
+(B[m   66 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 ipv6_addrconf                                                                                                                                   (B[m[39;49m[K
+(B[m   79 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 deferwq                                                                                                                                         (B[m[39;49m[K
+(B[m   80 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 charger_manager                                                                                                                                 (B[m[39;49m[K
+(B[m   81 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K
+(B[m  133 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K
+(B[m  134 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K
+(B[m  135 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K[H(B[mtop - 15:47:33 up 167 days,  6:07,  1 user,  load average: 0.02, 0.01, 0.00(B[m[39;49m(B[m[39;49m[K
+
+%Cpu(s):(B[m[39;49m[1m  0.0 (B[m[39;49mus,(B[m[39;49m[1m  0.0 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m100.0 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+KiB Mem :(B[m[39;49m[1m  2048312 (B[m[39;49mtotal,(B[m[39;49m[1m   267316 (B[m[39;49mfree,(B[m[39;49m[1m   133784 (B[m[39;49mused,(B[m[39;49m[1m  1647212 (B[m[39;49mbuff/cache(B[m[39;49m(B[m[39;49m[K
+KiB Swap:(B[m[39;49m[1m  2097148 (B[m[39;49mtotal,(B[m[39;49m[1m  2097112 (B[m[39;49mfree,(B[m[39;49m[1m       36 (B[m[39;49mused.(B[m[39;49m[1m  1679112 (B[m[39;49mavail Mem (B[m[39;49m(B[m[39;49m[K
+[K
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[H(B[mtop - 15:47:36 up 167 days,  6:07,  1 user,  load average: 0.02, 0.01, 0.00(B[m[39;49m(B[m[39;49m[K
+
+%Cpu(s):(B[m[39;49m[1m  0.0 (B[m[39;49mus,(B[m[39;49m[1m  0.3 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 99.7 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+KiB Mem :(B[m[39;49m[1m  2048312 (B[m[39;49mtotal,(B[m[39;49m[1m   267316 (B[m[39;49mfree,(B[m[39;49m[1m   133780 (B[m[39;49mused,(B[m[39;49m[1m  1647216 (B[m[39;49mbuff/cache(B[m[39;49m(B[m[39;49m[K
+
+[K
+
+(B[m  915 root      20   0  225456  49652   8688 S  0.3  2.4  97:09.14 vmtoolsd                                                                                                                                        (B[m[39;49m[K
+(B[m10381 n009618+  20   0   92832   4148   3216 S  0.3  0.2   0:00.08 sshd                                                                                                                                            (B[m[39;49m[K
+(B[m    1 root      20   0  119768   6028   4152 S  0.0  0.3   1:18.56 systemd                                                                                                                                         (B[m[39;49m[K
+(B[m    2 root      20   0       0      0      0 S  0.0  0.0   0:01.03 kthreadd                                                                                                                                        (B[m[39;49m[K
+(B[m    3 root      20   0       0      0      0 S  0.0  0.0   0:16.92 ksoftirqd/0                                                                                                                                     (B[m[39;49m[K
+(B[m    5 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kworker/0:0H                                                                                                                                    (B[m[39;49m[K
+(B[m    7 root      20   0       0      0      0 S  0.0  0.0  19:11.03 rcu_sched                                                                                                                                       (B[m[39;49m[K
+(B[m    8 root      20   0       0      0      0 S  0.0  0.0   0:00.00 rcu_bh                                                                                                                                          (B[m[39;49m[K
+(B[m    9 root      rt   0       0      0      0 S  0.0  0.0   0:00.00 migration/0                                                                                                                                     (B[m[39;49m[K
+(B[m   10 root      rt   0       0      0      0 S  0.0  0.0   0:40.21 watchdog/0                                                                                                                                      (B[m[39;49m[K
+(B[m   11 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kdevtmpfs                                                                                                                                       (B[m[39;49m[K
+(B[m   12 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 netns                                                                                                                                           (B[m[39;49m[K
+(B[m   13 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 perf                                                                                                                                            (B[m[39;49m[K
+(B[m   14 root      20   0       0      0      0 S  0.0  0.0   0:09.26 khungtaskd                                                                                                                                      (B[m[39;49m[K
+(B[m   15 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 writeback                                                                                                                                       (B[m[39;49m[K
+(B[m   16 root      25   5       0      0      0 S  0.0  0.0   0:00.00 ksmd                                                                                                                                            (B[m[39;49m[K
+(B[m   17 root      39  19       0      0      0 S  0.0  0.0   0:31.11 khugepaged                                                                                                                                      (B[m[39;49m[K
+(B[m   18 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 crypto                                                                                                                                          (B[m[39;49m[K
+(B[m   19 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kintegrityd                                                                                                                                     (B[m[39;49m[K
+(B[m   20 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K
+(B[m   21 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kblockd                                                                                                                                         (B[m[39;49m[K
+(B[m   22 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 ata_sff                                                                                                                                         (B[m[39;49m[K
+(B[m   23 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 md                                                                                                                                              (B[m[39;49m[K
+(B[m   24 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 devfreq_wq                                                                                                                                      (B[m[39;49m[K
+(B[m   28 root      20   0       0      0      0 S  0.0  0.0   0:00.01 kswapd0                                                                                                                                         (B[m[39;49m[K
+(B[m   29 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 vmstat                                                                                                                                          (B[m[39;49m[K
+(B[m   30 root      20   0       0      0      0 S  0.0  0.0   0:00.00 fsnotify_mark                                                                                                                                   (B[m[39;49m[K
+(B[m   31 root      20   0       0      0      0 S  0.0  0.0   0:00.00 ecryptfs-kthrea                                                                                                                                 (B[m[39;49m[K
+(B[m   47 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kthrotld                                                                                                                                        (B[m[39;49m[K
+(B[m   48 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 acpi_thermal_pm                                                                                                                                 (B[m[39;49m[K
+(B[m   49 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K
+(B[m   50 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K
+(B[m   51 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K
+(B[m   52 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K
+(B[m   53 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K
+(B[m   54 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K
+(B[m   55 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K
+(B[m   56 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K
+(B[m   57 root      20   0       0      0      0 S  0.0  0.0   0:00.00 scsi_eh_0                                                                                                                                       (B[m[39;49m[K
+(B[m   58 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 scsi_tmf_0                                                                                                                                      (B[m[39;49m[K
+(B[m   59 root      20   0       0      0      0 S  0.0  0.0   0:00.00 scsi_eh_1                                                                                                                                       (B[m[39;49m[K
+(B[m   60 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 scsi_tmf_1                                                                                                                                      (B[m[39;49m[K
+(B[m   66 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 ipv6_addrconf                                                                                                                                   (B[m[39;49m[K
+(B[m   79 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 deferwq                                                                                                                                         (B[m[39;49m[K
+(B[m   80 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 charger_manager                                                                                                                                 (B[m[39;49m[K
+(B[m   81 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K
+(B[m  133 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K[?1l>[55;1H
+[?12l[?25h[K]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ head
+^C
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ head my[K[Klab2.log 
+Script started on Tue 22 Jan 2019 01:21:52 PM EST
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ mai[Kn -he[K[K-ehl[K[K[Khelp
+Usage: man [OPTION...] [SECTION] PAGE...
+
+  -C, --config-file=FILE     use this user configuration file
+  -d, --debug                emit debugging messages
+  -D, --default              reset all options to their default values
+      --warnings[=WARNINGS]  enable warnings from groff
+
+ Main modes of operation:
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ head --help
+Usage: head [OPTION]... [FILE]...
+Print the first 10 lines of each FILE to standard output.
+With more than one FILE, precede each with a header giving the file name.
+
+With no FILE, or when FILE is -, read standard input.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -c, --bytes=[-]NUM       print the first NUM bytes of each file;
+                             with the leading '-', print all but the last
+                             NUM bytes of each file
+  -n, --lines=[-]NUM       print the first NUM lines instead of the first 10;
+                             with the leading '-', print all but the last
+                             NUM lines of each file
+  -q, --quiet, --silent    never print headers giving file names
+  -v, --verbose            always print headers giving file names
+  -z, --zero-terminated    line delimiter is NUL, not newline
+      --help     display this help and exit
+      --version  output version information and exit
+
+NUM may have a multiplier suffix:
+b 512, kB 1000, K 1024, MB 1000*1000, M 1024*1024,
+GB 1000*1000*1000, G 1024*1024*1024, and so on for T, P, E, Z, Y.
+
+GNU coreutils online help: <http://www.gnu.org/software/coreutils/>
+Full documentation at: <http://www.gnu.org/software/coreutils/head>
+or available locally via: info '(coreutils) head invocation'
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ tail 0f [K[K[K[K lab2.log 
+(B[m   55 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K
+(B[m   56 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                                                                          (B[m[39;49m[K
+(B[m   57 root      20   0       0      0      0 S  0.0  0.0   0:00.00 scsi_eh_0                                                                                                                                       (B[m[39;49m[K
+(B[m   58 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 scsi_tmf_0                                                                                                                                      (B[m[39;49m[K
+(B[m   59 root      20   0       0      0      0 S  0.0  0.0   0:00.00 scsi_eh_1                                                                                                                                       (B[m[39;49m[K
+(B[m   60 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 scsi_tmf_1                                                                                                                                      (B[m[39;49m[K
+(B[m   66 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 ipv6_addrconf                                                                                                                                   (B[m[39;49m[K
+(B[m   79 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 deferwq                                                                                                                                         (B[m[39;49m[K
+(B[m   80 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 charger_manager                                                                                                                                 (B[m[39;49m[K
+(B[m   81 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                                    ]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ tail -h[K[K--heal[Kp[K[Klp
+Usage: tail [OPTION]... [FILE]...
+Print the last 10 lines of each FILE to standard output.
+With more than one FILE, precede each with a header giving the file name.
+
+With no FILE, or when FILE is -, read standard input.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -c, --bytes=[+]NUM       output the last NUM bytes; or use -c +NUM to
+                             output starting with byte NUM of each file
+  -f, --follow[={name|descriptor}]
+                           output appended data as the file grows;
+                             an absent option argument means 'descriptor'
+  -F                       same as --follow=name --retry
+  -n, --lines=[+]NUM       output the last NUM lines, instead of the last 10;
+                             or use -n +NUM to output starting with line NUM
+      --max-unchanged-stats=N
+                           with --follow=name, reopen a FILE which has not
+                             changed size after N (default 5) iterations
+                             to see if it has been unlinked or renamed
+                             (this is the usual case of rotated log files);
+                             with inotify, this option is rarely useful
+      --pid=PID            with -f, terminate after process ID, PID dies
+  -q, --quiet, --silent    never output headers giving file names
+      --retry              keep trying to open a file if it is inaccessible
+  -s, --sleep-interval=N   with -f, sleep for approximately N seconds
+                             (default 1.0) between iterations;
+                             with inotify and --pid=P, check process P at
+                             least once every N seconds
+  -v, --verbose            always output headers giving file names
+  -z, --zero-terminated    line delimiter is NUL, not newline
+      --help     display this help and exit
+      --version  output version information and exit
+
+NUM may have a multiplier suffix:
+b 512, kB 1000, K 1024, MB 1000*1000, M 1024*1024,
+GB 1000*1000*1000, G 1024*1024*1024, and so on for T, P, E, Z, Y.
+
+With --follow (-f), tail defaults to following the file descriptor, which
+means that even if a tail'ed file is renamed, tail will continue to track
+its end.  This default behavior is not desirable when you really want to
+track the actual name of the file, not the file descriptor (e.g., log
+rotation).  Use --follow=name in that case.  That causes tail to track the
+named file in a way that accommodates renaming, removal and creation.
+
+GNU coreutils online help: <http://www.gnu.org/software/coreutils/>
+Full documentation at: <http://www.gnu.org/software/coreutils/tail>
+or available locally via: info '(coreutils) tail invocation'
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ sudo 
+sudo: unable to resolve host cisvm-cop4640-1: Connection timed out
+usage: sudo -h | -K | -k | -V
+usage: sudo -v [-AknS] [-g group] [-h host] [-p prompt] [-u user]
+usage: sudo -l [-AknS] [-g group] [-h host] [-p prompt] [-U user] [-u user] [command]
+usage: sudo [-AbEHknPS] [-r role] [-t type] [-C num] [-g group] [-h host] [-p prompt] [-u user] [VAR=value] [-i|-s] [<command>]
+usage: sudo -e [-AknS] [-r role] [-t type] [-C num] [-g group] [-h host] [-p prompt] [-u user] file ...
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ sudo cp [K[K[K[K touch log[K[K[K[K file
+sudo: unable to resolve host cisvm-cop4640-1: Connection timed out
+[sudo] password for n00961805: 
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ exit
+exit
+
+Script done on Tue 22 Jan 2019 03:56:47 PM EST

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Project 3 - Statistical Calculator</title>
+    <link rel="stylesheet" href="../css/site.css">
+</head>
+
+<body>
+    <h2>Statistical Calculator</h2>
+    <form name="calculator">
+        <div class="contain">
+            <div class="item">
+                <label for="values">Enter Values: </label>
+                <input type="textarea" name="values">
+            </div>
+            <div class="item">
+                <input type="button" value="Submit" onclick="return performStatistics();">
+                <input type="reset" value="Reset">
+            </div>
+            <div class="item">
+                <label for="max">Max: </label>
+                <input type="text" name="max" readonly>
+            </div>
+            <div class="item">
+                <label for="mean">Mean: </label>
+                <input type="text" name="mean" readonly>
+            </div>
+            <div class="item">
+                <label for="median">Median</label>
+                <input type="text" name="median" readonly>
+            </div>
+            <div class="item">
+                <label for="min">Min: </label>
+                <input type="text" name="min" readonly>
+            </div>
+            <div class="item">
+                <label for="mode">Mode</label>
+                <input type="text" name="mode" readonly>
+            </div>
+            <div class="item">
+                <label for="stddev">Std Dev: </label>
+                <input type="text" name="stddev" readonly>
+            </div>
+            <div class="item">
+                <label for="sum">Sum: </label>
+                <input type="text" name="sum" readonly>
+            </div>
+            <div class="item">
+                <label for="variance">Variance: </label>
+                <input type="text" name="variance" readonly>
+            </div>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>

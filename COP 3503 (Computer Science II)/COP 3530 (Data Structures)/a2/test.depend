@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1517004541 source:c:\users\ryanr\desktop\test\test\main.c
+	"main.h"
+
+1517004611 c:\users\ryanr\desktop\test\test\main.h
+	<stdbool.h>
+	<stdarg.h>
+	<stddef.h>
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<limits.h>
+	<math.h>
+
+1517004531 source:c:\users\ryanr\desktop\test\test\parsefile.c
+	"main.h"
+
+1517004536 source:c:\users\ryanr\desktop\test\test\sort.c
+	"main.h"
+
+1517004539 source:c:\users\ryanr\desktop\test\test\swap.c
+	"main.h"
+

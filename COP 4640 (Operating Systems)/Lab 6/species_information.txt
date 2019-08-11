@@ -1,0 +1,20 @@
+#!/bin/bash
+
+PARTICLECOUNT=$(cut -d" " -f1 $1 | sort | uniq -c | wc -l)
+printf "%s %d\n\n" "Total Species:" "$PARTICLECOUNT"
+printf "%s\n\n" "Species Information:"
+printf "%-10s %8s %15s %12s %15s\n" "Name" "Count" "Minimum" "Maximum" "Average"
+printf "%-10s %8s %15s %12s %15s\n" "--------" "-----" "---------" "---------"  "---------"
+arr=()
+while IFS='' read -r line || [[ -n "$line" ]]
+do
+    NAME=$(echo $line | cut -f 1 -d " ")
+    if [[ ! " ${arr[@]} " =~ " $NAME " ]]; then
+        COUNT=$(grep "$NAME" $1 | wc -l)
+        AVERAGE=$(grep "$NAME" $1 | sed 's/[^.0-9][^.0-9]*//g' | cut -d: -f1-10 | numaverage)
+        MIN=$(grep "$NAME" $1 | sed 's/[^.0-9][^.0-9]*//g' | cut -d: -f1-10 | sort -n | numbound -l)
+        MAX=$(grep "$NAME" $1 | sed 's/[^.0-9][^.0-9]*//g' | cut -d: -f1-10 | sort -n| numbound)
+        printf "%-10s %8s %15.6f %12.6f %15.6f\n" "$NAME" "$COUNT" "$MIN" "$MAX" "$AVERAGE"
+    fi
+    arr+=($NAME)
+done < "$1"

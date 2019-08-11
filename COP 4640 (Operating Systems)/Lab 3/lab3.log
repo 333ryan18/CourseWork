@@ -1,0 +1,2505 @@
+Script started on Sun 27 Jan 2019 12:09:45 PM EST
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ [K]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ uptime
+ 12:10:20 up 172 days,  2:29,  1 user,  load average: 0.00, 0.00, 0.00
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ pwd
+/home/n00961805
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ ^C
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ w
+ 12:12:13 up 172 days,  2:31,  1 user,  load average: 0.00, 0.00, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+n0096180 pts/0    192.168.100.37   12:09    1.00s  0.03s  0.00s script lab3.log
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ w n00961805
+ 12:12:34 up 172 days,  2:32,  1 user,  load average: 0.00, 0.00, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+n0096180 pts/0    192.168.100.37   12:09    2.00s  0.03s  0.00s script lab3.log
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ w n00961805[K6
+ 12:12:37 up 172 days,  2:32,  1 user,  load average: 0.00, 0.00, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ w n00961806[K5
+ 12:12:40 up 172 days,  2:32,  1 user,  load average: 0.00, 0.00, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+n0096180 pts/0    192.168.100.37   12:09    0.00s  0.03s  0.00s script lab3.log
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ w n00961805[K[K[K[K[K[K[K[K[K[K
+ 12:12:43 up 172 days,  2:32,  1 user,  load average: 0.00, 0.00, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+n0096180 pts/0    192.168.100.37   12:09    3.00s  0.03s  0.00s script lab3.log
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ w
+ 12:15:28 up 172 days,  2:34,  1 user,  load average: 0.00, 0.00, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+n0096180 pts/0    192.168.100.37   12:09    0.00s  0.03s  0.00s script lab3.log
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ cat /etc/os-release
+NAME="Ubuntu"
+VERSION="16.04.5 LTS (Xenial Xerus)"
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME="Ubuntu 16.04.5 LTS"
+VERSION_ID="16.04"
+HOME_URL="http://www.ubuntu.com/"
+SUPPORT_URL="http://help.ubuntu.com/"
+BUG_REPORT_URL="http://bugs.launchpad.net/ubuntu/"
+VERSION_CODENAME=xenial
+UBUNTU_CODENAME=xenial
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ top
+[?1h=[?25l[H[2J(B[mtop - 12:17:59 up 172 days,  2:37,  1 user,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+Tasks:(B[m[39;49m[1m 118 (B[m[39;49mtotal,(B[m[39;49m[1m   1 (B[m[39;49mrunning,(B[m[39;49m[1m 117 (B[m[39;49msleeping,(B[m[39;49m[1m   0 (B[m[39;49mstopped,(B[m[39;49m[1m   0 (B[m[39;49mzombie(B[m[39;49m(B[m[39;49m[K
+%Cpu(s):(B[m[39;49m[1m  0.1 (B[m[39;49mus,(B[m[39;49m[1m  0.0 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 99.9 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+KiB Mem :(B[m[39;49m[1m  2048312 (B[m[39;49mtotal,(B[m[39;49m[1m   265248 (B[m[39;49mfree,(B[m[39;49m[1m   130704 (B[m[39;49mused,(B[m[39;49m[1m  1652360 (B[m[39;49mbuff/cache(B[m[39;49m(B[m[39;49m[K
+KiB Swap:(B[m[39;49m[1m  2097148 (B[m[39;49mtotal,(B[m[39;49m[1m  2097112 (B[m[39;49mfree,(B[m[39;49m[1m       36 (B[m[39;49mused.(B[m[39;49m[1m  1682408 (B[m[39;49mavail Mem (B[m[39;49m(B[m[39;49m[K
+[K
+[7m  PID USER      PR  NI    VIRT    RES    SHR S %CPU %MEM     TIME+ COMMAND                                                                  (B[m[39;49m[K
+(B[m    1 root      20   0  119768   6028   4152 S  0.0  0.3   1:21.56 systemd                                                                  (B[m[39;49m[K
+(B[m    2 root      20   0       0      0      0 S  0.0  0.0   0:01.06 kthreadd                                                                 (B[m[39;49m[K
+(B[m    3 root      20   0       0      0      0 S  0.0  0.0   0:17.42 ksoftirqd/0                                                              (B[m[39;49m[K
+(B[m    5 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kworker/0:0H                                                             (B[m[39;49m[K
+(B[m    7 root      20   0       0      0      0 S  0.0  0.0  19:42.46 rcu_sched                                                                (B[m[39;49m[K
+(B[m    8 root      20   0       0      0      0 S  0.0  0.0   0:00.00 rcu_bh                                                                   (B[m[39;49m[K
+(B[m    9 root      rt   0       0      0      0 S  0.0  0.0   0:00.00 migration/0                                                              (B[m[39;49m[K
+(B[m   10 root      rt   0       0      0      0 S  0.0  0.0   0:41.42 watchdog/0                                                               (B[m[39;49m[K
+(B[m   11 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kdevtmpfs                                                                (B[m[39;49m[K
+(B[m   12 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 netns                                                                    (B[m[39;49m[K
+(B[m   13 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 perf                                                                     (B[m[39;49m[K
+(B[m   14 root      20   0       0      0      0 S  0.0  0.0   0:09.53 khungtaskd                                                               (B[m[39;49m[K
+(B[m   15 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 writeback                                                                (B[m[39;49m[K
+(B[m   16 root      25   5       0      0      0 S  0.0  0.0   0:00.00 ksmd                                                                     (B[m[39;49m[K
+(B[m   17 root      39  19       0      0      0 S  0.0  0.0   0:31.96 khugepaged                                                               (B[m[39;49m[K
+(B[m   18 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 crypto                                                                   (B[m[39;49m[K
+(B[m   19 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kintegrityd                                                              (B[m[39;49m[K
+(B[m   20 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                   (B[m[39;49m[K
+(B[m   21 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kblockd                                                                  (B[m[39;49m[K
+(B[m   22 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 ata_sff                                                                  (B[m[39;49m[K
+(B[m   23 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 md                                                                       (B[m[39;49m[K
+(B[m   24 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 devfreq_wq                                                               (B[m[39;49m[K
+(B[m   28 root      20   0       0      0      0 S  0.0  0.0   0:00.01 kswapd0                                                                  (B[m[39;49m[K
+(B[m   29 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 vmstat                                                                   (B[m[39;49m[K
+(B[m   30 root      20   0       0      0      0 S  0.0  0.0   0:00.00 fsnotify_mark                                                            (B[m[39;49m[K
+(B[m   31 root      20   0       0      0      0 S  0.0  0.0   0:00.00 ecryptfs-kthrea                                                          (B[m[39;49m[K
+(B[m   47 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kthrotld                                                                 (B[m[39;49m[K
+(B[m   48 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 acpi_thermal_pm                                                          (B[m[39;49m[K
+(B[m   49 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                   (B[m[39;49m[K
+(B[m   50 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                   (B[m[39;49m[K
+(B[m   51 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                   (B[m[39;49m[K
+(B[m   52 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                   (B[m[39;49m[K
+(B[m   53 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                   (B[m[39;49m[K
+(B[m   54 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                   (B[m[39;49m[K
+(B[m   55 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                   (B[m[39;49m[K
+(B[m   56 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                   (B[m[39;49m[K
+(B[m   57 root      20   0       0      0      0 S  0.0  0.0   0:00.00 scsi_eh_0                                                                (B[m[39;49m[K
+(B[m   58 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 scsi_tmf_0                                                               (B[m[39;49m[K
+(B[m   59 root      20   0       0      0      0 S  0.0  0.0   0:00.00 scsi_eh_1                                                                (B[m[39;49m[K
+(B[m   60 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 scsi_tmf_1                                                               (B[m[39;49m[K
+(B[m   66 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 ipv6_addrconf                                                            (B[m[39;49m[K
+(B[m   79 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 deferwq                                                                  (B[m[39;49m[K
+(B[m   80 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 charger_manager                                                          (B[m[39;49m[K
+(B[m   81 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                   (B[m[39;49m[K
+(B[m  133 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                   (B[m[39;49m[K
+(B[m  134 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                   (B[m[39;49m[K
+(B[m  135 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                   (B[m[39;49m[K
+(B[m  136 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                   (B[m[39;49m[K
+(B[m  137 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                   (B[m[39;49m[K
+(B[m  138 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                   (B[m[39;49m[K
+(B[m  139 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                   (B[m[39;49m[K
+(B[m  140 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                   (B[m[39;49m[K
+(B[m  141 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 mpt_poll_0                                                               (B[m[39;49m[K
+(B[m  143 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 mpt/0                                                                    (B[m[39;49m[K
+(B[m  144 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kpsmoused                                                                (B[m[39;49m[K
+(B[m  174 root      20   0       0      0      0 S  0.0  0.0   0:00.00 scsi_eh_2                                                                (B[m[39;49m[K
+(B[m  175 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 scsi_tmf_2                                                               (B[m[39;49m[K
+(B[m  176 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                   (B[m[39;49m[K
+(B[m  177 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 ttm_swap                                                                 (B[m[39;49m[K
+(B[m  263 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 raid5wq                                                                  (B[m[39;49m[K
+(B[m  288 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kdmflush                                                                 (B[m[39;49m[K
+(B[m  289 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                   (B[m[39;49m[K
+(B[m  299 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kdmflush                                                                 (B[m[39;49m[K
+(B[m  300 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                   (B[m[39;49m[K
+(B[m  317 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 bioset                                                                   (B[m[39;49m[K[H(B[mtop - 12:18:02 up 172 days,  2:37,  1 user,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+Tasks:(B[m[39;49m[1m 118 (B[m[39;49mtotal,(B[m[39;49m[1m   1 (B[m[39;49mrunning,(B[m[39;49m[1m 117 (B[m[39;49msleeping,(B[m[39;49m[1m   0 (B[m[39;49mstopped,(B[m[39;49m[1m   0 (B[m[39;49mzombie(B[m[39;49m(B[m[39;49m[K
+%Cpu(s):(B[m[39;49m[1m  0.0 (B[m[39;49mus,(B[m[39;49m[1m  0.3 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 99.7 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+KiB Mem :(B[m[39;49m[1m  2048312 (B[m[39;49mtotal,(B[m[39;49m[1m   265216 (B[m[39;49mfree,(B[m[39;49m[1m   130724 (B[m[39;49mused,(B[m[39;49m[1m  1652372 (B[m[39;49mbuff/cache(B[m[39;49m(B[m[39;49m[K
+KiB Swap:(B[m[39;49m[1m  2097148 (B[m[39;49mtotal,(B[m[39;49m[1m  2097112 (B[m[39;49mfree,(B[m[39;49m[1m       36 (B[m[39;49mused.(B[m[39;49m[1m  1682376 (B[m[39;49mavail Mem (B[m[39;49m(B[m[39;49m[K
+[K
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[?1l>[73;1H
+[?12l[?25h[K]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ ps ux
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+n009618+ 23792  0.0  0.2  45276  4664 ?        Ss   12:09   0:00 /lib/systemd/systemd --user
+n009618+ 23793  0.0  0.0 143220  1988 ?        S    12:09   0:00 (sd-pam)
+n009618+ 23817  0.0  0.2  92832  4148 ?        S    12:09   0:00 sshd: n00961805@pts/0
+n009618+ 23818  0.0  0.0  12876  1892 ?        Ss   12:09   0:00 /usr/lib/openssh/sftp-server
+n009618+ 23819  0.0  0.2  22648  5292 pts/0    Ss   12:09   0:00 -bash
+n009618+ 23833  0.0  0.1  22036  2516 pts/0    S+   12:09   0:00 script lab3.log
+n009618+ 23834  0.0  0.2  22544  5180 pts/1    Ss   12:09   0:00 bash -i
+n009618+ 23860  0.0  0.1  37360  3276 pts/1    R+   12:18   0:00 ps ux
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ top -U n00961805
+[?1h=[?25l[H[2J(B[mtop - 12:20:35 up 172 days,  2:40,  1 user,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+Tasks:(B[m[39;49m[1m 118 (B[m[39;49mtotal,(B[m[39;49m[1m   1 (B[m[39;49mrunning,(B[m[39;49m[1m 117 (B[m[39;49msleeping,(B[m[39;49m[1m   0 (B[m[39;49mstopped,(B[m[39;49m[1m   0 (B[m[39;49mzombie(B[m[39;49m(B[m[39;49m[K
+%Cpu(s):(B[m[39;49m[1m  0.1 (B[m[39;49mus,(B[m[39;49m[1m  0.0 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 99.9 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+KiB Mem :(B[m[39;49m[1m  2048312 (B[m[39;49mtotal,(B[m[39;49m[1m   265092 (B[m[39;49mfree,(B[m[39;49m[1m   130840 (B[m[39;49mused,(B[m[39;49m[1m  1652380 (B[m[39;49mbuff/cache(B[m[39;49m(B[m[39;49m[K
+KiB Swap:(B[m[39;49m[1m  2097148 (B[m[39;49mtotal,(B[m[39;49m[1m  2097112 (B[m[39;49mfree,(B[m[39;49m[1m       36 (B[m[39;49mused.(B[m[39;49m[1m  1682272 (B[m[39;49mavail Mem (B[m[39;49m(B[m[39;49m[K
+[K
+[7m  PID USER      PR  NI    VIRT    RES    SHR S %CPU %MEM     TIME+ COMMAND                                                                  (B[m[39;49m[K
+(B[m23792 n009618+  20   0   45276   4664   3960 S  0.0  0.2   0:00.00 systemd                                                                  (B[m[39;49m[K
+(B[m23793 n009618+  20   0  143220   1988      0 S  0.0  0.1   0:00.00 (sd-pam)                                                                 (B[m[39;49m[K
+(B[m23817 n009618+  20   0   92832   4148   3220 S  0.0  0.2   0:00.01 sshd                                                                     (B[m[39;49m[K
+(B[m23818 n009618+  20   0   12876   1892   1732 S  0.0  0.1   0:00.00 sftp-server                                                              (B[m[39;49m[K
+(B[m23819 n009618+  20   0   22648   5292   3360 S  0.0  0.3   0:00.03 bash                                                                     (B[m[39;49m[K
+(B[m23833 n009618+  20   0   22036   2516   2340 S  0.0  0.1   0:00.00 script                                                                   (B[m[39;49m[K
+(B[m23834 n009618+  20   0   22544   5180   3332 S  0.0  0.3   0:00.02 bash                                                                     (B[m[39;49m[K
+(B[m[1m23872 n009618+  20   0   41812   3796   3136 R  0.0  0.2   0:00.00 top                                                                      (B[m[39;49m[K
+[J[H(B[mtop - 12:20:38 up 172 days,  2:40,  1 user,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+Tasks:(B[m[39;49m[1m 118 (B[m[39;49mtotal,(B[m[39;49m[1m   1 (B[m[39;49mrunning,(B[m[39;49m[1m 117 (B[m[39;49msleeping,(B[m[39;49m[1m   0 (B[m[39;49mstopped,(B[m[39;49m[1m   0 (B[m[39;49mzombie(B[m[39;49m(B[m[39;49m[K
+%Cpu(s):(B[m[39;49m[1m  0.0 (B[m[39;49mus,(B[m[39;49m[1m  0.0 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m100.0 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+
+
+[K
+
+
+
+
+
+
+
+
+
+[J[H(B[mtop - 12:20:41 up 172 days,  2:40,  1 user,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+
+%Cpu(s):(B[m[39;49m[1m  0.3 (B[m[39;49mus,(B[m[39;49m[1m  0.0 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 99.7 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+KiB Mem :(B[m[39;49m[1m  2048312 (B[m[39;49mtotal,(B[m[39;49m[1m   265092 (B[m[39;49mfree,(B[m[39;49m[1m   130836 (B[m[39;49mused,(B[m[39;49m[1m  1652384 (B[m[39;49mbuff/cache(B[m[39;49m(B[m[39;49m[K
+
+[K
+
+
+
+
+
+
+
+
+
+[J[H(B[mtop - 12:20:44 up 172 days,  2:40,  1 user,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+
+%Cpu(s):(B[m[39;49m[1m  0.0 (B[m[39;49mus,(B[m[39;49m[1m  0.0 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 99.7 (B[m[39;49mid,(B[m[39;49m[1m  0.3 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+
+
+[K
+
+
+
+
+
+
+
+
+
+[J[H(B[mtop - 12:20:47 up 172 days,  2:40,  1 user,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+
+%Cpu(s):(B[m[39;49m[1m  0.0 (B[m[39;49mus,(B[m[39;49m[1m  0.0 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m100.0 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+
+
+[K
+
+(B[m[1m23872 n009618+  20   0   41812   3796   3136 R  0.3  0.2   0:00.01 top                                                                      (B[m[39;49m[K
+(B[m23792 n009618+  20   0   45276   4664   3960 S  0.0  0.2   0:00.00 systemd                                                                  (B[m[39;49m[K
+(B[m23793 n009618+  20   0  143220   1988      0 S  0.0  0.1   0:00.00 (sd-pam)                                                                 (B[m[39;49m[K
+(B[m23817 n009618+  20   0   92832   4148   3220 S  0.0  0.2   0:00.01 sshd                                                                     (B[m[39;49m[K
+(B[m23818 n009618+  20   0   12876   1892   1732 S  0.0  0.1   0:00.00 sftp-server                                                              (B[m[39;49m[K
+(B[m23819 n009618+  20   0   22648   5292   3360 S  0.0  0.3   0:00.03 bash                                                                     (B[m[39;49m[K
+(B[m23833 n009618+  20   0   22036   2516   2340 S  0.0  0.1   0:00.00 script                                                                   (B[m[39;49m[K
+(B[m23834 n009618+  20   0   22544   5180   3332 S  0.0  0.3   0:00.02 bash                                                                     (B[m[39;49m[K
+[J[H(B[mtop - 12:20:50 up 172 days,  2:40,  1 user,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+
+
+
+
+[K
+
+(B[m23792 n009618+  20   0   45276   4664   3960 S  0.0  0.2   0:00.00 systemd                                                                  (B[m[39;49m[K
+(B[m23793 n009618+  20   0  143220   1988      0 S  0.0  0.1   0:00.00 (sd-pam)                                                                 (B[m[39;49m[K
+(B[m23817 n009618+  20   0   92832   4148   3220 S  0.0  0.2   0:00.01 sshd                                                                     (B[m[39;49m[K
+(B[m23818 n009618+  20   0   12876   1892   1732 S  0.0  0.1   0:00.00 sftp-server                                                              (B[m[39;49m[K
+(B[m23819 n009618+  20   0   22648   5292   3360 S  0.0  0.3   0:00.03 bash                                                                     (B[m[39;49m[K
+(B[m23833 n009618+  20   0   22036   2516   2340 S  0.0  0.1   0:00.00 script                                                                   (B[m[39;49m[K
+(B[m23834 n009618+  20   0   22544   5180   3332 S  0.0  0.3   0:00.02 bash                                                                     (B[m[39;49m[K
+(B[m[1m23872 n009618+  20   0   41812   3796   3136 R  0.0  0.2   0:00.01 top                                                                      (B[m[39;49m[K
+[J[H(B[mtop - 12:20:53 up 172 days,  2:40,  1 user,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+
+%Cpu(s):(B[m[39;49m[1m  0.3 (B[m[39;49mus,(B[m[39;49m[1m  0.3 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 99.3 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+KiB Mem :(B[m[39;49m[1m  2048312 (B[m[39;49mtotal,(B[m[39;49m[1m   265092 (B[m[39;49mfree,(B[m[39;49m[1m   130832 (B[m[39;49mused,(B[m[39;49m[1m  1652388 (B[m[39;49mbuff/cache(B[m[39;49m(B[m[39;49m[K
+
+[K
+
+
+
+
+
+
+
+
+
+[J[H(B[mtop - 12:20:56 up 172 days,  2:40,  1 user,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+
+%Cpu(s):(B[m[39;49m[1m  0.0 (B[m[39;49mus,(B[m[39;49m[1m  0.0 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m100.0 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+
+
+[K
+
+(B[m[1m23872 n009618+  20   0   41812   3796   3136 R  0.3  0.2   0:00.02 top                                                                      (B[m[39;49m[K
+(B[m23792 n009618+  20   0   45276   4664   3960 S  0.0  0.2   0:00.00 systemd                                                                  (B[m[39;49m[K
+(B[m23793 n009618+  20   0  143220   1988      0 S  0.0  0.1   0:00.00 (sd-pam)                                                                 (B[m[39;49m[K
+(B[m23817 n009618+  20   0   92832   4148   3220 S  0.0  0.2   0:00.01 sshd                                                                     (B[m[39;49m[K
+(B[m23818 n009618+  20   0   12876   1892   1732 S  0.0  0.1   0:00.00 sftp-server                                                              (B[m[39;49m[K
+(B[m23819 n009618+  20   0   22648   5292   3360 S  0.0  0.3   0:00.03 bash                                                                     (B[m[39;49m[K
+(B[m23833 n009618+  20   0   22036   2516   2340 S  0.0  0.1   0:00.00 script                                                                   (B[m[39;49m[K
+(B[m23834 n009618+  20   0   22544   5180   3332 S  0.0  0.3   0:00.02 bash                                                                     (B[m[39;49m[K
+[J[H(B[mtop - 12:20:59 up 172 days,  2:40,  1 user,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+
+%Cpu(s):(B[m[39;49m[1m  0.3 (B[m[39;49mus,(B[m[39;49m[1m  0.0 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 99.7 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+
+
+[K
+
+(B[m23792 n009618+  20   0   45276   4664   3960 S  0.0  0.2   0:00.00 systemd                                                                  (B[m[39;49m[K
+(B[m23793 n009618+  20   0  143220   1988      0 S  0.0  0.1   0:00.00 (sd-pam)                                                                 (B[m[39;49m[K
+(B[m23817 n009618+  20   0   92832   4148   3220 S  0.0  0.2   0:00.01 sshd                                                                     (B[m[39;49m[K
+(B[m23818 n009618+  20   0   12876   1892   1732 S  0.0  0.1   0:00.00 sftp-server                                                              (B[m[39;49m[K
+(B[m23819 n009618+  20   0   22648   5292   3360 S  0.0  0.3   0:00.03 bash                                                                     (B[m[39;49m[K
+(B[m23833 n009618+  20   0   22036   2516   2340 S  0.0  0.1   0:00.00 script                                                                   (B[m[39;49m[K
+(B[m23834 n009618+  20   0   22544   5180   3332 S  0.0  0.3   0:00.02 bash                                                                     (B[m[39;49m[K
+(B[m[1m23872 n009618+  20   0   41812   3796   3136 R  0.0  0.2   0:00.02 top                                                                      (B[m[39;49m[K
+[J[H(B[mtop - 12:21:02 up 172 days,  2:40,  1 user,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+
+%Cpu(s):(B[m[39;49m[1m  0.0 (B[m[39;49mus,(B[m[39;49m[1m  0.0 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m100.0 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+KiB Mem :(B[m[39;49m[1m  2048312 (B[m[39;49mtotal,(B[m[39;49m[1m   265092 (B[m[39;49mfree,(B[m[39;49m[1m   130828 (B[m[39;49mused,(B[m[39;49m[1m  1652392 (B[m[39;49mbuff/cache(B[m[39;49m(B[m[39;49m[K
+
+[K
+
+
+
+
+
+
+
+
+
+[J[H(B[mtop - 12:21:05 up 172 days,  2:40,  1 user,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+
+
+
+
+[K
+
+
+
+
+
+
+
+
+
+[J[H(B[mtop - 12:21:08 up 172 days,  2:40,  1 user,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+
+%Cpu(s):(B[m[39;49m[1m  0.0 (B[m[39;49mus,(B[m[39;49m[1m  0.3 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 99.7 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+
+
+[K
+
+(B[m23817 n009618+  20   0   92832   4148   3220 S  0.3  0.2   0:00.02 sshd                                                                     (B[m[39;49m[K
+(B[m[1m23872 n009618+  20   0   41812   3796   3136 R  0.3  0.2   0:00.03 top                                                                      (B[m[39;49m[K
+(B[m23792 n009618+  20   0   45276   4664   3960 S  0.0  0.2   0:00.00 systemd                                                                  (B[m[39;49m[K
+(B[m23793 n009618+  20   0  143220   1988      0 S  0.0  0.1   0:00.00 (sd-pam)                                                                 (B[m[39;49m[K
+(B[m23818 n009618+  20   0   12876   1892   1732 S  0.0  0.1   0:00.00 sftp-server                                                              (B[m[39;49m[K
+(B[m23819 n009618+  20   0   22648   5292   3360 S  0.0  0.3   0:00.03 bash                                                                     (B[m[39;49m[K
+(B[m23833 n009618+  20   0   22036   2516   2340 S  0.0  0.1   0:00.00 script                                                                   (B[m[39;49m[K
+(B[m23834 n009618+  20   0   22544   5180   3332 S  0.0  0.3   0:00.02 bash                                                                     (B[m[39;49m[K
+[J[?1l>[73;1H
+[?12l[?25h[K]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ ifconfig -a
+ens160    Link encap:Ethernet  HWaddr 00:18:8b:57:20:6c  
+          inet addr:192.168.100.71  Bcast:192.168.101.255  Mask:255.255.254.0
+          inet6 addr: fe80::218:8bff:fe57:206c/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:16581580 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:740781 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:4017632062 (4.0 GB)  TX bytes:92828888 (92.8 MB)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:321225 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:321225 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1 
+          RX bytes:23809464 (23.8 MB)  TX bytes:23809464 (23.8 MB)
+
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ ip link show
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: ens160: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP mode DEFAULT group default qlen 1000
+    link/ether 00:18:8b:57:20:6c brd ff:ff:ff:ff:ff:ff
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ namp
+No command 'namp' found, did you mean:
+ Command 'nam' from package 'nam' (universe)
+ Command 'nmap' from package 'nmap' (main)
+ Command 'nama' from package 'nama' (universe)
+ Command 'nap' from package 'nap' (universe)
+ Command 'pamp' from package 'paml' (multiverse)
+namp: command not found
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ nmap
+The program 'nmap' is currently not installed. To run 'nmap' please ask your administrator to install the package 'nmap'
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ ifconfig -a | grep Link
+ens160    [01;31m[KLink[m[K encap:Ethernet  HWaddr 00:18:8b:57:20:6c  
+          inet6 addr: fe80::218:8bff:fe57:206c/64 Scope:[01;31m[KLink[m[K
+lo        [01;31m[KLink[m[K encap:Local Loopback  
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ ifconfig -a | grep Linknmap[Kampip link show[1Pfconfig -ap link show[1Pfconfig -a
+ens160    Link encap:Ethernet  HWaddr 00:18:8b:57:20:6c  
+          inet addr:192.168.100.71  Bcast:192.168.101.255  Mask:255.255.254.0
+          inet6 addr: fe80::218:8bff:fe57:206c/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:16581748 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:740844 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:4017662913 (4.0 GB)  TX bytes:92837230 (92.8 MB)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:321225 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:321225 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1 
+          RX bytes:23809464 (23.8 MB)  TX bytes:23809464 (23.8 MB)
+
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ netstat -i | column -t
+Kernel  Interface  table
+Iface   MTU        Met    RX-OK     RX-ERR  RX-DRP  RX-OVR  TX-OK   TX-ERR  TX-DRP  TX-OVR  Flg
+ens160  1500       0      16581867  0       0       0       740851  0       0       0       BMRU
+lo      65536      0      321225    0       0       0       321225  0       0       0       LRU
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ ls
+lab2.log  lab3.log
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ mkdir lab2
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ touch myPets
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ touch myPets ""D"o"g":" "M"o"r"r"i"s"
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ cat myPets 
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ t[Knano[K[K[K[Kecho ""D"o"g":" "M"o"r"r"i"s"[C >> myPets 
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ cat myPets 
+Dog: Morris
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ sed
+Usage: sed [OPTION]... {script-only-if-no-other-script} [input-file]...
+
+  -n, --quiet, --silent
+                 suppress automatic printing of pattern space
+  -e script, --expression=script
+                 add the script to the commands to be executed
+  -f script-file, --file=script-file
+                 add the contents of script-file to the commands to be executed
+  --follow-symlinks
+                 follow symlinks when processing in place
+  -i[SUFFIX], --in-place[=SUFFIX]
+                 edit files in place (makes backup if SUFFIX supplied)
+  -l N, --line-length=N
+                 specify the desired line-wrap length for the `l' command
+  --posix
+                 disable all GNU extensions.
+  -r, --regexp-extended
+                 use extended regular expressions in the script.
+  -s, --separate
+                 consider files as separate rather than as a single continuous
+                 long stream.
+  -u, --unbuffered
+                 load minimal amounts of data from the input files and flush
+                 the output buffers more often
+  -z, --null-data
+                 separate lines by NUL characters
+      --help     display this help and exit
+      --version  output version information and exit
+
+If no -e, --expression, -f, or --file option is given, then the first
+non-option argument is taken as the sed script to interpret.  All
+remaining arguments are names of input files; if no input files are
+specified, then the standard input is read.
+
+GNU sed home page: <http://www.gnu.org/software/sed/>.
+General help using GNU software: <http://www.gnu.org/gethelp/>.
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ sed 's/unix/linux/' geekfile.txt[1P.txt[1P.txt[1P.txt[1P.txt[1P.txt[1P.txt[1P.txt[1P.txt[1P.txt[1Ptxt[1Pxt[1Pt[K myPets [1P[1P[1P[1P[1P[1@C[1@a[1@t[1P[1P[1P[1P[1@D[1@o[1@g
+Cat: Morris
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ cd /
+]0;n00961805@cisvm-cop4640-1: /n00961805@cisvm-cop4640-1:/$ cd /bin
+]0;n00961805@cisvm-cop4640-1: /binn00961805@cisvm-cop4640-1:/bin$ ls -l
+total 16016
+-rwxr-xr-x 1 root root 1037528 May 16  2017 [0m[01;32mbash[0m
+-rwxr-xr-x 1 root root  520992 Jun 15  2017 [01;32mbtrfs[0m
+-rwxr-xr-x 1 root root  249464 Jun 15  2017 [01;32mbtrfs-calc-size[0m
+lrwxrwxrwx 1 root root       5 Jun 15  2017 [01;36mbtrfsck[0m -> [01;32mbtrfs[0m
+-rwxr-xr-x 1 root root  278376 Jun 15  2017 [01;32mbtrfs-convert[0m
+-rwxr-xr-x 1 root root  249464 Jun 15  2017 [01;32mbtrfs-debug-tree[0m
+-rwxr-xr-x 1 root root  245368 Jun 15  2017 [01;32mbtrfs-find-root[0m
+-rwxr-xr-x 1 root root  270136 Jun 15  2017 [01;32mbtrfs-image[0m
+-rwxr-xr-x 1 root root  249464 Jun 15  2017 [01;32mbtrfs-map-logical[0m
+-rwxr-xr-x 1 root root  245368 Jun 15  2017 [01;32mbtrfs-select-super[0m
+-rwxr-xr-x 1 root root  253816 Jun 15  2017 [01;32mbtrfs-show-super[0m
+-rwxr-xr-x 1 root root  249464 Jun 15  2017 [01;32mbtrfstune[0m
+-rwxr-xr-x 1 root root  245368 Jun 15  2017 [01;32mbtrfs-zero-log[0m
+-rwxr-xr-x 3 root root   31288 May 20  2015 [01;32mbunzip2[0m
+-rwxr-xr-x 1 root root 1964536 Aug 19  2015 [01;32mbusybox[0m
+-rwxr-xr-x 3 root root   31288 May 20  2015 [01;32mbzcat[0m
+lrwxrwxrwx 1 root root       6 Aug  4  2016 [01;36mbzcmp[0m -> [01;32mbzdiff[0m
+-rwxr-xr-x 1 root root    2140 May 20  2015 [01;32mbzdiff[0m
+lrwxrwxrwx 1 root root       6 Aug  4  2016 [01;36mbzegrep[0m -> [01;32mbzgrep[0m
+-rwxr-xr-x 1 root root    4877 May 20  2015 [01;32mbzexe[0m
+lrwxrwxrwx 1 root root       6 Aug  4  2016 [01;36mbzfgrep[0m -> [01;32mbzgrep[0m
+-rwxr-xr-x 1 root root    3642 May 20  2015 [01;32mbzgrep[0m
+-rwxr-xr-x 3 root root   31288 May 20  2015 [01;32mbzip2[0m
+-rwxr-xr-x 1 root root   14616 May 20  2015 [01;32mbzip2recover[0m
+lrwxrwxrwx 1 root root       6 Aug  4  2016 [01;36mbzless[0m -> [01;32mbzmore[0m
+-rwxr-xr-x 1 root root    1297 May 20  2015 [01;32mbzmore[0m
+-rwxr-xr-x 1 root root   52080 Mar  2  2017 [01;32mcat[0m
+-rwxr-xr-x 1 root root   14752 Feb  7  2016 [01;32mchacl[0m
+-rwxr-xr-x 1 root root   60272 Mar  2  2017 [01;32mchgrp[0m
+-rwxr-xr-x 1 root root   56112 Mar  2  2017 [01;32mchmod[0m
+-rwxr-xr-x 1 root root   64368 Mar  2  2017 [01;32mchown[0m
+-rwxr-xr-x 1 root root   10536 Sep 22  2016 [01;32mchvt[0m
+-rwxr-xr-x 1 root root  151024 Mar  2  2017 [01;32mcp[0m
+-rwxr-xr-x 1 root root  141472 Feb 18  2016 [01;32mcpio[0m
+-rwxr-xr-x 1 root root  154072 Feb 17  2016 [01;32mdash[0m
+-rwxr-xr-x 1 root root   68464 Mar  2  2017 [01;32mdate[0m
+-rwxr-xr-x 1 root root   72632 Mar  2  2017 [01;32mdd[0m
+-rwxr-xr-x 1 root root   97912 Mar  2  2017 [01;32mdf[0m
+-rwxr-xr-x 1 root root  126584 Mar  2  2017 [01;32mdir[0m
+-rwxr-xr-x 1 root root   60680 May 16  2018 [01;32mdmesg[0m
+lrwxrwxrwx 1 root root       8 Aug  4  2016 [01;36mdnsdomainname[0m -> [01;32mhostname[0m
+lrwxrwxrwx 1 root root       8 Aug  4  2016 [01;36mdomainname[0m -> [01;32mhostname[0m
+-rwxr-xr-x 1 root root   82328 Sep 22  2016 [01;32mdumpkeys[0m
+-rwxr-xr-x 1 root root   31376 Mar  2  2017 [01;32mecho[0m
+-rwxr-xr-x 1 root root   51512 Apr 26  2014 [01;32med[0m
+-rwxr-xr-x 1 root root      28 Apr 29  2016 [01;32megrep[0m
+-rwxr-xr-x 1 root root   27280 Mar  2  2017 [01;32mfalse[0m
+-rwxr-xr-x 1 root root   10544 Sep 22  2016 [01;32mfgconsole[0m
+-rwxr-xr-x 1 root root      28 Apr 29  2016 [01;32mfgrep[0m
+-rwxr-xr-x 1 root root   49576 May 16  2018 [01;32mfindmnt[0m
+-rwxr-xr-x 1 root root    1185 Jun 15  2017 [01;32mfsck.btrfs[0m
+-rwxr-xr-x 1 root root   36024 Feb  7  2016 [01;32mfuser[0m
+-rwsr-xr-x 1 root root   30800 Jul 12  2016 [37;41mfusermount[0m
+-rwxr-xr-x 1 root root   23752 Feb  7  2016 [01;32mgetfacl[0m
+-rwxr-xr-x 1 root root  211224 Apr 29  2016 [01;32mgrep[0m
+-rwxr-xr-x 2 root root    2301 Oct 27  2014 [01;32mgunzip[0m
+-rwxr-xr-x 1 root root    5927 Oct 27  2014 [01;32mgzexe[0m
+-rwxr-xr-x 1 root root   98240 Oct 27  2014 [01;32mgzip[0m
+-rwxr-xr-x 1 root root   14800 Nov 24  2015 [01;32mhostname[0m
+-rwxr-xr-x 1 root root  376192 Dec  6  2017 [01;32mip[0m
+-rwxr-xr-x 1 root root  498936 Jan 10 20:35 [01;32mjournalctl[0m
+-rwxr-xr-x 1 root root   10536 Sep 22  2016 [01;32mkbd_mode[0m
+-rwxr-xr-x 1 root root   23152 May 14  2018 [01;32mkill[0m
+-rwxr-xr-x 1 root root  150600 Jul 25  2017 [01;32mkmod[0m
+-rwxr-xr-x 1 root root  170728 Apr  5  2017 [01;32mless[0m
+-rwxr-xr-x 1 root root   10256 Apr  5  2017 [01;32mlessecho[0m
+lrwxrwxrwx 1 root root       8 Apr  5  2017 [01;36mlessfile[0m -> [01;32mlesspipe[0m
+-rwxr-xr-x 1 root root   19824 Apr  5  2017 [01;32mlesskey[0m
+-rwxr-xr-x 1 root root    7764 Apr  5  2017 [01;32mlesspipe[0m
+-rwxr-xr-x 1 root root   56152 Mar  2  2017 [01;32mln[0m
+-rwxr-xr-x 1 root root  111496 Sep 22  2016 [01;32mloadkeys[0m
+-rwxr-xr-x 1 root root   48128 May 16  2017 [01;32mlogin[0m
+-rwxr-xr-x 1 root root  453848 Jan 10 20:35 [01;32mloginctl[0m
+-rwxr-xr-x 1 root root  105136 Jan 28  2017 [01;32mlowntfs-3g[0m
+-rwxr-xr-x 1 root root  126584 Mar  2  2017 [01;32mls[0m
+-rwxr-xr-x 1 root root   77280 May 16  2018 [01;32mlsblk[0m
+lrwxrwxrwx 1 root root       4 Jul 25  2017 [01;36mlsmod[0m -> [01;32mkmod[0m
+-rwxr-xr-x 1 root root   76848 Mar  2  2017 [01;32mmkdir[0m
+-rwxr-xr-x 1 root root  265928 Jun 15  2017 [01;32mmkfs.btrfs[0m
+-rwxr-xr-x 1 root root   64496 Mar  2  2017 [01;32mmknod[0m
+-rwxr-xr-x 1 root root   39728 Mar  2  2017 [01;32mmktemp[0m
+-rwxr-xr-x 1 root root   39768 May 16  2018 [01;32mmore[0m
+-rwsr-xr-x 1 root root   40152 May 16  2018 [37;41mmount[0m
+-rwxr-xr-x 1 root root   14768 May 16  2018 [01;32mmountpoint[0m
+lrwxrwxrwx 1 root root      20 Aug  4  2016 [01;36mmt[0m -> [01;32m/etc/alternatives/mt[0m
+-rwxr-xr-x 1 root root   68824 Feb 18  2016 [01;32mmt-gnu[0m
+-rwxr-xr-x 1 root root  130488 Mar  2  2017 [01;32mmv[0m
+-rwxr-xr-x 1 root root  208480 Feb 15  2017 [01;32mnano[0m
+lrwxrwxrwx 1 root root      20 Aug  4  2016 [01;36mnc[0m -> [01;32m/etc/alternatives/nc[0m
+-rwxr-xr-x 1 root root   31248 Dec  3  2012 [01;32mnc.openbsd[0m
+lrwxrwxrwx 1 root root      24 Aug  4  2016 [01;36mnetcat[0m -> [01;32m/etc/alternatives/netcat[0m
+-rwxr-xr-x 1 root root  119624 Jun 30  2014 [01;32mnetstat[0m
+-rwxr-xr-x 1 root root  678496 Jan 10 20:35 [01;32mnetworkctl[0m
+lrwxrwxrwx 1 root root       8 Aug  4  2016 [01;36mnisdomainname[0m -> [01;32mhostname[0m
+-rwsr-xr-x 1 root root  142032 Jan 28  2017 [37;41mntfs-3g[0m
+-rwxr-xr-x 1 root root   10312 Jan 28  2017 [01;32mntfs-3g.probe[0m
+-rwxr-xr-x 1 root root   67608 Jan 28  2017 [01;32mntfs-3g.secaudit[0m
+-rwxr-xr-x 1 root root   18424 Jan 28  2017 [01;32mntfs-3g.usermap[0m
+-rwxr-xr-x 1 root root   26728 Jan 28  2017 [01;32mntfscat[0m
+-rwxr-xr-x 1 root root   30824 Jan 28  2017 [01;32mntfscluster[0m
+-rwxr-xr-x 1 root root   34920 Jan 28  2017 [01;32mntfscmp[0m
+-rwxr-xr-x 1 root root   34928 Jan 28  2017 [01;32mntfsfallocate[0m
+-rwxr-xr-x 1 root root   39024 Jan 28  2017 [01;32mntfsfix[0m
+-rwxr-xr-x 1 root root   55416 Jan 28  2017 [01;32mntfsinfo[0m
+-rwxr-xr-x 1 root root   31928 Jan 28  2017 [01;32mntfsls[0m
+-rwxr-xr-x 1 root root   30824 Jan 28  2017 [01;32mntfsmove[0m
+-rwxr-xr-x 1 root root   38944 Jan 28  2017 [01;32mntfstruncate[0m
+-rwxr-xr-x 1 root root   47752 Jan 28  2017 [01;32mntfswipe[0m
+lrwxrwxrwx 1 root root       6 Sep 22  2016 [01;36mopen[0m -> [01;32mopenvt[0m
+-rwxr-xr-x 1 root root   18968 Sep 22  2016 [01;32mopenvt[0m
+lrwxrwxrwx 1 root root      14 Aug  4  2016 [01;36mpidof[0m -> [01;32m/sbin/killall5[0m
+-rwsr-xr-x 1 root root   44168 May  7  2014 [37;41mping[0m
+-rwsr-xr-x 1 root root   44680 May  7  2014 [37;41mping6[0m
+-rwxr-xr-x 1 root root   39608 May  9  2018 [01;32mplymouth[0m
+-rwxr-xr-x 1 root root   97408 May 14  2018 [01;32mps[0m
+-rwxr-xr-x 1 root root   31472 Mar  2  2017 [01;32mpwd[0m
+lrwxrwxrwx 1 root root       4 May 16  2017 [01;36mrbash[0m -> [01;32mbash[0m
+-rwxr-xr-x 1 root root   39632 Mar  2  2017 [01;32mreadlink[0m
+-rwxr-xr-x 1 root root      89 Apr 26  2014 [01;32mred[0m
+-rwxr-xr-x 1 root root   60272 Mar  2  2017 [01;32mrm[0m
+-rwxr-xr-x 1 root root   39632 Mar  2  2017 [01;32mrmdir[0m
+lrwxrwxrwx 1 root root       4 Feb 15  2017 [01;36mrnano[0m -> [01;32mnano[0m
+-rwxr-xr-x 1 root root   19320 Jan 26  2016 [01;32mrun-parts[0m
+-rwxr-xr-x 1 root root   73424 Feb 11  2016 [01;32msed[0m
+-rwxr-xr-x 1 root root   36296 Feb  7  2016 [01;32msetfacl[0m
+-rwxr-xr-x 1 root root   39952 Sep 22  2016 [01;32msetfont[0m
+-rwxr-xr-x 1 root root   30875 Oct 12  2017 [01;32msetupcon[0m
+lrwxrwxrwx 1 root root       4 Aug  4  2016 [01;36msh[0m -> [01;32mdash[0m
+lrwxrwxrwx 1 root root       4 Aug  4  2016 [01;36msh.distrib[0m -> [01;32mdash[0m
+-rwxr-xr-x 1 root root   31408 Mar  2  2017 [01;32msleep[0m
+-rwxr-xr-x 1 root root  115816 Dec  6  2017 [01;32mss[0m
+lrwxrwxrwx 1 root root       7 Aug 19  2015 [01;36mstatic-sh[0m -> [01;32mbusybox[0m
+-rwxr-xr-x 1 root root   72496 Mar  2  2017 [01;32mstty[0m
+-rwsr-xr-x 1 root root   40128 May 16  2017 [37;41msu[0m
+-rwxr-xr-x 1 root root   31408 Mar  2  2017 [01;32msync[0m
+-rwxr-xr-x 1 root root  659856 Jan 10 20:35 [01;32msystemctl[0m
+lrwxrwxrwx 1 root root      20 Jan 10 20:35 [01;36msystemd[0m -> [01;32m/lib/systemd/systemd[0m
+-rwxr-xr-x 1 root root   51656 Jan 10 20:35 [01;32msystemd-ask-password[0m
+-rwxr-xr-x 1 root root   39344 Jan 10 20:35 [01;32msystemd-escape[0m
+-rwxr-xr-x 1 root root   64080 Jan 10 20:35 [01;32msystemd-hwdb[0m
+-rwxr-xr-x 1 root root  281840 Jan 10 20:35 [01;32msystemd-inhibit[0m
+-rwxr-xr-x 1 root root   47544 Jan 10 20:35 [01;32msystemd-machine-id-setup[0m
+-rwxr-xr-x 1 root root   35248 Jan 10 20:35 [01;32msystemd-notify[0m
+-rwxr-xr-x 1 root root  146008 Jan 10 20:35 [01;32msystemd-tmpfiles[0m
+-rwxr-xr-x 1 root root   68032 Jan 10 20:35 [01;32msystemd-tty-ask-password-agent[0m
+-rwxr-xr-x 1 root root   23144 May 16  2018 [01;32mtailf[0m
+-rwxr-xr-x 1 root root  383632 Nov 17  2016 [01;32mtar[0m
+-rwxr-xr-x 1 root root   10416 Jan 26  2016 [01;32mtempfile[0m
+-rwxr-xr-x 1 root root   64432 Mar  2  2017 [01;32mtouch[0m
+-rwxr-xr-x 1 root root   27280 Mar  2  2017 [01;32mtrue[0m
+-rwxr-xr-x 1 root root  449136 Jan 10 20:35 [01;32mudevadm[0m
+-rwxr-xr-x 1 root root   14328 Jul 12  2016 [01;32mulockmgr_server[0m
+-rwsr-xr-x 1 root root   27608 May 16  2018 [37;41mumount[0m
+-rwxr-xr-x 1 root root   31440 Mar  2  2017 [01;32muname[0m
+-rwxr-xr-x 2 root root    2301 Oct 27  2014 [01;32muncompress[0m
+-rwxr-xr-x 1 root root    2762 Sep 22  2016 [01;32municode_start[0m
+-rwxr-xr-x 1 root root  126584 Mar  2  2017 [01;32mvdir[0m
+-rwxr-xr-x 1 root root   31376 May 16  2018 [01;32mwdctl[0m
+-rwxr-xr-x 1 root root     946 Jan 26  2016 [01;32mwhich[0m
+-rwxr-xr-x 1 root root   27432 Jan 18  2016 [01;32mwhiptail[0m
+lrwxrwxrwx 1 root root       8 Aug  4  2016 [01;36mypdomainname[0m -> [01;32mhostname[0m
+-rwxr-xr-x 1 root root    1937 Oct 27  2014 [01;32mzcat[0m
+-rwxr-xr-x 1 root root    1777 Oct 27  2014 [01;32mzcmp[0m
+-rwxr-xr-x 1 root root    5764 Oct 27  2014 [01;32mzdiff[0m
+-rwxr-xr-x 1 root root     140 Oct 27  2014 [01;32mzegrep[0m
+-rwxr-xr-x 1 root root     140 Oct 27  2014 [01;32mzfgrep[0m
+-rwxr-xr-x 1 root root    2131 Oct 27  2014 [01;32mzforce[0m
+-rwxr-xr-x 1 root root    5938 Oct 27  2014 [01;32mzgrep[0m
+-rwxr-xr-x 1 root root    2037 Oct 27  2014 [01;32mzless[0m
+-rwxr-xr-x 1 root root    1910 Oct 27  2014 [01;32mzmore[0m
+-rwxr-xr-x 1 root root    5047 Oct 27  2014 [01;32mznew[0m
+]0;n00961805@cisvm-cop4640-1: /binn00961805@cisvm-cop4640-1:/bin$ ls -lt
+total 16016
+-rwxr-xr-x 1 root root   64080 Jan 10 20:35 [0m[01;32msystemd-hwdb[0m
+-rwxr-xr-x 1 root root  449136 Jan 10 20:35 [01;32mudevadm[0m
+-rwxr-xr-x 1 root root  498936 Jan 10 20:35 [01;32mjournalctl[0m
+-rwxr-xr-x 1 root root  453848 Jan 10 20:35 [01;32mloginctl[0m
+-rwxr-xr-x 1 root root   39344 Jan 10 20:35 [01;32msystemd-escape[0m
+-rwxr-xr-x 1 root root  146008 Jan 10 20:35 [01;32msystemd-tmpfiles[0m
+-rwxr-xr-x 1 root root   68032 Jan 10 20:35 [01;32msystemd-tty-ask-password-agent[0m
+-rwxr-xr-x 1 root root  678496 Jan 10 20:35 [01;32mnetworkctl[0m
+-rwxr-xr-x 1 root root  659856 Jan 10 20:35 [01;32msystemctl[0m
+-rwxr-xr-x 1 root root   51656 Jan 10 20:35 [01;32msystemd-ask-password[0m
+-rwxr-xr-x 1 root root  281840 Jan 10 20:35 [01;32msystemd-inhibit[0m
+-rwxr-xr-x 1 root root   47544 Jan 10 20:35 [01;32msystemd-machine-id-setup[0m
+-rwxr-xr-x 1 root root   35248 Jan 10 20:35 [01;32msystemd-notify[0m
+lrwxrwxrwx 1 root root      20 Jan 10 20:35 [01;36msystemd[0m -> [01;32m/lib/systemd/systemd[0m
+-rwxr-xr-x 1 root root   60680 May 16  2018 [01;32mdmesg[0m
+-rwxr-xr-x 1 root root   49576 May 16  2018 [01;32mfindmnt[0m
+-rwxr-xr-x 1 root root   77280 May 16  2018 [01;32mlsblk[0m
+-rwxr-xr-x 1 root root   39768 May 16  2018 [01;32mmore[0m
+-rwsr-xr-x 1 root root   40152 May 16  2018 [37;41mmount[0m
+-rwxr-xr-x 1 root root   14768 May 16  2018 [01;32mmountpoint[0m
+-rwxr-xr-x 1 root root   23144 May 16  2018 [01;32mtailf[0m
+-rwsr-xr-x 1 root root   27608 May 16  2018 [37;41mumount[0m
+-rwxr-xr-x 1 root root   31376 May 16  2018 [01;32mwdctl[0m
+-rwxr-xr-x 1 root root   23152 May 14  2018 [01;32mkill[0m
+-rwxr-xr-x 1 root root   97408 May 14  2018 [01;32mps[0m
+-rwxr-xr-x 1 root root   39608 May  9  2018 [01;32mplymouth[0m
+-rwxr-xr-x 1 root root  376192 Dec  6  2017 [01;32mip[0m
+-rwxr-xr-x 1 root root  115816 Dec  6  2017 [01;32mss[0m
+-rwxr-xr-x 1 root root   30875 Oct 12  2017 [01;32msetupcon[0m
+-rwxr-xr-x 1 root root  150600 Jul 25  2017 [01;32mkmod[0m
+lrwxrwxrwx 1 root root       4 Jul 25  2017 [01;36mlsmod[0m -> [01;32mkmod[0m
+-rwxr-xr-x 1 root root  249464 Jun 15  2017 [01;32mbtrfs-calc-size[0m
+-rwxr-xr-x 1 root root  245368 Jun 15  2017 [01;32mbtrfs-find-root[0m
+-rwxr-xr-x 1 root root  249464 Jun 15  2017 [01;32mbtrfs-map-logical[0m
+-rwxr-xr-x 1 root root  245368 Jun 15  2017 [01;32mbtrfs-select-super[0m
+-rwxr-xr-x 1 root root  249464 Jun 15  2017 [01;32mbtrfstune[0m
+-rwxr-xr-x 1 root root  265928 Jun 15  2017 [01;32mmkfs.btrfs[0m
+-rwxr-xr-x 1 root root  520992 Jun 15  2017 [01;32mbtrfs[0m
+-rwxr-xr-x 1 root root  278376 Jun 15  2017 [01;32mbtrfs-convert[0m
+-rwxr-xr-x 1 root root  249464 Jun 15  2017 [01;32mbtrfs-debug-tree[0m
+-rwxr-xr-x 1 root root  270136 Jun 15  2017 [01;32mbtrfs-image[0m
+-rwxr-xr-x 1 root root  253816 Jun 15  2017 [01;32mbtrfs-show-super[0m
+-rwxr-xr-x 1 root root  245368 Jun 15  2017 [01;32mbtrfs-zero-log[0m
+lrwxrwxrwx 1 root root       5 Jun 15  2017 [01;36mbtrfsck[0m -> [01;32mbtrfs[0m
+-rwxr-xr-x 1 root root    1185 Jun 15  2017 [01;32mfsck.btrfs[0m
+-rwxr-xr-x 1 root root   48128 May 16  2017 [01;32mlogin[0m
+-rwsr-xr-x 1 root root   40128 May 16  2017 [37;41msu[0m
+-rwxr-xr-x 1 root root 1037528 May 16  2017 [01;32mbash[0m
+lrwxrwxrwx 1 root root       4 May 16  2017 [01;36mrbash[0m -> [01;32mbash[0m
+-rwxr-xr-x 1 root root  170728 Apr  5  2017 [01;32mless[0m
+-rwxr-xr-x 1 root root   10256 Apr  5  2017 [01;32mlessecho[0m
+lrwxrwxrwx 1 root root       8 Apr  5  2017 [01;36mlessfile[0m -> [01;32mlesspipe[0m
+-rwxr-xr-x 1 root root   19824 Apr  5  2017 [01;32mlesskey[0m
+-rwxr-xr-x 1 root root    7764 Apr  5  2017 [01;32mlesspipe[0m
+-rwxr-xr-x 1 root root   52080 Mar  2  2017 [01;32mcat[0m
+-rwxr-xr-x 1 root root   60272 Mar  2  2017 [01;32mchgrp[0m
+-rwxr-xr-x 1 root root   56112 Mar  2  2017 [01;32mchmod[0m
+-rwxr-xr-x 1 root root   64368 Mar  2  2017 [01;32mchown[0m
+-rwxr-xr-x 1 root root  151024 Mar  2  2017 [01;32mcp[0m
+-rwxr-xr-x 1 root root   68464 Mar  2  2017 [01;32mdate[0m
+-rwxr-xr-x 1 root root   72632 Mar  2  2017 [01;32mdd[0m
+-rwxr-xr-x 1 root root   97912 Mar  2  2017 [01;32mdf[0m
+-rwxr-xr-x 1 root root  126584 Mar  2  2017 [01;32mdir[0m
+-rwxr-xr-x 1 root root   31376 Mar  2  2017 [01;32mecho[0m
+-rwxr-xr-x 1 root root   27280 Mar  2  2017 [01;32mfalse[0m
+-rwxr-xr-x 1 root root   56152 Mar  2  2017 [01;32mln[0m
+-rwxr-xr-x 1 root root  126584 Mar  2  2017 [01;32mls[0m
+-rwxr-xr-x 1 root root   76848 Mar  2  2017 [01;32mmkdir[0m
+-rwxr-xr-x 1 root root   64496 Mar  2  2017 [01;32mmknod[0m
+-rwxr-xr-x 1 root root   39728 Mar  2  2017 [01;32mmktemp[0m
+-rwxr-xr-x 1 root root  130488 Mar  2  2017 [01;32mmv[0m
+-rwxr-xr-x 1 root root   31472 Mar  2  2017 [01;32mpwd[0m
+-rwxr-xr-x 1 root root   39632 Mar  2  2017 [01;32mreadlink[0m
+-rwxr-xr-x 1 root root   60272 Mar  2  2017 [01;32mrm[0m
+-rwxr-xr-x 1 root root   39632 Mar  2  2017 [01;32mrmdir[0m
+-rwxr-xr-x 1 root root   31408 Mar  2  2017 [01;32msleep[0m
+-rwxr-xr-x 1 root root   72496 Mar  2  2017 [01;32mstty[0m
+-rwxr-xr-x 1 root root   31408 Mar  2  2017 [01;32msync[0m
+-rwxr-xr-x 1 root root   64432 Mar  2  2017 [01;32mtouch[0m
+-rwxr-xr-x 1 root root   27280 Mar  2  2017 [01;32mtrue[0m
+-rwxr-xr-x 1 root root   31440 Mar  2  2017 [01;32muname[0m
+-rwxr-xr-x 1 root root  126584 Mar  2  2017 [01;32mvdir[0m
+-rwxr-xr-x 1 root root  208480 Feb 15  2017 [01;32mnano[0m
+lrwxrwxrwx 1 root root       4 Feb 15  2017 [01;36mrnano[0m -> [01;32mnano[0m
+-rwxr-xr-x 1 root root  105136 Jan 28  2017 [01;32mlowntfs-3g[0m
+-rwxr-xr-x 1 root root   10312 Jan 28  2017 [01;32mntfs-3g.probe[0m
+-rwxr-xr-x 1 root root   18424 Jan 28  2017 [01;32mntfs-3g.usermap[0m
+-rwxr-xr-x 1 root root   26728 Jan 28  2017 [01;32mntfscat[0m
+-rwxr-xr-x 1 root root   30824 Jan 28  2017 [01;32mntfscluster[0m
+-rwxr-xr-x 1 root root   34920 Jan 28  2017 [01;32mntfscmp[0m
+-rwxr-xr-x 1 root root   39024 Jan 28  2017 [01;32mntfsfix[0m
+-rwxr-xr-x 1 root root   55416 Jan 28  2017 [01;32mntfsinfo[0m
+-rwxr-xr-x 1 root root   31928 Jan 28  2017 [01;32mntfsls[0m
+-rwxr-xr-x 1 root root   38944 Jan 28  2017 [01;32mntfstruncate[0m
+-rwsr-xr-x 1 root root  142032 Jan 28  2017 [37;41mntfs-3g[0m
+-rwxr-xr-x 1 root root   67608 Jan 28  2017 [01;32mntfs-3g.secaudit[0m
+-rwxr-xr-x 1 root root   34928 Jan 28  2017 [01;32mntfsfallocate[0m
+-rwxr-xr-x 1 root root   30824 Jan 28  2017 [01;32mntfsmove[0m
+-rwxr-xr-x 1 root root   47752 Jan 28  2017 [01;32mntfswipe[0m
+-rwxr-xr-x 1 root root  383632 Nov 17  2016 [01;32mtar[0m
+-rwxr-xr-x 1 root root   10536 Sep 22  2016 [01;32mchvt[0m
+-rwxr-xr-x 1 root root   82328 Sep 22  2016 [01;32mdumpkeys[0m
+-rwxr-xr-x 1 root root   10544 Sep 22  2016 [01;32mfgconsole[0m
+-rwxr-xr-x 1 root root   10536 Sep 22  2016 [01;32mkbd_mode[0m
+-rwxr-xr-x 1 root root  111496 Sep 22  2016 [01;32mloadkeys[0m
+-rwxr-xr-x 1 root root   18968 Sep 22  2016 [01;32mopenvt[0m
+-rwxr-xr-x 1 root root   39952 Sep 22  2016 [01;32msetfont[0m
+lrwxrwxrwx 1 root root       6 Sep 22  2016 [01;36mopen[0m -> [01;32mopenvt[0m
+-rwxr-xr-x 1 root root    2762 Sep 22  2016 [01;32municode_start[0m
+lrwxrwxrwx 1 root root       8 Aug  4  2016 [01;36mypdomainname[0m -> [01;32mhostname[0m
+lrwxrwxrwx 1 root root       4 Aug  4  2016 [01;36msh[0m -> [01;32mdash[0m
+lrwxrwxrwx 1 root root       4 Aug  4  2016 [01;36msh.distrib[0m -> [01;32mdash[0m
+lrwxrwxrwx 1 root root       8 Aug  4  2016 [01;36mnisdomainname[0m -> [01;32mhostname[0m
+lrwxrwxrwx 1 root root      14 Aug  4  2016 [01;36mpidof[0m -> [01;32m/sbin/killall5[0m
+lrwxrwxrwx 1 root root      24 Aug  4  2016 [01;36mnetcat[0m -> [01;32m/etc/alternatives/netcat[0m
+lrwxrwxrwx 1 root root      20 Aug  4  2016 [01;36mnc[0m -> [01;32m/etc/alternatives/nc[0m
+lrwxrwxrwx 1 root root      20 Aug  4  2016 [01;36mmt[0m -> [01;32m/etc/alternatives/mt[0m
+lrwxrwxrwx 1 root root       8 Aug  4  2016 [01;36mdnsdomainname[0m -> [01;32mhostname[0m
+lrwxrwxrwx 1 root root       8 Aug  4  2016 [01;36mdomainname[0m -> [01;32mhostname[0m
+lrwxrwxrwx 1 root root       6 Aug  4  2016 [01;36mbzcmp[0m -> [01;32mbzdiff[0m
+lrwxrwxrwx 1 root root       6 Aug  4  2016 [01;36mbzegrep[0m -> [01;32mbzgrep[0m
+lrwxrwxrwx 1 root root       6 Aug  4  2016 [01;36mbzfgrep[0m -> [01;32mbzgrep[0m
+lrwxrwxrwx 1 root root       6 Aug  4  2016 [01;36mbzless[0m -> [01;32mbzmore[0m
+-rwsr-xr-x 1 root root   30800 Jul 12  2016 [37;41mfusermount[0m
+-rwxr-xr-x 1 root root   14328 Jul 12  2016 [01;32mulockmgr_server[0m
+-rwxr-xr-x 1 root root  211224 Apr 29  2016 [01;32mgrep[0m
+-rwxr-xr-x 1 root root      28 Apr 29  2016 [01;32megrep[0m
+-rwxr-xr-x 1 root root      28 Apr 29  2016 [01;32mfgrep[0m
+-rwxr-xr-x 1 root root  141472 Feb 18  2016 [01;32mcpio[0m
+-rwxr-xr-x 1 root root   68824 Feb 18  2016 [01;32mmt-gnu[0m
+-rwxr-xr-x 1 root root  154072 Feb 17  2016 [01;32mdash[0m
+-rwxr-xr-x 1 root root   73424 Feb 11  2016 [01;32msed[0m
+-rwxr-xr-x 1 root root   36024 Feb  7  2016 [01;32mfuser[0m
+-rwxr-xr-x 1 root root   14752 Feb  7  2016 [01;32mchacl[0m
+-rwxr-xr-x 1 root root   23752 Feb  7  2016 [01;32mgetfacl[0m
+-rwxr-xr-x 1 root root   36296 Feb  7  2016 [01;32msetfacl[0m
+-rwxr-xr-x 1 root root   19320 Jan 26  2016 [01;32mrun-parts[0m
+-rwxr-xr-x 1 root root   10416 Jan 26  2016 [01;32mtempfile[0m
+-rwxr-xr-x 1 root root     946 Jan 26  2016 [01;32mwhich[0m
+-rwxr-xr-x 1 root root   27432 Jan 18  2016 [01;32mwhiptail[0m
+-rwxr-xr-x 1 root root   14800 Nov 24  2015 [01;32mhostname[0m
+-rwxr-xr-x 1 root root 1964536 Aug 19  2015 [01;32mbusybox[0m
+lrwxrwxrwx 1 root root       7 Aug 19  2015 [01;36mstatic-sh[0m -> [01;32mbusybox[0m
+-rwxr-xr-x 3 root root   31288 May 20  2015 [01;32mbunzip2[0m
+-rwxr-xr-x 3 root root   31288 May 20  2015 [01;32mbzcat[0m
+-rwxr-xr-x 3 root root   31288 May 20  2015 [01;32mbzip2[0m
+-rwxr-xr-x 1 root root   14616 May 20  2015 [01;32mbzip2recover[0m
+-rwxr-xr-x 1 root root    2140 May 20  2015 [01;32mbzdiff[0m
+-rwxr-xr-x 1 root root    4877 May 20  2015 [01;32mbzexe[0m
+-rwxr-xr-x 1 root root    3642 May 20  2015 [01;32mbzgrep[0m
+-rwxr-xr-x 1 root root    1297 May 20  2015 [01;32mbzmore[0m
+-rwxr-xr-x 1 root root   98240 Oct 27  2014 [01;32mgzip[0m
+-rwxr-xr-x 2 root root    2301 Oct 27  2014 [01;32mgunzip[0m
+-rwxr-xr-x 1 root root    5927 Oct 27  2014 [01;32mgzexe[0m
+-rwxr-xr-x 2 root root    2301 Oct 27  2014 [01;32muncompress[0m
+-rwxr-xr-x 1 root root    1937 Oct 27  2014 [01;32mzcat[0m
+-rwxr-xr-x 1 root root    1777 Oct 27  2014 [01;32mzcmp[0m
+-rwxr-xr-x 1 root root    5764 Oct 27  2014 [01;32mzdiff[0m
+-rwxr-xr-x 1 root root     140 Oct 27  2014 [01;32mzegrep[0m
+-rwxr-xr-x 1 root root     140 Oct 27  2014 [01;32mzfgrep[0m
+-rwxr-xr-x 1 root root    2131 Oct 27  2014 [01;32mzforce[0m
+-rwxr-xr-x 1 root root    5938 Oct 27  2014 [01;32mzgrep[0m
+-rwxr-xr-x 1 root root    2037 Oct 27  2014 [01;32mzless[0m
+-rwxr-xr-x 1 root root    1910 Oct 27  2014 [01;32mzmore[0m
+-rwxr-xr-x 1 root root    5047 Oct 27  2014 [01;32mznew[0m
+-rwxr-xr-x 1 root root  119624 Jun 30  2014 [01;32mnetstat[0m
+-rwsr-xr-x 1 root root   44168 May  7  2014 [37;41mping[0m
+-rwsr-xr-x 1 root root   44680 May  7  2014 [37;41mping6[0m
+-rwxr-xr-x 1 root root   51512 Apr 26  2014 [01;32med[0m
+-rwxr-xr-x 1 root root      89 Apr 26  2014 [01;32mred[0m
+-rwxr-xr-x 1 root root   31248 Dec  3  2012 [01;32mnc.openbsd[0m
+]0;n00961805@cisvm-cop4640-1: /binn00961805@cisvm-cop4640-1:/bin$ ls -ltr * | grep Sep
+-rwxr-xr-x 1 root root    2762 [01;31m[KSep[m[K 22  2016 unicode_start
+lrwxrwxrwx 1 root root       6 [01;31m[KSep[m[K 22  2016 open -> openvt
+-rwxr-xr-x 1 root root   39952 [01;31m[KSep[m[K 22  2016 setfont
+-rwxr-xr-x 1 root root   18968 [01;31m[KSep[m[K 22  2016 openvt
+-rwxr-xr-x 1 root root  111496 [01;31m[KSep[m[K 22  2016 loadkeys
+-rwxr-xr-x 1 root root   10536 [01;31m[KSep[m[K 22  2016 kbd_mode
+-rwxr-xr-x 1 root root   10544 [01;31m[KSep[m[K 22  2016 fgconsole
+-rwxr-xr-x 1 root root   82328 [01;31m[KSep[m[K 22  2016 dumpkeys
+-rwxr-xr-x 1 root root   10536 [01;31m[KSep[m[K 22  2016 chvt
+]0;n00961805@cisvm-cop4640-1: /binn00961805@cisvm-cop4640-1:/bin$ ls -ltr * | grep Sep[K[K[KJan
+-rwxr-xr-x 1 root root   27432 [01;31m[KJan[m[K 18  2016 whiptail
+-rwxr-xr-x 1 root root     946 [01;31m[KJan[m[K 26  2016 which
+-rwxr-xr-x 1 root root   10416 [01;31m[KJan[m[K 26  2016 tempfile
+-rwxr-xr-x 1 root root   19320 [01;31m[KJan[m[K 26  2016 run-parts
+-rwxr-xr-x 1 root root   47752 [01;31m[KJan[m[K 28  2017 ntfswipe
+-rwxr-xr-x 1 root root   30824 [01;31m[KJan[m[K 28  2017 ntfsmove
+-rwxr-xr-x 1 root root   34928 [01;31m[KJan[m[K 28  2017 ntfsfallocate
+-rwxr-xr-x 1 root root   67608 [01;31m[KJan[m[K 28  2017 ntfs-3g.secaudit
+-rwsr-xr-x 1 root root  142032 [01;31m[KJan[m[K 28  2017 ntfs-3g
+-rwxr-xr-x 1 root root   38944 [01;31m[KJan[m[K 28  2017 ntfstruncate
+-rwxr-xr-x 1 root root   31928 [01;31m[KJan[m[K 28  2017 ntfsls
+-rwxr-xr-x 1 root root   55416 [01;31m[KJan[m[K 28  2017 ntfsinfo
+-rwxr-xr-x 1 root root   39024 [01;31m[KJan[m[K 28  2017 ntfsfix
+-rwxr-xr-x 1 root root   34920 [01;31m[KJan[m[K 28  2017 ntfscmp
+-rwxr-xr-x 1 root root   30824 [01;31m[KJan[m[K 28  2017 ntfscluster
+-rwxr-xr-x 1 root root   26728 [01;31m[KJan[m[K 28  2017 ntfscat
+-rwxr-xr-x 1 root root   18424 [01;31m[KJan[m[K 28  2017 ntfs-3g.usermap
+-rwxr-xr-x 1 root root   10312 [01;31m[KJan[m[K 28  2017 ntfs-3g.probe
+-rwxr-xr-x 1 root root  105136 [01;31m[KJan[m[K 28  2017 lowntfs-3g
+lrwxrwxrwx 1 root root      20 [01;31m[KJan[m[K 10 20:35 systemd -> /lib/systemd/systemd
+-rwxr-xr-x 1 root root   35248 [01;31m[KJan[m[K 10 20:35 systemd-notify
+-rwxr-xr-x 1 root root   47544 [01;31m[KJan[m[K 10 20:35 systemd-machine-id-setup
+-rwxr-xr-x 1 root root  281840 [01;31m[KJan[m[K 10 20:35 systemd-inhibit
+-rwxr-xr-x 1 root root   51656 [01;31m[KJan[m[K 10 20:35 systemd-ask-password
+-rwxr-xr-x 1 root root  659856 [01;31m[KJan[m[K 10 20:35 systemctl
+-rwxr-xr-x 1 root root  678496 [01;31m[KJan[m[K 10 20:35 networkctl
+-rwxr-xr-x 1 root root   68032 [01;31m[KJan[m[K 10 20:35 systemd-tty-ask-password-agent
+-rwxr-xr-x 1 root root  146008 [01;31m[KJan[m[K 10 20:35 systemd-tmpfiles
+-rwxr-xr-x 1 root root   39344 [01;31m[KJan[m[K 10 20:35 systemd-escape
+-rwxr-xr-x 1 root root  453848 [01;31m[KJan[m[K 10 20:35 loginctl
+-rwxr-xr-x 1 root root  498936 [01;31m[KJan[m[K 10 20:35 journalctl
+-rwxr-xr-x 1 root root  449136 [01;31m[KJan[m[K 10 20:35 udevadm
+-rwxr-xr-x 1 root root   64080 [01;31m[KJan[m[K 10 20:35 systemd-hwdb
+]0;n00961805@cisvm-cop4640-1: /binn00961805@cisvm-cop4640-1:/bin$ ls -ltr * | grep Jan[K[K[KFeb
+-rwxr-xr-x 1 root root   36296 [01;31m[KFeb[m[K  7  2016 setfacl
+-rwxr-xr-x 1 root root   23752 [01;31m[KFeb[m[K  7  2016 getfacl
+-rwxr-xr-x 1 root root   14752 [01;31m[KFeb[m[K  7  2016 chacl
+-rwxr-xr-x 1 root root   36024 [01;31m[KFeb[m[K  7  2016 fuser
+-rwxr-xr-x 1 root root   73424 [01;31m[KFeb[m[K 11  2016 sed
+-rwxr-xr-x 1 root root  154072 [01;31m[KFeb[m[K 17  2016 dash
+-rwxr-xr-x 1 root root   68824 [01;31m[KFeb[m[K 18  2016 mt-gnu
+-rwxr-xr-x 1 root root  141472 [01;31m[KFeb[m[K 18  2016 cpio
+lrwxrwxrwx 1 root root       4 [01;31m[KFeb[m[K 15  2017 rnano -> nano
+-rwxr-xr-x 1 root root  208480 [01;31m[KFeb[m[K 15  2017 nano
+]0;n00961805@cisvm-cop4640-1: /binn00961805@cisvm-cop4640-1:/bin$ ls -ltr * | grep Feb[K[K[Kmar
+]0;n00961805@cisvm-cop4640-1: /binn00961805@cisvm-cop4640-1:/bin$ ls -ltr * | grep mar[1ParMar
+-rwxr-xr-x 1 root root  126584 [01;31m[KMar[m[K  2  2017 vdir
+-rwxr-xr-x 1 root root   31440 [01;31m[KMar[m[K  2  2017 uname
+-rwxr-xr-x 1 root root   27280 [01;31m[KMar[m[K  2  2017 true
+-rwxr-xr-x 1 root root   64432 [01;31m[KMar[m[K  2  2017 touch
+-rwxr-xr-x 1 root root   31408 [01;31m[KMar[m[K  2  2017 sync
+-rwxr-xr-x 1 root root   72496 [01;31m[KMar[m[K  2  2017 stty
+-rwxr-xr-x 1 root root   31408 [01;31m[KMar[m[K  2  2017 sleep
+-rwxr-xr-x 1 root root   39632 [01;31m[KMar[m[K  2  2017 rmdir
+-rwxr-xr-x 1 root root   60272 [01;31m[KMar[m[K  2  2017 rm
+-rwxr-xr-x 1 root root   39632 [01;31m[KMar[m[K  2  2017 readlink
+-rwxr-xr-x 1 root root   31472 [01;31m[KMar[m[K  2  2017 pwd
+-rwxr-xr-x 1 root root  130488 [01;31m[KMar[m[K  2  2017 mv
+-rwxr-xr-x 1 root root   39728 [01;31m[KMar[m[K  2  2017 mktemp
+-rwxr-xr-x 1 root root   64496 [01;31m[KMar[m[K  2  2017 mknod
+-rwxr-xr-x 1 root root   76848 [01;31m[KMar[m[K  2  2017 mkdir
+-rwxr-xr-x 1 root root  126584 [01;31m[KMar[m[K  2  2017 ls
+-rwxr-xr-x 1 root root   56152 [01;31m[KMar[m[K  2  2017 ln
+-rwxr-xr-x 1 root root   27280 [01;31m[KMar[m[K  2  2017 false
+-rwxr-xr-x 1 root root   31376 [01;31m[KMar[m[K  2  2017 echo
+-rwxr-xr-x 1 root root  126584 [01;31m[KMar[m[K  2  2017 dir
+-rwxr-xr-x 1 root root   97912 [01;31m[KMar[m[K  2  2017 df
+-rwxr-xr-x 1 root root   72632 [01;31m[KMar[m[K  2  2017 dd
+-rwxr-xr-x 1 root root   68464 [01;31m[KMar[m[K  2  2017 date
+-rwxr-xr-x 1 root root  151024 [01;31m[KMar[m[K  2  2017 cp
+-rwxr-xr-x 1 root root   64368 [01;31m[KMar[m[K  2  2017 chown
+-rwxr-xr-x 1 root root   56112 [01;31m[KMar[m[K  2  2017 chmod
+-rwxr-xr-x 1 root root   60272 [01;31m[KMar[m[K  2  2017 chgrp
+-rwxr-xr-x 1 root root   52080 [01;31m[KMar[m[K  2  2017 cat
+]0;n00961805@cisvm-cop4640-1: /binn00961805@cisvm-cop4640-1:/bin$ ls -ltr * | grep Mar[K[K[KApr
+-rwxr-xr-x 1 root root      89 [01;31m[KApr[m[K 26  2014 red
+-rwxr-xr-x 1 root root   51512 [01;31m[KApr[m[K 26  2014 ed
+-rwxr-xr-x 1 root root      28 [01;31m[KApr[m[K 29  2016 fgrep
+-rwxr-xr-x 1 root root      28 [01;31m[KApr[m[K 29  2016 egrep
+-rwxr-xr-x 1 root root  211224 [01;31m[KApr[m[K 29  2016 grep
+-rwxr-xr-x 1 root root    7764 [01;31m[KApr[m[K  5  2017 lesspipe
+-rwxr-xr-x 1 root root   19824 [01;31m[KApr[m[K  5  2017 lesskey
+lrwxrwxrwx 1 root root       8 [01;31m[KApr[m[K  5  2017 lessfile -> lesspipe
+-rwxr-xr-x 1 root root   10256 [01;31m[KApr[m[K  5  2017 lessecho
+-rwxr-xr-x 1 root root  170728 [01;31m[KApr[m[K  5  2017 less
+]0;n00961805@cisvm-cop4640-1: /binn00961805@cisvm-cop4640-1:/bin$ ls -ltr * | grep Apr[K[K[KMay
+-rwsr-xr-x 1 root root   44680 [01;31m[KMay[m[K  7  2014 ping6
+-rwsr-xr-x 1 root root   44168 [01;31m[KMay[m[K  7  2014 ping
+-rwxr-xr-x 1 root root    1297 [01;31m[KMay[m[K 20  2015 bzmore
+-rwxr-xr-x 1 root root    3642 [01;31m[KMay[m[K 20  2015 bzgrep
+-rwxr-xr-x 1 root root    4877 [01;31m[KMay[m[K 20  2015 bzexe
+-rwxr-xr-x 1 root root    2140 [01;31m[KMay[m[K 20  2015 bzdiff
+-rwxr-xr-x 1 root root   14616 [01;31m[KMay[m[K 20  2015 bzip2recover
+-rwxr-xr-x 3 root root   31288 [01;31m[KMay[m[K 20  2015 bzip2
+-rwxr-xr-x 3 root root   31288 [01;31m[KMay[m[K 20  2015 bzcat
+-rwxr-xr-x 3 root root   31288 [01;31m[KMay[m[K 20  2015 bunzip2
+lrwxrwxrwx 1 root root       4 [01;31m[KMay[m[K 16  2017 rbash -> bash
+-rwxr-xr-x 1 root root 1037528 [01;31m[KMay[m[K 16  2017 bash
+-rwsr-xr-x 1 root root   40128 [01;31m[KMay[m[K 16  2017 su
+-rwxr-xr-x 1 root root   48128 [01;31m[KMay[m[K 16  2017 login
+-rwxr-xr-x 1 root root   39608 [01;31m[KMay[m[K  9  2018 plymouth
+-rwxr-xr-x 1 root root   97408 [01;31m[KMay[m[K 14  2018 ps
+-rwxr-xr-x 1 root root   23152 [01;31m[KMay[m[K 14  2018 kill
+-rwxr-xr-x 1 root root   31376 [01;31m[KMay[m[K 16  2018 wdctl
+-rwsr-xr-x 1 root root   27608 [01;31m[KMay[m[K 16  2018 umount
+-rwxr-xr-x 1 root root   23144 [01;31m[KMay[m[K 16  2018 tailf
+-rwxr-xr-x 1 root root   14768 [01;31m[KMay[m[K 16  2018 mountpoint
+-rwsr-xr-x 1 root root   40152 [01;31m[KMay[m[K 16  2018 mount
+-rwxr-xr-x 1 root root   39768 [01;31m[KMay[m[K 16  2018 more
+-rwxr-xr-x 1 root root   77280 [01;31m[KMay[m[K 16  2018 lsblk
+-rwxr-xr-x 1 root root   49576 [01;31m[KMay[m[K 16  2018 findmnt
+-rwxr-xr-x 1 root root   60680 [01;31m[KMay[m[K 16  2018 dmesg
+]0;n00961805@cisvm-cop4640-1: /binn00961805@cisvm-cop4640-1:/bin$ ls -ltr * | grep May[K[K[KJun
+-rwxr-xr-x 1 root root  119624 [01;31m[KJun[m[K 30  2014 netstat
+-rwxr-xr-x 1 root root    1185 [01;31m[KJun[m[K 15  2017 fsck.btrfs
+lrwxrwxrwx 1 root root       5 [01;31m[KJun[m[K 15  2017 btrfsck -> btrfs
+-rwxr-xr-x 1 root root  245368 [01;31m[KJun[m[K 15  2017 btrfs-zero-log
+-rwxr-xr-x 1 root root  253816 [01;31m[KJun[m[K 15  2017 btrfs-show-super
+-rwxr-xr-x 1 root root  270136 [01;31m[KJun[m[K 15  2017 btrfs-image
+-rwxr-xr-x 1 root root  249464 [01;31m[KJun[m[K 15  2017 btrfs-debug-tree
+-rwxr-xr-x 1 root root  278376 [01;31m[KJun[m[K 15  2017 btrfs-convert
+-rwxr-xr-x 1 root root  520992 [01;31m[KJun[m[K 15  2017 btrfs
+-rwxr-xr-x 1 root root  265928 [01;31m[KJun[m[K 15  2017 mkfs.btrfs
+-rwxr-xr-x 1 root root  249464 [01;31m[KJun[m[K 15  2017 btrfstune
+-rwxr-xr-x 1 root root  245368 [01;31m[KJun[m[K 15  2017 btrfs-select-super
+-rwxr-xr-x 1 root root  249464 [01;31m[KJun[m[K 15  2017 btrfs-map-logical
+-rwxr-xr-x 1 root root  245368 [01;31m[KJun[m[K 15  2017 btrfs-find-root
+-rwxr-xr-x 1 root root  249464 [01;31m[KJun[m[K 15  2017 btrfs-calc-size
+]0;n00961805@cisvm-cop4640-1: /binn00961805@cisvm-cop4640-1:/bin$ ls -ltr * | grep Jun[KL[Kl
+-rwxr-xr-x 1 root root   14328 [01;31m[KJul[m[K 12  2016 ulockmgr_server
+-rwsr-xr-x 1 root root   30800 [01;31m[KJul[m[K 12  2016 fusermount
+lrwxrwxrwx 1 root root       4 [01;31m[KJul[m[K 25  2017 lsmod -> kmod
+-rwxr-xr-x 1 root root  150600 [01;31m[KJul[m[K 25  2017 kmod
+]0;n00961805@cisvm-cop4640-1: /binn00961805@cisvm-cop4640-1:/bin$ ls -ltr * | grep Jul[K[K[KAug
+lrwxrwxrwx 1 root root       7 [01;31m[KAug[m[K 19  2015 static-sh -> busybox
+-rwxr-xr-x 1 root root 1964536 [01;31m[KAug[m[K 19  2015 busybox
+lrwxrwxrwx 1 root root       6 [01;31m[KAug[m[K  4  2016 bzless -> bzmore
+lrwxrwxrwx 1 root root       6 [01;31m[KAug[m[K  4  2016 bzfgrep -> bzgrep
+lrwxrwxrwx 1 root root       6 [01;31m[KAug[m[K  4  2016 bzegrep -> bzgrep
+lrwxrwxrwx 1 root root       6 [01;31m[KAug[m[K  4  2016 bzcmp -> bzdiff
+lrwxrwxrwx 1 root root       8 [01;31m[KAug[m[K  4  2016 domainname -> hostname
+lrwxrwxrwx 1 root root       8 [01;31m[KAug[m[K  4  2016 dnsdomainname -> hostname
+lrwxrwxrwx 1 root root      20 [01;31m[KAug[m[K  4  2016 mt -> /etc/alternatives/mt
+lrwxrwxrwx 1 root root      20 [01;31m[KAug[m[K  4  2016 nc -> /etc/alternatives/nc
+lrwxrwxrwx 1 root root      24 [01;31m[KAug[m[K  4  2016 netcat -> /etc/alternatives/netcat
+lrwxrwxrwx 1 root root      14 [01;31m[KAug[m[K  4  2016 pidof -> /sbin/killall5
+lrwxrwxrwx 1 root root       8 [01;31m[KAug[m[K  4  2016 nisdomainname -> hostname
+lrwxrwxrwx 1 root root       4 [01;31m[KAug[m[K  4  2016 sh.distrib -> dash
+lrwxrwxrwx 1 root root       4 [01;31m[KAug[m[K  4  2016 sh -> dash
+lrwxrwxrwx 1 root root       8 [01;31m[KAug[m[K  4  2016 ypdomainname -> hostname
+]0;n00961805@cisvm-cop4640-1: /binn00961805@cisvm-cop4640-1:/bin$ ls -ltr * | grep Aug[K[K[KSep
+-rwxr-xr-x 1 root root    2762 [01;31m[KSep[m[K 22  2016 unicode_start
+lrwxrwxrwx 1 root root       6 [01;31m[KSep[m[K 22  2016 open -> openvt
+-rwxr-xr-x 1 root root   39952 [01;31m[KSep[m[K 22  2016 setfont
+-rwxr-xr-x 1 root root   18968 [01;31m[KSep[m[K 22  2016 openvt
+-rwxr-xr-x 1 root root  111496 [01;31m[KSep[m[K 22  2016 loadkeys
+-rwxr-xr-x 1 root root   10536 [01;31m[KSep[m[K 22  2016 kbd_mode
+-rwxr-xr-x 1 root root   10544 [01;31m[KSep[m[K 22  2016 fgconsole
+-rwxr-xr-x 1 root root   82328 [01;31m[KSep[m[K 22  2016 dumpkeys
+-rwxr-xr-x 1 root root   10536 [01;31m[KSep[m[K 22  2016 chvt
+]0;n00961805@cisvm-cop4640-1: /binn00961805@cisvm-cop4640-1:/bin$ ls -ltr * | grep Sep[K[K[KOct
+-rwxr-xr-x 1 root root    5047 [01;31m[KOct[m[K 27  2014 znew
+-rwxr-xr-x 1 root root    1910 [01;31m[KOct[m[K 27  2014 zmore
+-rwxr-xr-x 1 root root    2037 [01;31m[KOct[m[K 27  2014 zless
+-rwxr-xr-x 1 root root    5938 [01;31m[KOct[m[K 27  2014 zgrep
+-rwxr-xr-x 1 root root    2131 [01;31m[KOct[m[K 27  2014 zforce
+-rwxr-xr-x 1 root root     140 [01;31m[KOct[m[K 27  2014 zfgrep
+-rwxr-xr-x 1 root root     140 [01;31m[KOct[m[K 27  2014 zegrep
+-rwxr-xr-x 1 root root    5764 [01;31m[KOct[m[K 27  2014 zdiff
+-rwxr-xr-x 1 root root    1777 [01;31m[KOct[m[K 27  2014 zcmp
+-rwxr-xr-x 1 root root    1937 [01;31m[KOct[m[K 27  2014 zcat
+-rwxr-xr-x 2 root root    2301 [01;31m[KOct[m[K 27  2014 uncompress
+-rwxr-xr-x 1 root root    5927 [01;31m[KOct[m[K 27  2014 gzexe
+-rwxr-xr-x 2 root root    2301 [01;31m[KOct[m[K 27  2014 gunzip
+-rwxr-xr-x 1 root root   98240 [01;31m[KOct[m[K 27  2014 gzip
+-rwxr-xr-x 1 root root   30875 [01;31m[KOct[m[K 12  2017 setupcon
+]0;n00961805@cisvm-cop4640-1: /binn00961805@cisvm-cop4640-1:/bin$ ls -ltr * | grep Oct[K[K[KNov
+-rwxr-xr-x 1 root root   14800 [01;31m[KNov[m[K 24  2015 hostname
+-rwxr-xr-x 1 root root  383632 [01;31m[KNov[m[K 17  2016 tar
+]0;n00961805@cisvm-cop4640-1: /binn00961805@cisvm-cop4640-1:/bin$ ls -ltr * | grep Nov[K[K[KDec
+-rwxr-xr-x 1 root root   31248 [01;31m[KDec[m[K  3  2012 nc.openbsd
+-rwxr-xr-x 1 root root  115816 [01;31m[KDec[m[K  6  2017 ss
+-rwxr-xr-x 1 root root  376192 [01;31m[KDec[m[K  6  2017 ip
+]0;n00961805@cisvm-cop4640-1: /binn00961805@cisvm-cop4640-1:/bin$ ls -l . | egrep -c '^-'
+149
+]0;n00961805@cisvm-cop4640-1: /binn00961805@cisvm-cop4640-1:/bin$ ls -l|awk '$8 ~ /..:../{gsub($8,"2009")}1'|awk '{A[$7" "$6" "$8]++}END{for (i in A){print i" "A[i]}}'
+17 Nov 2016 1
+30 Jun 2014 1
+14 May 2018 2
+26 Apr 2014 2
+3 Dec 2012 1
+26 Jan 2016 3
+12 Jul 2016 2
+24 Nov 2015 1
+7 May 2014 2
+10 Jan 2009 14
+2 Mar 2017 28
+18 Feb 2016 2
+15 Jun 2017 14
+9 May 2018 1
+17 Feb 2016 1
+20 May 2015 8
+16 May 2017 4
+11 Feb 2016 1
+16 May 2018 9
+29 Apr 2016 3
+7 Feb 2016 4
+19 Aug 2015 2
+15 Feb 2017 2
+5 Apr 2017 5
+27 Oct 2014 14
+28 Jan 2017 15
+25 Jul 2017 2
+12 Oct 2017 1
+22 Sep 2016 9
+4 Aug 2016 14
+18 Jan 2016 1
+6 Dec 2017 2
+   1
+]0;n00961805@cisvm-cop4640-1: /binn00961805@cisvm-cop4640-1:/bin$ find
+.
+./ntfsmove
+./run-parts
+./zcmp
+./btrfstune
+./nc
+./systemd
+./systemd-inhibit
+./ss
+./zmore
+./systemd-tmpfiles
+./wdctl
+./ls
+./mountpoint
+./cpio
+./btrfs-image
+./cat
+./bzgrep
+./nano
+./cp
+./static-sh
+./false
+./znew
+./mknod
+./btrfs-map-logical
+./systemd-notify
+./lowntfs-3g
+./btrfs-calc-size
+./ntfsfallocate
+./ntfscluster
+./bzexe
+./sync
+./getfacl
+./systemd-tty-ask-password-agent
+./ntfs-3g.probe
+./mt
+./ntfsinfo
+./fusermount
+./tempfile
+./btrfs-convert
+./gzexe
+./ntfs-3g.usermap
+./btrfs-find-root
+./vdir
+./kmod
+./lesspipe
+./btrfs
+./whiptail
+./loadkeys
+./plymouth
+./dnsdomainname
+./ln
+./sh
+./ntfscat
+./bunzip2
+./tar
+./sed
+./touch
+./kill
+./uncompress
+./bzip2
+./bzdiff
+./zfgrep
+./setfacl
+./nisdomainname
+./grep
+./ed
+./bzmore
+./setfont
+./dumpkeys
+./chvt
+./systemd-machine-id-setup
+./fgrep
+./readlink
+./ntfsfix
+./gunzip
+./ntfscmp
+./ulockmgr_server
+./login
+./bzfgrep
+./ip
+./zgrep
+./open
+./less
+./chmod
+./ntfs-3g.secaudit
+./sh.distrib
+./ntfsls
+./ntfs-3g
+./mktemp
+./true
+./fsck.btrfs
+./hostname
+./dd
+./uname
+./systemd-hwdb
+./zdiff
+./ypdomainname
+./openvt
+./ping
+./unicode_start
+./more
+./gzip
+./ping6
+./chacl
+./sleep
+./bash
+./busybox
+./mkdir
+./btrfs-debug-tree
+./zcat
+./lessfile
+./which
+./lsmod
+./btrfs-zero-log
+./zforce
+./rm
+./bzcmp
+./rnano
+./findmnt
+./dir
+./ntfstruncate
+./networkctl
+./mkfs.btrfs
+./date
+./mv
+./btrfs-show-super
+./systemctl
+./lsblk
+./ntfswipe
+./domainname
+./loginctl
+./bzcat
+./echo
+./dmesg
+./bzegrep
+./mt-gnu
+./egrep
+./red
+./netstat
+./lesskey
+./stty
+./dash
+./zless
+./udevadm
+./chgrp
+./rmdir
+./bzless
+./chown
+./mount
+./btrfsck
+./pwd
+./rbash
+./nc.openbsd
+./su
+./umount
+./setupcon
+./systemd-escape
+./lessecho
+./pidof
+./fgconsole
+./journalctl
+./df
+./ps
+./zegrep
+./fuser
+./kbd_mode
+./bzip2recover
+./btrfs-select-super
+./netcat
+./systemd-ask-password
+./tailf
+]0;n00961805@cisvm-cop4640-1: /binn00961805@cisvm-cop4640-1:/bin$ findls -l|awk '$8 ~ /..:../{gsub($8,"2009")}1'|awk '{A[$7" "$6" "$8]++}END{for (i in A){print i" "A[i]}}'^C
+]0;n00961805@cisvm-cop4640-1: /binn00961805@cisvm-cop4640-1:/bin$ ls | wc -l
+171
+]0;n00961805@cisvm-cop4640-1: /binn00961805@cisvm-cop4640-1:/bin$ ls | wc -l[K[K[K[K[K[K[K[K[K[Kwc
+^C
+]0;n00961805@cisvm-cop4640-1: /binn00961805@cisvm-cop4640-1:/bin$ wc -e[Khelp
+wc: invalid option -- 'h'
+Try 'wc --help' for more information.
+]0;n00961805@cisvm-cop4640-1: /binn00961805@cisvm-cop4640-1:/bin$ wc -help-help
+Usage: wc [OPTION]... [FILE]...
+  or:  wc [OPTION]... --files0-from=F
+Print newline, word, and byte counts for each FILE, and a total line if
+more than one FILE is specified.  A word is a non-zero-length sequence of
+characters delimited by white space.
+
+With no FILE, or when FILE is -, read standard input.
+
+The options below may be used to select which counts are printed, always in
+the following order: newline, word, character, byte, maximum line length.
+  -c, --bytes            print the byte counts
+  -m, --chars            print the character counts
+  -l, --lines            print the newline counts
+      --files0-from=F    read input from the files specified by
+                           NUL-terminated names in file F;
+                           If F is - then read names from standard input
+  -L, --max-line-length  print the maximum display width
+  -w, --words            print the word counts
+      --help     display this help and exit
+      --version  output version information and exit
+
+GNU coreutils online help: <http://www.gnu.org/software/coreutils/>
+Full documentation at: <http://www.gnu.org/software/coreutils/wc>
+or available locally via: info '(coreutils) wc invocation'
+]0;n00961805@cisvm-cop4640-1: /binn00961805@cisvm-cop4640-1:/bin$ wc --help[1Phelp[Kls | wc -l[K[K[K[K[K[K[K[K[K[Kfindls -l|awk '$8 ~ /..:../{gsub($8,"2009")}1'|awk '{A[$7" "$6" "$8]++}END{for (i in A){print i" "A[i]}}'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C . | egrep -c '^-'[K[3Ptr * | grep DecNovOctSepAugJulnMayAprMarmar[K[K[K[K[K[K[K[K[K[K[K
+-rwxr-xr-x 1 root root   31248 Dec  3  2012 [0m[01;32mnc.openbsd[0m
+-rwxr-xr-x 1 root root      89 Apr 26  2014 [01;32mred[0m
+-rwxr-xr-x 1 root root   51512 Apr 26  2014 [01;32med[0m
+-rwsr-xr-x 1 root root   44680 May  7  2014 [37;41mping6[0m
+-rwsr-xr-x 1 root root   44168 May  7  2014 [37;41mping[0m
+-rwxr-xr-x 1 root root  119624 Jun 30  2014 [01;32mnetstat[0m
+-rwxr-xr-x 1 root root    5047 Oct 27  2014 [01;32mznew[0m
+-rwxr-xr-x 1 root root    1910 Oct 27  2014 [01;32mzmore[0m
+-rwxr-xr-x 1 root root    2037 Oct 27  2014 [01;32mzless[0m
+-rwxr-xr-x 1 root root    5938 Oct 27  2014 [01;32mzgrep[0m
+-rwxr-xr-x 1 root root    2131 Oct 27  2014 [01;32mzforce[0m
+-rwxr-xr-x 1 root root     140 Oct 27  2014 [01;32mzfgrep[0m
+-rwxr-xr-x 1 root root     140 Oct 27  2014 [01;32mzegrep[0m
+-rwxr-xr-x 1 root root    5764 Oct 27  2014 [01;32mzdiff[0m
+-rwxr-xr-x 1 root root    1777 Oct 27  2014 [01;32mzcmp[0m
+-rwxr-xr-x 1 root root    1937 Oct 27  2014 [01;32mzcat[0m
+-rwxr-xr-x 2 root root    2301 Oct 27  2014 [01;32muncompress[0m
+-rwxr-xr-x 1 root root    5927 Oct 27  2014 [01;32mgzexe[0m
+-rwxr-xr-x 2 root root    2301 Oct 27  2014 [01;32mgunzip[0m
+-rwxr-xr-x 1 root root   98240 Oct 27  2014 [01;32mgzip[0m
+-rwxr-xr-x 1 root root    1297 May 20  2015 [01;32mbzmore[0m
+-rwxr-xr-x 1 root root    3642 May 20  2015 [01;32mbzgrep[0m
+-rwxr-xr-x 1 root root    4877 May 20  2015 [01;32mbzexe[0m
+-rwxr-xr-x 1 root root    2140 May 20  2015 [01;32mbzdiff[0m
+-rwxr-xr-x 1 root root   14616 May 20  2015 [01;32mbzip2recover[0m
+-rwxr-xr-x 3 root root   31288 May 20  2015 [01;32mbzip2[0m
+-rwxr-xr-x 3 root root   31288 May 20  2015 [01;32mbzcat[0m
+-rwxr-xr-x 3 root root   31288 May 20  2015 [01;32mbunzip2[0m
+lrwxrwxrwx 1 root root       7 Aug 19  2015 [01;36mstatic-sh[0m -> [01;32mbusybox[0m
+-rwxr-xr-x 1 root root 1964536 Aug 19  2015 [01;32mbusybox[0m
+-rwxr-xr-x 1 root root   14800 Nov 24  2015 [01;32mhostname[0m
+-rwxr-xr-x 1 root root   27432 Jan 18  2016 [01;32mwhiptail[0m
+-rwxr-xr-x 1 root root     946 Jan 26  2016 [01;32mwhich[0m
+-rwxr-xr-x 1 root root   10416 Jan 26  2016 [01;32mtempfile[0m
+-rwxr-xr-x 1 root root   19320 Jan 26  2016 [01;32mrun-parts[0m
+-rwxr-xr-x 1 root root   36296 Feb  7  2016 [01;32msetfacl[0m
+-rwxr-xr-x 1 root root   23752 Feb  7  2016 [01;32mgetfacl[0m
+-rwxr-xr-x 1 root root   14752 Feb  7  2016 [01;32mchacl[0m
+-rwxr-xr-x 1 root root   36024 Feb  7  2016 [01;32mfuser[0m
+-rwxr-xr-x 1 root root   73424 Feb 11  2016 [01;32msed[0m
+-rwxr-xr-x 1 root root  154072 Feb 17  2016 [01;32mdash[0m
+-rwxr-xr-x 1 root root   68824 Feb 18  2016 [01;32mmt-gnu[0m
+-rwxr-xr-x 1 root root  141472 Feb 18  2016 [01;32mcpio[0m
+-rwxr-xr-x 1 root root      28 Apr 29  2016 [01;32mfgrep[0m
+-rwxr-xr-x 1 root root      28 Apr 29  2016 [01;32megrep[0m
+-rwxr-xr-x 1 root root  211224 Apr 29  2016 [01;32mgrep[0m
+-rwxr-xr-x 1 root root   14328 Jul 12  2016 [01;32mulockmgr_server[0m
+-rwsr-xr-x 1 root root   30800 Jul 12  2016 [37;41mfusermount[0m
+lrwxrwxrwx 1 root root       6 Aug  4  2016 [01;36mbzless[0m -> [01;32mbzmore[0m
+lrwxrwxrwx 1 root root       6 Aug  4  2016 [01;36mbzfgrep[0m -> [01;32mbzgrep[0m
+lrwxrwxrwx 1 root root       6 Aug  4  2016 [01;36mbzegrep[0m -> [01;32mbzgrep[0m
+lrwxrwxrwx 1 root root       6 Aug  4  2016 [01;36mbzcmp[0m -> [01;32mbzdiff[0m
+lrwxrwxrwx 1 root root       8 Aug  4  2016 [01;36mdomainname[0m -> [01;32mhostname[0m
+lrwxrwxrwx 1 root root       8 Aug  4  2016 [01;36mdnsdomainname[0m -> [01;32mhostname[0m
+lrwxrwxrwx 1 root root      20 Aug  4  2016 [01;36mmt[0m -> [01;32m/etc/alternatives/mt[0m
+lrwxrwxrwx 1 root root      20 Aug  4  2016 [01;36mnc[0m -> [01;32m/etc/alternatives/nc[0m
+lrwxrwxrwx 1 root root      24 Aug  4  2016 [01;36mnetcat[0m -> [01;32m/etc/alternatives/netcat[0m
+lrwxrwxrwx 1 root root      14 Aug  4  2016 [01;36mpidof[0m -> [01;32m/sbin/killall5[0m
+lrwxrwxrwx 1 root root       8 Aug  4  2016 [01;36mnisdomainname[0m -> [01;32mhostname[0m
+lrwxrwxrwx 1 root root       4 Aug  4  2016 [01;36msh.distrib[0m -> [01;32mdash[0m
+lrwxrwxrwx 1 root root       4 Aug  4  2016 [01;36msh[0m -> [01;32mdash[0m
+lrwxrwxrwx 1 root root       8 Aug  4  2016 [01;36mypdomainname[0m -> [01;32mhostname[0m
+-rwxr-xr-x 1 root root    2762 Sep 22  2016 [01;32municode_start[0m
+lrwxrwxrwx 1 root root       6 Sep 22  2016 [01;36mopen[0m -> [01;32mopenvt[0m
+-rwxr-xr-x 1 root root   39952 Sep 22  2016 [01;32msetfont[0m
+-rwxr-xr-x 1 root root   18968 Sep 22  2016 [01;32mopenvt[0m
+-rwxr-xr-x 1 root root  111496 Sep 22  2016 [01;32mloadkeys[0m
+-rwxr-xr-x 1 root root   10536 Sep 22  2016 [01;32mkbd_mode[0m
+-rwxr-xr-x 1 root root   10544 Sep 22  2016 [01;32mfgconsole[0m
+-rwxr-xr-x 1 root root   82328 Sep 22  2016 [01;32mdumpkeys[0m
+-rwxr-xr-x 1 root root   10536 Sep 22  2016 [01;32mchvt[0m
+-rwxr-xr-x 1 root root  383632 Nov 17  2016 [01;32mtar[0m
+-rwxr-xr-x 1 root root   47752 Jan 28  2017 [01;32mntfswipe[0m
+-rwxr-xr-x 1 root root   30824 Jan 28  2017 [01;32mntfsmove[0m
+-rwxr-xr-x 1 root root   34928 Jan 28  2017 [01;32mntfsfallocate[0m
+-rwxr-xr-x 1 root root   67608 Jan 28  2017 [01;32mntfs-3g.secaudit[0m
+-rwsr-xr-x 1 root root  142032 Jan 28  2017 [37;41mntfs-3g[0m
+-rwxr-xr-x 1 root root   38944 Jan 28  2017 [01;32mntfstruncate[0m
+-rwxr-xr-x 1 root root   31928 Jan 28  2017 [01;32mntfsls[0m
+-rwxr-xr-x 1 root root   55416 Jan 28  2017 [01;32mntfsinfo[0m
+-rwxr-xr-x 1 root root   39024 Jan 28  2017 [01;32mntfsfix[0m
+-rwxr-xr-x 1 root root   34920 Jan 28  2017 [01;32mntfscmp[0m
+-rwxr-xr-x 1 root root   30824 Jan 28  2017 [01;32mntfscluster[0m
+-rwxr-xr-x 1 root root   26728 Jan 28  2017 [01;32mntfscat[0m
+-rwxr-xr-x 1 root root   18424 Jan 28  2017 [01;32mntfs-3g.usermap[0m
+-rwxr-xr-x 1 root root   10312 Jan 28  2017 [01;32mntfs-3g.probe[0m
+-rwxr-xr-x 1 root root  105136 Jan 28  2017 [01;32mlowntfs-3g[0m
+lrwxrwxrwx 1 root root       4 Feb 15  2017 [01;36mrnano[0m -> [01;32mnano[0m
+-rwxr-xr-x 1 root root  208480 Feb 15  2017 [01;32mnano[0m
+-rwxr-xr-x 1 root root  126584 Mar  2  2017 [01;32mvdir[0m
+-rwxr-xr-x 1 root root   31440 Mar  2  2017 [01;32muname[0m
+-rwxr-xr-x 1 root root   27280 Mar  2  2017 [01;32mtrue[0m
+-rwxr-xr-x 1 root root   64432 Mar  2  2017 [01;32mtouch[0m
+-rwxr-xr-x 1 root root   31408 Mar  2  2017 [01;32msync[0m
+-rwxr-xr-x 1 root root   72496 Mar  2  2017 [01;32mstty[0m
+-rwxr-xr-x 1 root root   31408 Mar  2  2017 [01;32msleep[0m
+-rwxr-xr-x 1 root root   39632 Mar  2  2017 [01;32mrmdir[0m
+-rwxr-xr-x 1 root root   60272 Mar  2  2017 [01;32mrm[0m
+-rwxr-xr-x 1 root root   39632 Mar  2  2017 [01;32mreadlink[0m
+-rwxr-xr-x 1 root root   31472 Mar  2  2017 [01;32mpwd[0m
+-rwxr-xr-x 1 root root  130488 Mar  2  2017 [01;32mmv[0m
+-rwxr-xr-x 1 root root   39728 Mar  2  2017 [01;32mmktemp[0m
+-rwxr-xr-x 1 root root   64496 Mar  2  2017 [01;32mmknod[0m
+-rwxr-xr-x 1 root root   76848 Mar  2  2017 [01;32mmkdir[0m
+-rwxr-xr-x 1 root root  126584 Mar  2  2017 [01;32mls[0m
+-rwxr-xr-x 1 root root   56152 Mar  2  2017 [01;32mln[0m
+-rwxr-xr-x 1 root root   27280 Mar  2  2017 [01;32mfalse[0m
+-rwxr-xr-x 1 root root   31376 Mar  2  2017 [01;32mecho[0m
+-rwxr-xr-x 1 root root  126584 Mar  2  2017 [01;32mdir[0m
+-rwxr-xr-x 1 root root   97912 Mar  2  2017 [01;32mdf[0m
+-rwxr-xr-x 1 root root   72632 Mar  2  2017 [01;32mdd[0m
+-rwxr-xr-x 1 root root   68464 Mar  2  2017 [01;32mdate[0m
+-rwxr-xr-x 1 root root  151024 Mar  2  2017 [01;32mcp[0m
+-rwxr-xr-x 1 root root   64368 Mar  2  2017 [01;32mchown[0m
+-rwxr-xr-x 1 root root   56112 Mar  2  2017 [01;32mchmod[0m
+-rwxr-xr-x 1 root root   60272 Mar  2  2017 [01;32mchgrp[0m
+-rwxr-xr-x 1 root root   52080 Mar  2  2017 [01;32mcat[0m
+-rwxr-xr-x 1 root root    7764 Apr  5  2017 [01;32mlesspipe[0m
+-rwxr-xr-x 1 root root   19824 Apr  5  2017 [01;32mlesskey[0m
+lrwxrwxrwx 1 root root       8 Apr  5  2017 [01;36mlessfile[0m -> [01;32mlesspipe[0m
+-rwxr-xr-x 1 root root   10256 Apr  5  2017 [01;32mlessecho[0m
+-rwxr-xr-x 1 root root  170728 Apr  5  2017 [01;32mless[0m
+lrwxrwxrwx 1 root root       4 May 16  2017 [01;36mrbash[0m -> [01;32mbash[0m
+-rwxr-xr-x 1 root root 1037528 May 16  2017 [01;32mbash[0m
+-rwsr-xr-x 1 root root   40128 May 16  2017 [37;41msu[0m
+-rwxr-xr-x 1 root root   48128 May 16  2017 [01;32mlogin[0m
+-rwxr-xr-x 1 root root    1185 Jun 15  2017 [01;32mfsck.btrfs[0m
+lrwxrwxrwx 1 root root       5 Jun 15  2017 [01;36mbtrfsck[0m -> [01;32mbtrfs[0m
+-rwxr-xr-x 1 root root  245368 Jun 15  2017 [01;32mbtrfs-zero-log[0m
+-rwxr-xr-x 1 root root  253816 Jun 15  2017 [01;32mbtrfs-show-super[0m
+-rwxr-xr-x 1 root root  270136 Jun 15  2017 [01;32mbtrfs-image[0m
+-rwxr-xr-x 1 root root  249464 Jun 15  2017 [01;32mbtrfs-debug-tree[0m
+-rwxr-xr-x 1 root root  278376 Jun 15  2017 [01;32mbtrfs-convert[0m
+-rwxr-xr-x 1 root root  520992 Jun 15  2017 [01;32mbtrfs[0m
+-rwxr-xr-x 1 root root  265928 Jun 15  2017 [01;32mmkfs.btrfs[0m
+-rwxr-xr-x 1 root root  249464 Jun 15  2017 [01;32mbtrfstune[0m
+-rwxr-xr-x 1 root root  245368 Jun 15  2017 [01;32mbtrfs-select-super[0m
+-rwxr-xr-x 1 root root  249464 Jun 15  2017 [01;32mbtrfs-map-logical[0m
+-rwxr-xr-x 1 root root  245368 Jun 15  2017 [01;32mbtrfs-find-root[0m
+-rwxr-xr-x 1 root root  249464 Jun 15  2017 [01;32mbtrfs-calc-size[0m
+lrwxrwxrwx 1 root root       4 Jul 25  2017 [01;36mlsmod[0m -> [01;32mkmod[0m
+-rwxr-xr-x 1 root root  150600 Jul 25  2017 [01;32mkmod[0m
+-rwxr-xr-x 1 root root   30875 Oct 12  2017 [01;32msetupcon[0m
+-rwxr-xr-x 1 root root  115816 Dec  6  2017 [01;32mss[0m
+-rwxr-xr-x 1 root root  376192 Dec  6  2017 [01;32mip[0m
+-rwxr-xr-x 1 root root   39608 May  9  2018 [01;32mplymouth[0m
+-rwxr-xr-x 1 root root   97408 May 14  2018 [01;32mps[0m
+-rwxr-xr-x 1 root root   23152 May 14  2018 [01;32mkill[0m
+-rwxr-xr-x 1 root root   31376 May 16  2018 [01;32mwdctl[0m
+-rwsr-xr-x 1 root root   27608 May 16  2018 [37;41mumount[0m
+-rwxr-xr-x 1 root root   23144 May 16  2018 [01;32mtailf[0m
+-rwxr-xr-x 1 root root   14768 May 16  2018 [01;32mmountpoint[0m
+-rwsr-xr-x 1 root root   40152 May 16  2018 [37;41mmount[0m
+-rwxr-xr-x 1 root root   39768 May 16  2018 [01;32mmore[0m
+-rwxr-xr-x 1 root root   77280 May 16  2018 [01;32mlsblk[0m
+-rwxr-xr-x 1 root root   49576 May 16  2018 [01;32mfindmnt[0m
+-rwxr-xr-x 1 root root   60680 May 16  2018 [01;32mdmesg[0m
+lrwxrwxrwx 1 root root      20 Jan 10 20:35 [01;36msystemd[0m -> [01;32m/lib/systemd/systemd[0m
+-rwxr-xr-x 1 root root   35248 Jan 10 20:35 [01;32msystemd-notify[0m
+-rwxr-xr-x 1 root root   47544 Jan 10 20:35 [01;32msystemd-machine-id-setup[0m
+-rwxr-xr-x 1 root root  281840 Jan 10 20:35 [01;32msystemd-inhibit[0m
+-rwxr-xr-x 1 root root   51656 Jan 10 20:35 [01;32msystemd-ask-password[0m
+-rwxr-xr-x 1 root root  659856 Jan 10 20:35 [01;32msystemctl[0m
+-rwxr-xr-x 1 root root  678496 Jan 10 20:35 [01;32mnetworkctl[0m
+-rwxr-xr-x 1 root root   68032 Jan 10 20:35 [01;32msystemd-tty-ask-password-agent[0m
+-rwxr-xr-x 1 root root  146008 Jan 10 20:35 [01;32msystemd-tmpfiles[0m
+-rwxr-xr-x 1 root root   39344 Jan 10 20:35 [01;32msystemd-escape[0m
+-rwxr-xr-x 1 root root  453848 Jan 10 20:35 [01;32mloginctl[0m
+-rwxr-xr-x 1 root root  498936 Jan 10 20:35 [01;32mjournalctl[0m
+-rwxr-xr-x 1 root root  449136 Jan 10 20:35 [01;32mudevadm[0m
+-rwxr-xr-x 1 root root   64080 Jan 10 20:35 [01;32msystemd-hwdb[0m
+]0;n00961805@cisvm-cop4640-1: /binn00961805@cisvm-cop4640-1:/bin$ ls -ltr *[K[K[K[K[K[K--help
+Usage: ls [OPTION]... [FILE]...
+List information about the FILEs (the current directory by default).
+Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -a, --all                  do not ignore entries starting with .
+  -A, --almost-all           do not list implied . and ..
+      --author               with -l, print the author of each file
+  -b, --escape               print C-style escapes for nongraphic characters
+      --block-size=SIZE      scale sizes by SIZE before printing them; e.g.,
+                               '--block-size=M' prints sizes in units of
+                               1,048,576 bytes; see SIZE format below
+  -B, --ignore-backups       do not list implied entries ending with ~
+  -c                         with -lt: sort by, and show, ctime (time of last
+                               modification of file status information);
+                               with -l: show ctime and sort by name;
+                               otherwise: sort by ctime, newest first
+  -C                         list entries by columns
+      --color[=WHEN]         colorize the output; WHEN can be 'always' (default
+                               if omitted), 'auto', or 'never'; more info below
+  -d, --directory            list directories themselves, not their contents
+  -D, --dired                generate output designed for Emacs' dired mode
+  -f                         do not sort, enable -aU, disable -ls --color
+  -F, --classify             append indicator (one of */=>@|) to entries
+      --file-type            likewise, except do not append '*'
+      --format=WORD          across -x, commas -m, horizontal -x, long -l,
+                               single-column -1, verbose -l, vertical -C
+      --full-time            like -l --time-style=full-iso
+  -g                         like -l, but do not list owner
+      --group-directories-first
+                             group directories before files;
+                               can be augmented with a --sort option, but any
+                               use of --sort=none (-U) disables grouping
+  -G, --no-group             in a long listing, don't print group names
+  -h, --human-readable       with -l and/or -s, print human readable sizes
+                               (e.g., 1K 234M 2G)
+      --si                   likewise, but use powers of 1000 not 1024
+  -H, --dereference-command-line
+                             follow symbolic links listed on the command line
+      --dereference-command-line-symlink-to-dir
+                             follow each command line symbolic link
+                               that points to a directory
+      --hide=PATTERN         do not list implied entries matching shell PATTERN
+                               (overridden by -a or -A)
+      --indicator-style=WORD  append indicator with style WORD to entry names:
+                               none (default), slash (-p),
+                               file-type (--file-type), classify (-F)
+  -i, --inode                print the index number of each file
+  -I, --ignore=PATTERN       do not list implied entries matching shell PATTERN
+  -k, --kibibytes            default to 1024-byte blocks for disk usage
+  -l                         use a long listing format
+  -L, --dereference          when showing file information for a symbolic
+                               link, show information for the file the link
+                               references rather than for the link itself
+  -m                         fill width with a comma separated list of entries
+  -n, --numeric-uid-gid      like -l, but list numeric user and group IDs
+  -N, --literal              print raw entry names (don't treat e.g. control
+                               characters specially)
+  -o                         like -l, but do not list group information
+  -p, --indicator-style=slash
+                             append / indicator to directories
+  -q, --hide-control-chars   print ? instead of nongraphic characters
+      --show-control-chars   show nongraphic characters as-is (the default,
+                               unless program is 'ls' and output is a terminal)
+  -Q, --quote-name           enclose entry names in double quotes
+      --quoting-style=WORD   use quoting style WORD for entry names:
+                               literal, locale, shell, shell-always,
+                               shell-escape, shell-escape-always, c, escape
+  -r, --reverse              reverse order while sorting
+  -R, --recursive            list subdirectories recursively
+  -s, --size                 print the allocated size of each file, in blocks
+  -S                         sort by file size, largest first
+      --sort=WORD            sort by WORD instead of name: none (-U), size (-S),
+                               time (-t), version (-v), extension (-X)
+      --time=WORD            with -l, show time as WORD instead of default
+                               modification time: atime or access or use (-u);
+                               ctime or status (-c); also use specified time
+                               as sort key if --sort=time (newest first)
+      --time-style=STYLE     with -l, show times using style STYLE:
+                               full-iso, long-iso, iso, locale, or +FORMAT;
+                               FORMAT is interpreted like in 'date'; if FORMAT
+                               is FORMAT1<newline>FORMAT2, then FORMAT1 applies
+                               to non-recent files and FORMAT2 to recent files;
+                               if STYLE is prefixed with 'posix-', STYLE
+                               takes effect only outside the POSIX locale
+  -t                         sort by modification time, newest first
+  -T, --tabsize=COLS         assume tab stops at each COLS instead of 8
+  -u                         with -lt: sort by, and show, access time;
+                               with -l: show access time and sort by name;
+                               otherwise: sort by access time, newest first
+  -U                         do not sort; list entries in directory order
+  -v                         natural sort of (version) numbers within text
+  -w, --width=COLS           set output width to COLS.  0 means no limit
+  -x                         list entries by lines instead of by columns
+  -X                         sort alphabetically by entry extension
+  -Z, --context              print any security context of each file
+  -1                         list one file per line.  Avoid '\n' with -q or -b
+      --help     display this help and exit
+      --version  output version information and exit
+
+The SIZE argument is an integer and optional unit (example: 10K is 10*1024).
+Units are K,M,G,T,P,E,Z,Y (powers of 1024) or KB,MB,... (powers of 1000).
+
+Using color to distinguish file types is disabled both by default and
+with --color=never.  With --color=auto, ls emits color codes only when
+standard output is connected to a terminal.  The LS_COLORS environment
+variable can change the settings.  Use the dircolors command to set it.
+
+Exit status:
+ 0  if OK,
+ 1  if minor problems (e.g., cannot access subdirectory),
+ 2  if serious trouble (e.g., cannot access command-line argument).
+
+GNU coreutils online help: <http://www.gnu.org/software/coreutils/>
+Full documentation at: <http://www.gnu.org/software/coreutils/ls>
+or available locally via: info '(coreutils) ls invocation'
+]0;n00961805@cisvm-cop4640-1: /binn00961805@cisvm-cop4640-1:/bin$ ls | wc -l
+171
+]0;n00961805@cisvm-cop4640-1: /binn00961805@cisvm-cop4640-1:/bin$ ls | wc -l[1P[1P[1P[1P[1P[C[C[C[C[Kh[K-help
+Usage: wc [OPTION]... [FILE]...
+  or:  wc [OPTION]... --files0-from=F
+Print newline, word, and byte counts for each FILE, and a total line if
+more than one FILE is specified.  A word is a non-zero-length sequence of
+characters delimited by white space.
+
+With no FILE, or when FILE is -, read standard input.
+
+The options below may be used to select which counts are printed, always in
+the following order: newline, word, character, byte, maximum line length.
+  -c, --bytes            print the byte counts
+  -m, --chars            print the character counts
+  -l, --lines            print the newline counts
+      --files0-from=F    read input from the files specified by
+                           NUL-terminated names in file F;
+                           If F is - then read names from standard input
+  -L, --max-line-length  print the maximum display width
+  -w, --words            print the word counts
+      --help     display this help and exit
+      --version  output version information and exit
+
+GNU coreutils online help: <http://www.gnu.org/software/coreutils/>
+Full documentation at: <http://www.gnu.org/software/coreutils/wc>
+or available locally via: info '(coreutils) wc invocation'
+]0;n00961805@cisvm-cop4640-1: /binn00961805@cisvm-cop4640-1:/bin$ find DIR_NAME -type f | wc -l[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@ 
+149
+]0;n00961805@cisvm-cop4640-1: /binn00961805@cisvm-cop4640-1:/bin$ find -type f | wc -l[K[K[K[K[K[K[K
+./ntfsmove
+./run-parts
+./zcmp
+./btrfstune
+./systemd-inhibit
+./ss
+./zmore
+./systemd-tmpfiles
+./wdctl
+./ls
+./mountpoint
+./cpio
+./btrfs-image
+./cat
+./bzgrep
+./nano
+./cp
+./false
+./znew
+./mknod
+./btrfs-map-logical
+./systemd-notify
+./lowntfs-3g
+./btrfs-calc-size
+./ntfsfallocate
+./ntfscluster
+./bzexe
+./sync
+./getfacl
+./systemd-tty-ask-password-agent
+./ntfs-3g.probe
+./ntfsinfo
+./fusermount
+./tempfile
+./btrfs-convert
+./gzexe
+./ntfs-3g.usermap
+./btrfs-find-root
+./vdir
+./kmod
+./lesspipe
+./btrfs
+./whiptail
+./loadkeys
+./plymouth
+./ln
+./ntfscat
+./bunzip2
+./tar
+./sed
+./touch
+./kill
+./uncompress
+./bzip2
+./bzdiff
+./zfgrep
+./setfacl
+./grep
+./ed
+./bzmore
+./setfont
+./dumpkeys
+./chvt
+./systemd-machine-id-setup
+./fgrep
+./readlink
+./ntfsfix
+./gunzip
+./ntfscmp
+./ulockmgr_server
+./login
+./ip
+./zgrep
+./less
+./chmod
+./ntfs-3g.secaudit
+./ntfsls
+./ntfs-3g
+./mktemp
+./true
+./fsck.btrfs
+./hostname
+./dd
+./uname
+./systemd-hwdb
+./zdiff
+./openvt
+./ping
+./unicode_start
+./more
+./gzip
+./ping6
+./chacl
+./sleep
+./bash
+./busybox
+./mkdir
+./btrfs-debug-tree
+./zcat
+./which
+./btrfs-zero-log
+./zforce
+./rm
+./findmnt
+./dir
+./ntfstruncate
+./networkctl
+./mkfs.btrfs
+./date
+./mv
+./btrfs-show-super
+./systemctl
+./lsblk
+./ntfswipe
+./loginctl
+./bzcat
+./echo
+./dmesg
+./mt-gnu
+./egrep
+./red
+./netstat
+./lesskey
+./stty
+./dash
+./zless
+./udevadm
+./chgrp
+./rmdir
+./chown
+./mount
+./pwd
+./nc.openbsd
+./su
+./umount
+./setupcon
+./systemd-escape
+./lessecho
+./fgconsole
+./journalctl
+./df
+./ps
+./zegrep
+./fuser
+./kbd_mode
+./bzip2recover
+./btrfs-select-super
+./systemd-ask-password
+./tailf
+]0;n00961805@cisvm-cop4640-1: /binn00961805@cisvm-cop4640-1:/bin$ find -type f [K[K[K[K[K[K[K-help
+Usage: find [-H] [-L] [-P] [-Olevel] [-D help|tree|search|stat|rates|opt|exec|time] [path...] [expression]
+
+default path is the current directory; default expression is -print
+expression may consist of: operators, options, tests, and actions:
+
+operators (decreasing precedence; -and is implicit where no others are given):
+      ( EXPR )   ! EXPR   -not EXPR   EXPR1 -a EXPR2   EXPR1 -and EXPR2
+      EXPR1 -o EXPR2   EXPR1 -or EXPR2   EXPR1 , EXPR2
+
+positional options (always true): -daystart -follow -regextype
+
+normal options (always true, specified before other expressions):
+      -depth --help -maxdepth LEVELS -mindepth LEVELS -mount -noleaf
+      --version -xdev -ignore_readdir_race -noignore_readdir_race
+
+tests (N can be +N or -N or N): -amin N -anewer FILE -atime N -cmin N
+      -cnewer FILE -ctime N -empty -false -fstype TYPE -gid N -group NAME
+      -ilname PATTERN -iname PATTERN -inum N -iwholename PATTERN -iregex PATTERN
+      -links N -lname PATTERN -mmin N -mtime N -name PATTERN -newer FILE
+      -nouser -nogroup -path PATTERN -perm [-/]MODE -regex PATTERN
+      -readable -writable -executable
+      -wholename PATTERN -size N[bcwkMG] -true -type [bcdpflsD] -uid N
+      -used N -user NAME -xtype [bcdpfls]
+      -context CONTEXT
+
+
+actions: -delete -print0 -printf FORMAT -fprintf FILE FORMAT -print 
+      -fprint0 FILE -fprint FILE -ls -fls FILE -prune -quit
+      -exec COMMAND ; -exec COMMAND {} + -ok COMMAND ;
+      -execdir COMMAND ; -execdir COMMAND {} + -okdir COMMAND ;
+
+Please see also the documentation at http://www.gnu.org/software/findutils/.
+You can report (and track progress on fixing) bugs in the "find"
+program via the GNU findutils bug-reporting page at
+https://savannah.gnu.org/bugs/?group=findutils or, if
+you have no web access, by sending email to <bug-findutils@gnu.org>.
+]0;n00961805@cisvm-cop4640-1: /binn00961805@cisvm-cop4640-1:/bin$ ls -l | grep -c "Jan 8"
+0
+]0;n00961805@cisvm-cop4640-1: /binn00961805@cisvm-cop4640-1:/bin$ ls -l | grep -c "Jan 8"[K[K[K"
+33
+]0;n00961805@cisvm-cop4640-1: /binn00961805@cisvm-cop4640-1:/bin$ ls -l | grep -c "Jan"[1P"[1P"[1P"*"
+0
+]0;n00961805@cisvm-cop4640-1: /binn00961805@cisvm-cop4640-1:/bin$ ls -l | grep -c "*"[1P"[C[K[K
+Usage: grep [OPTION]... PATTERN [FILE]...
+Try 'grep --help' for more information.
+]0;n00961805@cisvm-cop4640-1: /binn00961805@cisvm-cop4640-1:/bin$ ls -l | grep -c [K[K[K[K
+Usage: grep [OPTION]... PATTERN [FILE]...
+Try 'grep --help' for more information.
+]0;n00961805@cisvm-cop4640-1: /binn00961805@cisvm-cop4640-1:/bin$ ls -l | grep[K[K[K[K[K[K
+total 16016
+-rwxr-xr-x 1 root root 1037528 May 16  2017 [0m[01;32mbash[0m
+-rwxr-xr-x 1 root root  520992 Jun 15  2017 [01;32mbtrfs[0m
+-rwxr-xr-x 1 root root  249464 Jun 15  2017 [01;32mbtrfs-calc-size[0m
+lrwxrwxrwx 1 root root       5 Jun 15  2017 [01;36mbtrfsck[0m -> [01;32mbtrfs[0m
+-rwxr-xr-x 1 root root  278376 Jun 15  2017 [01;32mbtrfs-convert[0m
+-rwxr-xr-x 1 root root  249464 Jun 15  2017 [01;32mbtrfs-debug-tree[0m
+-rwxr-xr-x 1 root root  245368 Jun 15  2017 [01;32mbtrfs-find-root[0m
+-rwxr-xr-x 1 root root  270136 Jun 15  2017 [01;32mbtrfs-image[0m
+-rwxr-xr-x 1 root root  249464 Jun 15  2017 [01;32mbtrfs-map-logical[0m
+-rwxr-xr-x 1 root root  245368 Jun 15  2017 [01;32mbtrfs-select-super[0m
+-rwxr-xr-x 1 root root  253816 Jun 15  2017 [01;32mbtrfs-show-super[0m
+-rwxr-xr-x 1 root root  249464 Jun 15  2017 [01;32mbtrfstune[0m
+-rwxr-xr-x 1 root root  245368 Jun 15  2017 [01;32mbtrfs-zero-log[0m
+-rwxr-xr-x 3 root root   31288 May 20  2015 [01;32mbunzip2[0m
+-rwxr-xr-x 1 root root 1964536 Aug 19  2015 [01;32mbusybox[0m
+-rwxr-xr-x 3 root root   31288 May 20  2015 [01;32mbzcat[0m
+lrwxrwxrwx 1 root root       6 Aug  4  2016 [01;36mbzcmp[0m -> [01;32mbzdiff[0m
+-rwxr-xr-x 1 root root    2140 May 20  2015 [01;32mbzdiff[0m
+lrwxrwxrwx 1 root root       6 Aug  4  2016 [01;36mbzegrep[0m -> [01;32mbzgrep[0m
+-rwxr-xr-x 1 root root    4877 May 20  2015 [01;32mbzexe[0m
+lrwxrwxrwx 1 root root       6 Aug  4  2016 [01;36mbzfgrep[0m -> [01;32mbzgrep[0m
+-rwxr-xr-x 1 root root    3642 May 20  2015 [01;32mbzgrep[0m
+-rwxr-xr-x 3 root root   31288 May 20  2015 [01;32mbzip2[0m
+-rwxr-xr-x 1 root root   14616 May 20  2015 [01;32mbzip2recover[0m
+lrwxrwxrwx 1 root root       6 Aug  4  2016 [01;36mbzless[0m -> [01;32mbzmore[0m
+-rwxr-xr-x 1 root root    1297 May 20  2015 [01;32mbzmore[0m
+-rwxr-xr-x 1 root root   52080 Mar  2  2017 [01;32mcat[0m
+-rwxr-xr-x 1 root root   14752 Feb  7  2016 [01;32mchacl[0m
+-rwxr-xr-x 1 root root   60272 Mar  2  2017 [01;32mchgrp[0m
+-rwxr-xr-x 1 root root   56112 Mar  2  2017 [01;32mchmod[0m
+-rwxr-xr-x 1 root root   64368 Mar  2  2017 [01;32mchown[0m
+-rwxr-xr-x 1 root root   10536 Sep 22  2016 [01;32mchvt[0m
+-rwxr-xr-x 1 root root  151024 Mar  2  2017 [01;32mcp[0m
+-rwxr-xr-x 1 root root  141472 Feb 18  2016 [01;32mcpio[0m
+-rwxr-xr-x 1 root root  154072 Feb 17  2016 [01;32mdash[0m
+-rwxr-xr-x 1 root root   68464 Mar  2  2017 [01;32mdate[0m
+-rwxr-xr-x 1 root root   72632 Mar  2  2017 [01;32mdd[0m
+-rwxr-xr-x 1 root root   97912 Mar  2  2017 [01;32mdf[0m
+-rwxr-xr-x 1 root root  126584 Mar  2  2017 [01;32mdir[0m
+-rwxr-xr-x 1 root root   60680 May 16  2018 [01;32mdmesg[0m
+lrwxrwxrwx 1 root root       8 Aug  4  2016 [01;36mdnsdomainname[0m -> [01;32mhostname[0m
+lrwxrwxrwx 1 root root       8 Aug  4  2016 [01;36mdomainname[0m -> [01;32mhostname[0m
+-rwxr-xr-x 1 root root   82328 Sep 22  2016 [01;32mdumpkeys[0m
+-rwxr-xr-x 1 root root   31376 Mar  2  2017 [01;32mecho[0m
+-rwxr-xr-x 1 root root   51512 Apr 26  2014 [01;32med[0m
+-rwxr-xr-x 1 root root      28 Apr 29  2016 [01;32megrep[0m
+-rwxr-xr-x 1 root root   27280 Mar  2  2017 [01;32mfalse[0m
+-rwxr-xr-x 1 root root   10544 Sep 22  2016 [01;32mfgconsole[0m
+-rwxr-xr-x 1 root root      28 Apr 29  2016 [01;32mfgrep[0m
+-rwxr-xr-x 1 root root   49576 May 16  2018 [01;32mfindmnt[0m
+-rwxr-xr-x 1 root root    1185 Jun 15  2017 [01;32mfsck.btrfs[0m
+-rwxr-xr-x 1 root root   36024 Feb  7  2016 [01;32mfuser[0m
+-rwsr-xr-x 1 root root   30800 Jul 12  2016 [37;41mfusermount[0m
+-rwxr-xr-x 1 root root   23752 Feb  7  2016 [01;32mgetfacl[0m
+-rwxr-xr-x 1 root root  211224 Apr 29  2016 [01;32mgrep[0m
+-rwxr-xr-x 2 root root    2301 Oct 27  2014 [01;32mgunzip[0m
+-rwxr-xr-x 1 root root    5927 Oct 27  2014 [01;32mgzexe[0m
+-rwxr-xr-x 1 root root   98240 Oct 27  2014 [01;32mgzip[0m
+-rwxr-xr-x 1 root root   14800 Nov 24  2015 [01;32mhostname[0m
+-rwxr-xr-x 1 root root  376192 Dec  6  2017 [01;32mip[0m
+-rwxr-xr-x 1 root root  498936 Jan 10 20:35 [01;32mjournalctl[0m
+-rwxr-xr-x 1 root root   10536 Sep 22  2016 [01;32mkbd_mode[0m
+-rwxr-xr-x 1 root root   23152 May 14  2018 [01;32mkill[0m
+-rwxr-xr-x 1 root root  150600 Jul 25  2017 [01;32mkmod[0m
+-rwxr-xr-x 1 root root  170728 Apr  5  2017 [01;32mless[0m
+-rwxr-xr-x 1 root root   10256 Apr  5  2017 [01;32mlessecho[0m
+lrwxrwxrwx 1 root root       8 Apr  5  2017 [01;36mlessfile[0m -> [01;32mlesspipe[0m
+-rwxr-xr-x 1 root root   19824 Apr  5  2017 [01;32mlesskey[0m
+-rwxr-xr-x 1 root root    7764 Apr  5  2017 [01;32mlesspipe[0m
+-rwxr-xr-x 1 root root   56152 Mar  2  2017 [01;32mln[0m
+-rwxr-xr-x 1 root root  111496 Sep 22  2016 [01;32mloadkeys[0m
+-rwxr-xr-x 1 root root   48128 May 16  2017 [01;32mlogin[0m
+-rwxr-xr-x 1 root root  453848 Jan 10 20:35 [01;32mloginctl[0m
+-rwxr-xr-x 1 root root  105136 Jan 28  2017 [01;32mlowntfs-3g[0m
+-rwxr-xr-x 1 root root  126584 Mar  2  2017 [01;32mls[0m
+-rwxr-xr-x 1 root root   77280 May 16  2018 [01;32mlsblk[0m
+lrwxrwxrwx 1 root root       4 Jul 25  2017 [01;36mlsmod[0m -> [01;32mkmod[0m
+-rwxr-xr-x 1 root root   76848 Mar  2  2017 [01;32mmkdir[0m
+-rwxr-xr-x 1 root root  265928 Jun 15  2017 [01;32mmkfs.btrfs[0m
+-rwxr-xr-x 1 root root   64496 Mar  2  2017 [01;32mmknod[0m
+-rwxr-xr-x 1 root root   39728 Mar  2  2017 [01;32mmktemp[0m
+-rwxr-xr-x 1 root root   39768 May 16  2018 [01;32mmore[0m
+-rwsr-xr-x 1 root root   40152 May 16  2018 [37;41mmount[0m
+-rwxr-xr-x 1 root root   14768 May 16  2018 [01;32mmountpoint[0m
+lrwxrwxrwx 1 root root      20 Aug  4  2016 [01;36mmt[0m -> [01;32m/etc/alternatives/mt[0m
+-rwxr-xr-x 1 root root   68824 Feb 18  2016 [01;32mmt-gnu[0m
+-rwxr-xr-x 1 root root  130488 Mar  2  2017 [01;32mmv[0m
+-rwxr-xr-x 1 root root  208480 Feb 15  2017 [01;32mnano[0m
+lrwxrwxrwx 1 root root      20 Aug  4  2016 [01;36mnc[0m -> [01;32m/etc/alternatives/nc[0m
+-rwxr-xr-x 1 root root   31248 Dec  3  2012 [01;32mnc.openbsd[0m
+lrwxrwxrwx 1 root root      24 Aug  4  2016 [01;36mnetcat[0m -> [01;32m/etc/alternatives/netcat[0m
+-rwxr-xr-x 1 root root  119624 Jun 30  2014 [01;32mnetstat[0m
+-rwxr-xr-x 1 root root  678496 Jan 10 20:35 [01;32mnetworkctl[0m
+lrwxrwxrwx 1 root root       8 Aug  4  2016 [01;36mnisdomainname[0m -> [01;32mhostname[0m
+-rwsr-xr-x 1 root root  142032 Jan 28  2017 [37;41mntfs-3g[0m
+-rwxr-xr-x 1 root root   10312 Jan 28  2017 [01;32mntfs-3g.probe[0m
+-rwxr-xr-x 1 root root   67608 Jan 28  2017 [01;32mntfs-3g.secaudit[0m
+-rwxr-xr-x 1 root root   18424 Jan 28  2017 [01;32mntfs-3g.usermap[0m
+-rwxr-xr-x 1 root root   26728 Jan 28  2017 [01;32mntfscat[0m
+-rwxr-xr-x 1 root root   30824 Jan 28  2017 [01;32mntfscluster[0m
+-rwxr-xr-x 1 root root   34920 Jan 28  2017 [01;32mntfscmp[0m
+-rwxr-xr-x 1 root root   34928 Jan 28  2017 [01;32mntfsfallocate[0m
+-rwxr-xr-x 1 root root   39024 Jan 28  2017 [01;32mntfsfix[0m
+-rwxr-xr-x 1 root root   55416 Jan 28  2017 [01;32mntfsinfo[0m
+-rwxr-xr-x 1 root root   31928 Jan 28  2017 [01;32mntfsls[0m
+-rwxr-xr-x 1 root root   30824 Jan 28  2017 [01;32mntfsmove[0m
+-rwxr-xr-x 1 root root   38944 Jan 28  2017 [01;32mntfstruncate[0m
+-rwxr-xr-x 1 root root   47752 Jan 28  2017 [01;32mntfswipe[0m
+lrwxrwxrwx 1 root root       6 Sep 22  2016 [01;36mopen[0m -> [01;32mopenvt[0m
+-rwxr-xr-x 1 root root   18968 Sep 22  2016 [01;32mopenvt[0m
+lrwxrwxrwx 1 root root      14 Aug  4  2016 [01;36mpidof[0m -> [01;32m/sbin/killall5[0m
+-rwsr-xr-x 1 root root   44168 May  7  2014 [37;41mping[0m
+-rwsr-xr-x 1 root root   44680 May  7  2014 [37;41mping6[0m
+-rwxr-xr-x 1 root root   39608 May  9  2018 [01;32mplymouth[0m
+-rwxr-xr-x 1 root root   97408 May 14  2018 [01;32mps[0m
+-rwxr-xr-x 1 root root   31472 Mar  2  2017 [01;32mpwd[0m
+lrwxrwxrwx 1 root root       4 May 16  2017 [01;36mrbash[0m -> [01;32mbash[0m
+-rwxr-xr-x 1 root root   39632 Mar  2  2017 [01;32mreadlink[0m
+-rwxr-xr-x 1 root root      89 Apr 26  2014 [01;32mred[0m
+-rwxr-xr-x 1 root root   60272 Mar  2  2017 [01;32mrm[0m
+-rwxr-xr-x 1 root root   39632 Mar  2  2017 [01;32mrmdir[0m
+lrwxrwxrwx 1 root root       4 Feb 15  2017 [01;36mrnano[0m -> [01;32mnano[0m
+-rwxr-xr-x 1 root root   19320 Jan 26  2016 [01;32mrun-parts[0m
+-rwxr-xr-x 1 root root   73424 Feb 11  2016 [01;32msed[0m
+-rwxr-xr-x 1 root root   36296 Feb  7  2016 [01;32msetfacl[0m
+-rwxr-xr-x 1 root root   39952 Sep 22  2016 [01;32msetfont[0m
+-rwxr-xr-x 1 root root   30875 Oct 12  2017 [01;32msetupcon[0m
+lrwxrwxrwx 1 root root       4 Aug  4  2016 [01;36msh[0m -> [01;32mdash[0m
+lrwxrwxrwx 1 root root       4 Aug  4  2016 [01;36msh.distrib[0m -> [01;32mdash[0m
+-rwxr-xr-x 1 root root   31408 Mar  2  2017 [01;32msleep[0m
+-rwxr-xr-x 1 root root  115816 Dec  6  2017 [01;32mss[0m
+lrwxrwxrwx 1 root root       7 Aug 19  2015 [01;36mstatic-sh[0m -> [01;32mbusybox[0m
+-rwxr-xr-x 1 root root   72496 Mar  2  2017 [01;32mstty[0m
+-rwsr-xr-x 1 root root   40128 May 16  2017 [37;41msu[0m
+-rwxr-xr-x 1 root root   31408 Mar  2  2017 [01;32msync[0m
+-rwxr-xr-x 1 root root  659856 Jan 10 20:35 [01;32msystemctl[0m
+lrwxrwxrwx 1 root root      20 Jan 10 20:35 [01;36msystemd[0m -> [01;32m/lib/systemd/systemd[0m
+-rwxr-xr-x 1 root root   51656 Jan 10 20:35 [01;32msystemd-ask-password[0m
+-rwxr-xr-x 1 root root   39344 Jan 10 20:35 [01;32msystemd-escape[0m
+-rwxr-xr-x 1 root root   64080 Jan 10 20:35 [01;32msystemd-hwdb[0m
+-rwxr-xr-x 1 root root  281840 Jan 10 20:35 [01;32msystemd-inhibit[0m
+-rwxr-xr-x 1 root root   47544 Jan 10 20:35 [01;32msystemd-machine-id-setup[0m
+-rwxr-xr-x 1 root root   35248 Jan 10 20:35 [01;32msystemd-notify[0m
+-rwxr-xr-x 1 root root  146008 Jan 10 20:35 [01;32msystemd-tmpfiles[0m
+-rwxr-xr-x 1 root root   68032 Jan 10 20:35 [01;32msystemd-tty-ask-password-agent[0m
+-rwxr-xr-x 1 root root   23144 May 16  2018 [01;32mtailf[0m
+-rwxr-xr-x 1 root root  383632 Nov 17  2016 [01;32mtar[0m
+-rwxr-xr-x 1 root root   10416 Jan 26  2016 [01;32mtempfile[0m
+-rwxr-xr-x 1 root root   64432 Mar  2  2017 [01;32mtouch[0m
+-rwxr-xr-x 1 root root   27280 Mar  2  2017 [01;32mtrue[0m
+-rwxr-xr-x 1 root root  449136 Jan 10 20:35 [01;32mudevadm[0m
+-rwxr-xr-x 1 root root   14328 Jul 12  2016 [01;32mulockmgr_server[0m
+-rwsr-xr-x 1 root root   27608 May 16  2018 [37;41mumount[0m
+-rwxr-xr-x 1 root root   31440 Mar  2  2017 [01;32muname[0m
+-rwxr-xr-x 2 root root    2301 Oct 27  2014 [01;32muncompress[0m
+-rwxr-xr-x 1 root root    2762 Sep 22  2016 [01;32municode_start[0m
+-rwxr-xr-x 1 root root  126584 Mar  2  2017 [01;32mvdir[0m
+-rwxr-xr-x 1 root root   31376 May 16  2018 [01;32mwdctl[0m
+-rwxr-xr-x 1 root root     946 Jan 26  2016 [01;32mwhich[0m
+-rwxr-xr-x 1 root root   27432 Jan 18  2016 [01;32mwhiptail[0m
+lrwxrwxrwx 1 root root       8 Aug  4  2016 [01;36mypdomainname[0m -> [01;32mhostname[0m
+-rwxr-xr-x 1 root root    1937 Oct 27  2014 [01;32mzcat[0m
+-rwxr-xr-x 1 root root    1777 Oct 27  2014 [01;32mzcmp[0m
+-rwxr-xr-x 1 root root    5764 Oct 27  2014 [01;32mzdiff[0m
+-rwxr-xr-x 1 root root     140 Oct 27  2014 [01;32mzegrep[0m
+-rwxr-xr-x 1 root root     140 Oct 27  2014 [01;32mzfgrep[0m
+-rwxr-xr-x 1 root root    2131 Oct 27  2014 [01;32mzforce[0m
+-rwxr-xr-x 1 root root    5938 Oct 27  2014 [01;32mzgrep[0m
+-rwxr-xr-x 1 root root    2037 Oct 27  2014 [01;32mzless[0m
+-rwxr-xr-x 1 root root    1910 Oct 27  2014 [01;32mzmore[0m
+-rwxr-xr-x 1 root root    5047 Oct 27  2014 [01;32mznew[0m
+]0;n00961805@cisvm-cop4640-1: /binn00961805@cisvm-cop4640-1:/bin$ ls -l | grep ""-""c"" ""[CO"c"t"
+15
+]0;n00961805@cisvm-cop4640-1: /binn00961805@cisvm-cop4640-1:/bin$ ^C
+]0;n00961805@cisvm-cop4640-1: /binn00961805@cisvm-cop4640-1:/bin$ ls -l | grep -c "Oct"[1P"[1P"[1P"J"a"n"
+33
+]0;n00961805@cisvm-cop4640-1: /binn00961805@cisvm-cop4640-1:/bin$ ls -l | grep -c "Jan"[1P"[1P"[1P"F"e"b"
+10
+]0;n00961805@cisvm-cop4640-1: /binn00961805@cisvm-cop4640-1:/bin$ ls -l | grep -c "Feb"[1P"[1P"[1P"M"a"r"
+28
+]0;n00961805@cisvm-cop4640-1: /binn00961805@cisvm-cop4640-1:/bin$ ls -l | grep -c "Mar"[C[1P"[1P"[1P"A"p"r"
+10
+]0;n00961805@cisvm-cop4640-1: /binn00961805@cisvm-cop4640-1:/bin$ cd ..
+]0;n00961805@cisvm-cop4640-1: /n00961805@cisvm-cop4640-1:/$ du /etc
+12	/etc/pm/sleep.d
+16	/etc/pm
+8	/etc/terminfo
+12	/etc/byobu
+4	/etc/systemd/user
+4	/etc/systemd/network
+4	/etc/systemd/system/multi-user.target.wants
+4	/etc/systemd/system/getty.target.wants
+4	/etc/systemd/system/cloud-final.service.wants
+4	/etc/systemd/system/sockets.target.wants
+4	/etc/systemd/system/graphical.target.wants
+4	/etc/systemd/system/default.target.wants
+4	/etc/systemd/system/final.target.wants
+4	/etc/systemd/system/timers.target.wants
+4	/etc/systemd/system/network-online.target.wants
+4	/etc/systemd/system/paths.target.wants
+4	/etc/systemd/system/sysinit.target.wants
+48	/etc/systemd/system
+88	/etc/systemd
+8	/etc/kernel/kernel/postinst.d
+8	/etc/kernel/kernel/postrm.d
+20	/etc/kernel/kernel
+24	/etc/kernel/postinst.d
+16	/etc/kernel/postrm.d
+64	/etc/kernel
+36	/etc/iproute2
+8	/etc/ufw/applications.d
+56	/etc/ufw
+8	/etc/mdadm
+4	/etc/modules-load.d
+8	/etc/rc5.d
+4	/etc/apparmor/init/network-interface-security
+8	/etc/apparmor/init
+20	/etc/apparmor
+4	/etc/opt
+4	/etc/tmpfiles.d
+4	/etc/X11/xkb
+4	/etc/X11/xinit/xinitrc.d
+8	/etc/X11/xinit
+12	/etc/X11/Xsession.d
+28	/etc/X11
+20	/etc/iscsi
+20	/etc/profile.d
+48	/etc/fonts/conf.avail
+4	/etc/fonts/conf.d
+56	/etc/fonts
+4	/etc/update-notifier
+44	/etc/sysctl.d
+8	/etc/newt
+20	/etc/xml
+8	/etc/rc4.d
+8	/etc/ldap
+72	/etc/dbus-1/system.d
+4	/etc/dbus-1/session.d
+80	/etc/dbus-1
+8	/etc/monit/monitrc.d
+12	/etc/monit
+236	/etc/fail2ban/action.d
+8	/etc/fail2ban/filter.d/ignorecommands
+316	/etc/fail2ban/filter.d
+8	/etc/fail2ban/jail.d
+4	/etc/fail2ban/fail2ban.d
+620	/etc/fail2ban
+8	/etc/rcS.d
+8	/etc/acpi/events
+16	/etc/acpi
+8	/etc/python2.7
+4	/etc/security/namespace.d
+4	/etc/security/limits.d
+48	/etc/security
+12	/etc/vim
+4	/etc/insserv/overrides
+8	/etc/insserv
+du: cannot read directory '/etc/lvm/backup': Permission denied
+4	/etc/lvm/backup
+du: cannot read directory '/etc/lvm/archive': Permission denied
+4	/etc/lvm/archive
+96	/etc/lvm
+148	/etc/console-setup
+20	/etc/cron.weekly
+44	/etc/bash_completion.d
+32	/etc/update-motd.d/backup
+40	/etc/update-motd.d
+4	/etc/apparmor.d/tunables/multiarch.d
+8	/etc/apparmor.d/tunables/home.d
+8	/etc/apparmor.d/tunables/xdg-user-dirs.d
+68	/etc/apparmor.d/tunables
+4	/etc/apparmor.d/disable
+4	/etc/apparmor.d/force-complain
+36	/etc/apparmor.d/local
+392	/etc/apparmor.d/cache
+20	/etc/apparmor.d/lxc
+44	/etc/apparmor.d/abstractions/ubuntu-browsers.d
+24	/etc/apparmor.d/abstractions/apparmor_api
+20	/etc/apparmor.d/abstractions/lxc
+392	/etc/apparmor.d/abstractions
+972	/etc/apparmor.d
+4	/etc/udev/hwdb.d
+4	/etc/udev/rules.d
+16	/etc/udev
+8	/etc/alternatives
+12	/etc/groff
+8	/etc/calendar
+8	/etc/python
+308	/etc/init.d
+12	/etc/kbd
+16	/etc/cron.d
+8	/etc/python3.5
+12	/etc/network/if-post-down.d
+12	/etc/network/if-down.d
+24	/etc/network/if-pre-up.d
+32	/etc/network/if-up.d
+4	/etc/network/interfaces.d
+92	/etc/network
+4	/etc/dpkg/dpkg.cfg.d
+12	/etc/dpkg/origins
+32	/etc/dpkg
+12	/etc/libnl-3
+36	/etc/logrotate.d
+8	/etc/cron.hourly
+148	/etc/init
+8	/etc/logcheck/violations.d
+16	/etc/logcheck/ignore.d.server
+28	/etc/logcheck
+8	/etc/cron.monthly
+80	/etc/grub.d
+40	/etc/modprobe.d
+8	/etc/ppp/ip-up.d
+8	/etc/ppp/ip-down.d
+20	/etc/ppp
+4	/etc/apt/preferences.d
+4	/etc/apt/sources.list.d
+56	/etc/apt/apt.conf.d
+4	/etc/apt/trusted.gpg.d
+88	/etc/apt
+96	/etc/pam.d
+16	/etc/skel
+344	/etc/ssh
+4	/etc/perl/CPAN
+8	/etc/perl/Net
+16	/etc/perl
+8	/etc/gss/mech.d
+12	/etc/gss
+4	/etc/insserv.conf.d
+16	/etc/ld.so.conf.d
+4	/etc/ca-certificates/update.d
+8	/etc/ca-certificates
+8	/etc/dhcp/dhclient-enter-hooks.d
+12	/etc/dhcp/dhclient-exit-hooks.d
+32	/etc/dhcp
+20	/etc/vmware-tools/scripts/vmware
+24	/etc/vmware-tools/scripts
+84	/etc/vmware-tools
+8	/etc/rc6.d
+8	/etc/sgml
+4	/etc/binfmt.d
+8	/etc/apm/event.d
+12	/etc/apm
+8	/etc/sudoers.d
+4	/etc/xdg/systemd
+8	/etc/xdg/autostart
+24	/etc/xdg
+du: cannot read directory '/etc/ssl/private': Permission denied
+4	/etc/ssl/private
+720	/etc/ssl/certs
+740	/etc/ssl
+4	/etc/update-manager/release-upgrades.d
+16	/etc/update-manager
+8	/etc/rc1.d
+12	/etc/apport/blacklist.d
+20	/etc/apport
+8	/etc/rc2.d
+8	/etc/rc3.d
+8	/etc/initramfs-tools/conf.d
+4	/etc/initramfs-tools/hooks
+4	/etc/initramfs-tools/scripts/nfs-top
+4	/etc/initramfs-tools/scripts/init-bottom
+4	/etc/initramfs-tools/scripts/local-bottom
+4	/etc/initramfs-tools/scripts/local-top
+4	/etc/initramfs-tools/scripts/local-premount
+4	/etc/initramfs-tools/scripts/init-premount
+4	/etc/initramfs-tools/scripts/nfs-bottom
+4	/etc/initramfs-tools/scripts/panic
+4	/etc/initramfs-tools/scripts/nfs-premount
+4	/etc/initramfs-tools/scripts/init-top
+44	/etc/initramfs-tools/scripts
+72	/etc/initramfs-tools
+12	/etc/rsyslog.d
+4	/etc/default/grub.d
+112	/etc/default
+du: cannot read directory '/etc/polkit-1/localauthority': Permission denied
+4	/etc/polkit-1/localauthority
+12	/etc/polkit-1/localauthority.conf.d
+8	/etc/polkit-1/nullbackend.conf.d
+28	/etc/polkit-1
+8	/etc/selinux
+52	/etc/cron.daily
+8	/etc/depmod.d
+8	/etc/rc0.d
+8	/etc/python3
+12	/etc/resolvconf/update.d
+8	/etc/resolvconf/resolv.conf.d
+28	/etc/resolvconf
+5944	/etc
+]0;n00961805@cisvm-cop4640-1: /n00961805@cisvm-cop4640-1:/$ du /etc-/etch/etc /etc
+12K	/etc/pm/sleep.d
+16K	/etc/pm
+8.0K	/etc/terminfo
+12K	/etc/byobu
+4.0K	/etc/systemd/user
+4.0K	/etc/systemd/network
+4.0K	/etc/systemd/system/multi-user.target.wants
+4.0K	/etc/systemd/system/getty.target.wants
+4.0K	/etc/systemd/system/cloud-final.service.wants
+4.0K	/etc/systemd/system/sockets.target.wants
+4.0K	/etc/systemd/system/graphical.target.wants
+4.0K	/etc/systemd/system/default.target.wants
+4.0K	/etc/systemd/system/final.target.wants
+4.0K	/etc/systemd/system/timers.target.wants
+4.0K	/etc/systemd/system/network-online.target.wants
+4.0K	/etc/systemd/system/paths.target.wants
+4.0K	/etc/systemd/system/sysinit.target.wants
+48K	/etc/systemd/system
+88K	/etc/systemd
+8.0K	/etc/kernel/kernel/postinst.d
+8.0K	/etc/kernel/kernel/postrm.d
+20K	/etc/kernel/kernel
+24K	/etc/kernel/postinst.d
+16K	/etc/kernel/postrm.d
+64K	/etc/kernel
+36K	/etc/iproute2
+8.0K	/etc/ufw/applications.d
+56K	/etc/ufw
+8.0K	/etc/mdadm
+4.0K	/etc/modules-load.d
+8.0K	/etc/rc5.d
+4.0K	/etc/apparmor/init/network-interface-security
+8.0K	/etc/apparmor/init
+20K	/etc/apparmor
+4.0K	/etc/opt
+4.0K	/etc/tmpfiles.d
+4.0K	/etc/X11/xkb
+4.0K	/etc/X11/xinit/xinitrc.d
+8.0K	/etc/X11/xinit
+12K	/etc/X11/Xsession.d
+28K	/etc/X11
+20K	/etc/iscsi
+20K	/etc/profile.d
+48K	/etc/fonts/conf.avail
+4.0K	/etc/fonts/conf.d
+56K	/etc/fonts
+4.0K	/etc/update-notifier
+44K	/etc/sysctl.d
+8.0K	/etc/newt
+20K	/etc/xml
+8.0K	/etc/rc4.d
+8.0K	/etc/ldap
+72K	/etc/dbus-1/system.d
+4.0K	/etc/dbus-1/session.d
+80K	/etc/dbus-1
+8.0K	/etc/monit/monitrc.d
+12K	/etc/monit
+236K	/etc/fail2ban/action.d
+8.0K	/etc/fail2ban/filter.d/ignorecommands
+316K	/etc/fail2ban/filter.d
+8.0K	/etc/fail2ban/jail.d
+4.0K	/etc/fail2ban/fail2ban.d
+620K	/etc/fail2ban
+8.0K	/etc/rcS.d
+8.0K	/etc/acpi/events
+16K	/etc/acpi
+8.0K	/etc/python2.7
+4.0K	/etc/security/namespace.d
+4.0K	/etc/security/limits.d
+48K	/etc/security
+12K	/etc/vim
+4.0K	/etc/insserv/overrides
+8.0K	/etc/insserv
+du: cannot read directory '/etc/lvm/backup': Permission denied
+4.0K	/etc/lvm/backup
+du: cannot read directory '/etc/lvm/archive': Permission denied
+4.0K	/etc/lvm/archive
+96K	/etc/lvm
+148K	/etc/console-setup
+20K	/etc/cron.weekly
+44K	/etc/bash_completion.d
+32K	/etc/update-motd.d/backup
+40K	/etc/update-motd.d
+4.0K	/etc/apparmor.d/tunables/multiarch.d
+8.0K	/etc/apparmor.d/tunables/home.d
+8.0K	/etc/apparmor.d/tunables/xdg-user-dirs.d
+68K	/etc/apparmor.d/tunables
+4.0K	/etc/apparmor.d/disable
+4.0K	/etc/apparmor.d/force-complain
+36K	/etc/apparmor.d/local
+392K	/etc/apparmor.d/cache
+20K	/etc/apparmor.d/lxc
+44K	/etc/apparmor.d/abstractions/ubuntu-browsers.d
+24K	/etc/apparmor.d/abstractions/apparmor_api
+20K	/etc/apparmor.d/abstractions/lxc
+392K	/etc/apparmor.d/abstractions
+972K	/etc/apparmor.d
+4.0K	/etc/udev/hwdb.d
+4.0K	/etc/udev/rules.d
+16K	/etc/udev
+8.0K	/etc/alternatives
+12K	/etc/groff
+8.0K	/etc/calendar
+8.0K	/etc/python
+308K	/etc/init.d
+12K	/etc/kbd
+16K	/etc/cron.d
+8.0K	/etc/python3.5
+12K	/etc/network/if-post-down.d
+12K	/etc/network/if-down.d
+24K	/etc/network/if-pre-up.d
+32K	/etc/network/if-up.d
+4.0K	/etc/network/interfaces.d
+92K	/etc/network
+4.0K	/etc/dpkg/dpkg.cfg.d
+12K	/etc/dpkg/origins
+32K	/etc/dpkg
+12K	/etc/libnl-3
+36K	/etc/logrotate.d
+8.0K	/etc/cron.hourly
+148K	/etc/init
+8.0K	/etc/logcheck/violations.d
+16K	/etc/logcheck/ignore.d.server
+28K	/etc/logcheck
+8.0K	/etc/cron.monthly
+80K	/etc/grub.d
+40K	/etc/modprobe.d
+8.0K	/etc/ppp/ip-up.d
+8.0K	/etc/ppp/ip-down.d
+20K	/etc/ppp
+4.0K	/etc/apt/preferences.d
+4.0K	/etc/apt/sources.list.d
+56K	/etc/apt/apt.conf.d
+4.0K	/etc/apt/trusted.gpg.d
+88K	/etc/apt
+96K	/etc/pam.d
+16K	/etc/skel
+344K	/etc/ssh
+4.0K	/etc/perl/CPAN
+8.0K	/etc/perl/Net
+16K	/etc/perl
+8.0K	/etc/gss/mech.d
+12K	/etc/gss
+4.0K	/etc/insserv.conf.d
+16K	/etc/ld.so.conf.d
+4.0K	/etc/ca-certificates/update.d
+8.0K	/etc/ca-certificates
+8.0K	/etc/dhcp/dhclient-enter-hooks.d
+12K	/etc/dhcp/dhclient-exit-hooks.d
+32K	/etc/dhcp
+20K	/etc/vmware-tools/scripts/vmware
+24K	/etc/vmware-tools/scripts
+84K	/etc/vmware-tools
+8.0K	/etc/rc6.d
+8.0K	/etc/sgml
+4.0K	/etc/binfmt.d
+8.0K	/etc/apm/event.d
+12K	/etc/apm
+8.0K	/etc/sudoers.d
+4.0K	/etc/xdg/systemd
+8.0K	/etc/xdg/autostart
+24K	/etc/xdg
+du: cannot read directory '/etc/ssl/private': Permission denied
+4.0K	/etc/ssl/private
+720K	/etc/ssl/certs
+740K	/etc/ssl
+4.0K	/etc/update-manager/release-upgrades.d
+16K	/etc/update-manager
+8.0K	/etc/rc1.d
+12K	/etc/apport/blacklist.d
+20K	/etc/apport
+8.0K	/etc/rc2.d
+8.0K	/etc/rc3.d
+8.0K	/etc/initramfs-tools/conf.d
+4.0K	/etc/initramfs-tools/hooks
+4.0K	/etc/initramfs-tools/scripts/nfs-top
+4.0K	/etc/initramfs-tools/scripts/init-bottom
+4.0K	/etc/initramfs-tools/scripts/local-bottom
+4.0K	/etc/initramfs-tools/scripts/local-top
+4.0K	/etc/initramfs-tools/scripts/local-premount
+4.0K	/etc/initramfs-tools/scripts/init-premount
+4.0K	/etc/initramfs-tools/scripts/nfs-bottom
+4.0K	/etc/initramfs-tools/scripts/panic
+4.0K	/etc/initramfs-tools/scripts/nfs-premount
+4.0K	/etc/initramfs-tools/scripts/init-top
+44K	/etc/initramfs-tools/scripts
+72K	/etc/initramfs-tools
+12K	/etc/rsyslog.d
+4.0K	/etc/default/grub.d
+112K	/etc/default
+du: cannot read directory '/etc/polkit-1/localauthority': Permission denied
+4.0K	/etc/polkit-1/localauthority
+12K	/etc/polkit-1/localauthority.conf.d
+8.0K	/etc/polkit-1/nullbackend.conf.d
+28K	/etc/polkit-1
+8.0K	/etc/selinux
+52K	/etc/cron.daily
+8.0K	/etc/depmod.d
+8.0K	/etc/rc0.d
+8.0K	/etc/python3
+12K	/etc/resolvconf/update.d
+8.0K	/etc/resolvconf/resolv.conf.d
+28K	/etc/resolvconf
+5.9M	/etc
+]0;n00961805@cisvm-cop4640-1: /n00961805@cisvm-cop4640-1:/$ du -h /etc[1P /etcs /etc
+du: cannot read directory '/etc/lvm/backup': Permission denied
+du: cannot read directory '/etc/lvm/archive': Permission denied
+du: cannot read directory '/etc/ssl/private': Permission denied
+du: cannot read directory '/etc/polkit-1/localauthority': Permission denied
+5944	/etc
+]0;n00961805@cisvm-cop4640-1: /n00961805@cisvm-cop4640-1:/$ du -s /etc-/etch/etc /etc
+du: cannot read directory '/etc/lvm/backup': Permission denied
+du: cannot read directory '/etc/lvm/archive': Permission denied
+du: cannot read directory '/etc/ssl/private': Permission denied
+du: cannot read directory '/etc/polkit-1/localauthority': Permission denied
+5.9M	/etc
+]0;n00961805@cisvm-cop4640-1: /n00961805@cisvm-cop4640-1:/$ du -s -h /etc[K[K[Kbin
+16M	/bin
+]0;n00961805@cisvm-cop4640-1: /n00961805@cisvm-cop4640-1:/$ du -s -h /bin[K[K[Ksbin
+13M	/sbin
+]0;n00961805@cisvm-cop4640-1: /n00961805@cisvm-cop4640-1:/$ watch
+
+Usage:
+ watch [options] command
+
+Options:
+  -b, --beep             beep if command has a non-zero exit
+  -c, --color            interpret ANSI color and style sequences
+  -d, --differences[=<permanent>]
+                         highlight changes between updates
+  -e, --errexit          exit if command has a non-zero exit
+  -g, --chgexit          exit when output from command changes
+  -n, --interval <secs>  seconds to wait between updates
+  -p, --precise          attempt run command in precise intervals
+  -t, --no-title         turn off header
+  -x, --exec             pass command to exec instead of "sh -c"
+
+ -h, --help     display this help and exit
+ -v, --version  output version information and exit
+
+For more details see watch(1).
+]0;n00961805@cisvm-cop4640-1: /n00961805@cisvm-cop4640-1:/$ cat /proc/meminfo
+MemTotal:        2048312 kB
+MemFree:          265108 kB
+MemAvailable:    1682584 kB
+Buffers:          276880 kB
+Cached:          1117364 kB
+SwapCached:            8 kB
+Active:           903376 kB
+Inactive:         576452 kB
+Active(anon):      49076 kB
+Inactive(anon):    60228 kB
+Active(file):     854300 kB
+Inactive(file):   516224 kB
+Unevictable:        3652 kB
+Mlocked:            3652 kB
+SwapTotal:       2097148 kB
+SwapFree:        2097112 kB
+Dirty:                 0 kB
+Writeback:             0 kB
+AnonPages:         89224 kB
+Mapped:            48308 kB
+Shmem:             21300 kB
+Slab:             258452 kB
+SReclaimable:     234932 kB
+SUnreclaim:        23520 kB
+KernelStack:        2304 kB
+PageTables:         3096 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     3121304 kB
+Committed_AS:     442264 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:           0 kB
+VmallocChunk:          0 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:     43008 kB
+CmaTotal:              0 kB
+CmaFree:               0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:       73664 kB
+DirectMap2M:     2023424 kB
+]0;n00961805@cisvm-cop4640-1: /n00961805@cisvm-cop4640-1:/$ ^C
+]0;n00961805@cisvm-cop4640-1: /n00961805@cisvm-cop4640-1:/$ free -m
+              total        used        free      shared  buff/cache   available
+Mem:           2000         127         258          20        1613        1643
+Swap:          2047           0        2047
+]0;n00961805@cisvm-cop4640-1: /n00961805@cisvm-cop4640-1:/$ dir >[K[K[K[K[Kcd ~
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ cd [K[K[Kdr [K[Kir > myFile
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ ls
+Dog: Morris  [0m[01;34mlab2[0m  lab2.log  lab3.log  myFile  myPets
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ cat myPets
+Dog: Morris
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ sed 's/Dog/Cat/' myPets
+Cat: Morris
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ cat myPets
+Dog: Morris
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ ls
+Dog: Morris  [0m[01;34mlab2[0m  lab2.log  lab3.log  myFile  myPets
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ rn[Km Dog\:\ Morris 
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ ls
+[0m[01;34mlab2[0m  lab2.log  lab3.log  myFile  myPets
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ cat myFile
+Dog:\ Morris  lab2  lab2.log  lab3.log	myFile	myPets
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ ls -l
+total 220
+drwxrwxr-x 2 n00961805 n00961805   4096 Jan 27 12:29 [0m[01;34mlab2[0m
+-rw-rw-r-- 1 n00961805 n00961805  75179 Jan 22 15:56 lab2.log
+-rw-rw-r-- 1 n00961805 n00961805 135168 Jan 27 13:05 lab3.log
+-rw-rw-r-- 1 n00961805 n00961805     53 Jan 27 13:05 myFile
+-rw-rw-r-- 1 n00961805 n00961805     12 Jan 27 12:31 myPets
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ dir [K[Kr >> myFile
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ ls
+[0m[01;34mlab2[0m  lab2.log  lab3.log  myFile  myPets
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ dir | find myFile
+myFile
+]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ nano myFile
+[?1049h[1;72r(B[m[4l[?7h[?1h=[?1h=[?1h=[39;49m[?25l[39;49m(B[m[H[2J[70;63H(B[0;7m[ Reading File ][3d(B[m[70;69H(B[0;7m 2 lines[5d(B[m[?12l[?25h[H[39;49m(B[0;7m  GNU nano 2.5.3                                   File: myFile                                                                             [3;1H(B[mDog:\ Morris  lab2  lab2.log  lab3.log  myFile  myPets[4dlab2  lab2.log  lab3.log  myFile  myPets[71d(B[0;7m^G(B[m Get Help    (B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut Text    (B[0;7m^J(B[m Justify     (B[0;7m^C(B[m Cur Pos     (B[0;7m^Y(B[m Prev Page   (B[0;7mM-\(B[m First Line (B[0;7mM-W(B[m WhereIs Next[72d(B[0;7m^X(B[m Exit[72;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Uncut Text  (B[0;7m^T(B[m To Spell    (B[0;7m^_(B[m Go To Line  (B[0;7m^V(B[m Next Page   (B[0;7mM-/(B[m Last Line  (B[0;7mM-](B[m To Bracket[3d[70d[J[72;140H[72;1H[?1049l[?1l>]0;n00961805@cisvm-cop4640-1: ~n00961805@cisvm-cop4640-1:~$ exit
+exit
+
+Script done on Sun 27 Jan 2019 01:10:03 PM EST

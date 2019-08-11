@@ -1,0 +1,195 @@
+.contain{
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  margin-bottom: 10px;
+}
+
+.item{
+  margin-bottom: 5px;
+}
+
+div.main_header {
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+span.main_header {
+    color: #ffffff;
+    font-size: 250%;
+}
+
+span.body_text {
+    font-size: 150%;
+}
+
+.blue{
+    color: blue;
+}
+
+.red{
+    color: red;
+}
+
+.green{
+    color: green;
+}
+
+.purple{
+    color: purple;
+}
+
+.yellow{
+    color: yellow;
+}
+.black{
+    color: black;
+}
+.white{
+    color: white
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.center-image{
+    display: flex;
+    justify-content: center;
+}
+.block{
+    display: inline-block;
+}
+.link-left{
+    display:block;
+    text-align:left
+}
+.link-center{
+    display:block;
+    text-align:center
+}
+.link-right{
+    display:block;
+    text-align:right
+}
+
+
+#########################################
+#######       Topography         ########
+#########################################
+.bold{
+    font-weight: bold;
+}
+.italic{
+    font-style: italic;
+}
+#########################################
+#######         Links            ########
+#########################################
+a{
+    font-size: 100%;
+}
+a.hover:hover {
+    font-size: 150%;
+}
+body{
+    padding: 20px;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: grey;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: blue;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+input[type="radio"]:checked:before {
+    content: "";
+    display: block;
+    position: relative;
+    top: 3px;
+    left: 3px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: green;
+}
+
+#########################################
+#######        Schedule          ########
+#########################################
+td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+th{
+    color: blue;
+}
